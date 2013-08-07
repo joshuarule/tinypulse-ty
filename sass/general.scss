@@ -1,0 +1,34 @@
+$desktop: 768px;
+
+$mbl-pad: 10px;
+
+$well-pad: 		14px;
+$tight-pad: 	 3px;
+
+$size-0: 60px;
+$size-2: 24px;
+
+%font-awesome {
+	font-family: FontAwesome;
+	font-weight: normal;
+	font-style: normal;
+	text-decoration: inherit;
+	-webkit-font-smoothing: antialiased;
+}
+
+%pseudo {
+	position: absolute;
+	content: '';
+}
+
+.well--pad {
+	padding: $well-pad;
+}
+
+.well--tight{
+	padding: $tight-pad;
+	@include box-shadow(none);
+}
+
+.top-text {margin-top: 		0;}
+.btm-text {margin-bottom:   0;}

@@ -1,20 +1,155 @@
+/* line 11, ../sass/general.scss */
+#thank-you .quote:after, #thank-you .quote:before {
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* line 19, ../sass/general.scss */
+#thank-you .respond-quote:before {
+  position: absolute;
+  content: '';
+}
+
+/* line 24, ../sass/general.scss */
+.well--pad {
+  padding: 14px;
+}
+
+/* line 28, ../sass/general.scss */
+.well--tight {
+  padding: 3px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+/* line 33, ../sass/general.scss */
+.top-text {
+  margin-top: 0;
+}
+
+/* line 34, ../sass/general.scss */
+.btm-text {
+  margin-bottom: 0;
+}
+
 /* line 1, ../sass/_element.scss */
+.container {
+  overflow: hidden;
+}
+
+/* line 3, ../sass/_element.scss */
+.content {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 768px) {
+  /* line 3, ../sass/_element.scss */
+  .content {
+    margin: 0;
+  }
+}
+
+/* line 14, ../sass/_element.scss */
 .header-ty {
   background: #FFF;
   line-height: 40px;
 }
 
-/* line 6, ../sass/_element.scss */
+/* line 19, ../sass/_element.scss */
+.logo {
+  display: block;
+  text-align: center;
+}
+/* line 23, ../sass/_element.scss */
+.logo img {
+  max-height: 20px;
+  display: inline-block;
+}
+
+/* line 28, ../sass/_element.scss */
 .footer-ty {
   border-top: 1px solid black;
 }
 
-/* line 8, ../sass/_element.scss */
+/* line 30, ../sass/_element.scss */
 .ftr-right {
   background: yellow;
 }
 
-/* line 9, ../sass/_element.scss */
+/* line 31, ../sass/_element.scss */
 .ftr-left {
   background: pink;
+}
+
+/* line 38, ../sass/_element.scss */
+#thank-you h1 {
+  font-size: 16px;
+}
+/* line 42, ../sass/_element.scss */
+#thank-you .respond-quote {
+  width: auto;
+  position: relative;
+  z-index: 0;
+  padding: 10px 0;
+}
+/* line 48, ../sass/_element.scss */
+#thank-you .respond-quote:before {
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: -100%;
+  right: -100%;
+  background: yellow;
+  display: block;
+}
+/* line 59, ../sass/_element.scss */
+#thank-you .respond-quote .quote, #thank-you .respond-quote .quote-author {
+  text-align: center;
+}
+/* line 65, ../sass/_element.scss */
+#thank-you .quote {
+  padding: 0 40px;
+}
+/* line 67, ../sass/_element.scss */
+#thank-you .quote:after, #thank-you .quote:before {
+  position: absolute;
+  top: 15px;
+  font-size: 24px;
+}
+/* line 73, ../sass/_element.scss */
+#thank-you .quote:before {
+  left: 0;
+  content: "\f10d";
+}
+/* line 77, ../sass/_element.scss */
+#thank-you .quote:after {
+  right: 0;
+  content: "\f10e";
+}
+
+/* line 88, ../sass/_element.scss */
+.streak {
+  height: 90px;
+  position: relative;
+}
+
+/* line 93, ../sass/_element.scss */
+.streak-number {
+  height: 100%;
+  width: 84px;
+  margin-right: 10px;
+  outline: 1px solid red;
+}
+
+/* line 104, ../sass/_element.scss */
+.streak-stars {
+  display: inline-block;
+}
+/* line 107, ../sass/_element.scss */
+.streak-stars.inline li {
+  padding: 0;
 }

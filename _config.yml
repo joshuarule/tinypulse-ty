@@ -1,3 +1,6 @@
-name: Your New Jekyll Site
+name: Tiny Pulse Header
 markdown: redcarpet
 pygments: true
+url: "http://joshuarule.github.io/tinypulse-ty/"
+baseurl: "/tinypulse-ty"
+permalink: none

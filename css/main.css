@@ -1,4 +1,20 @@
-/* line 1, ../sass/main.scss */
-body {
-  background: none;
+/* line 1, ../sass/_element.scss */
+.header-ty {
+  background: #FFF;
+  line-height: 40px;
+}
+
+/* line 6, ../sass/_element.scss */
+.footer-ty {
+  border-top: 1px solid black;
+}
+
+/* line 8, ../sass/_element.scss */
+.ftr-right {
+  background: yellow;
+}
+
+/* line 9, ../sass/_element.scss */
+.ftr-left {
+  background: pink;
 }

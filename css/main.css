@@ -1,3 +1,66 @@
+@font-face {
+  font-family: 'tinypulse-fonts';
+  src: url("../fonts/tinypulse-fonts.eot");
+}
+
+@font-face {
+  font-family: 'tinypulse-fonts';
+  src: url(data:application/font-woff;charset=utf-8;base64,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) format("woff"), url(data:application/x-font-ttf;charset=utf-8;base64,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) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+/* line 14, ../sass/fonts.scss */
+[data-icon]:before {
+  font-family: 'tinypulse-fonts';
+  content: attr(data-icon);
+  speak: none;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Use the following CSS code if you want to have a class per icon */
+/*
+Instead of a list of all class selectors,
+you can use the generic selector below, but it's slower:
+[class*="icon-"] {
+*/
+/* line 31, ../sass/fonts.scss */
+.icon-shirt, .icon-comment-reverse, .icon-clock-rewind, .icon-contacts {
+  font-family: 'tinypulse-fonts';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* line 41, ../sass/fonts.scss */
+.icon-shirt:before {
+  content: "\73";
+}
+
+/* line 44, ../sass/fonts.scss */
+.icon-comment-reverse:before {
+  content: "\63";
+}
+
+/* line 47, ../sass/fonts.scss */
+.icon-clock-rewind:before {
+  content: "\74";
+}
+
+/* line 50, ../sass/fonts.scss */
+.icon-contacts:before {
+  content: "\61";
+}
+
 /* line 21, ../sass/general.scss */
 #thank-you .quote:after, #thank-you .quote:before {
   font-family: FontAwesome;
@@ -88,9 +151,8 @@
 .ftr-left {
   padding: 15px;
   position: relative;
-  height: 70px;
 }
-/* line 40, ../sass/_element.scss */
+/* line 39, ../sass/_element.scss */
 .ftr-right p,
 .ftr-left p {
   font-size: 12px;
@@ -98,19 +160,20 @@
   margin: 5px 0;
 }
 
-/* line 43, ../sass/_element.scss */
+/* line 42, ../sass/_element.scss */
 .ftr-right {
   height: 300px;
 }
 
-/* line 47, ../sass/_element.scss */
-.ftr-left .icon-file {
+/* line 46, ../sass/_element.scss */
+.ftr-left .icon-shirt {
   line-height: 1.2em;
-  font-size: 40px;
+  font-size: 38px;
   position: absolute;
   top: 50%;
   height: 50px;
   margin-top: -25px;
+  color: #eb742c;
 }
 /* line 56, ../sass/_element.scss */
 .ftr-left:before {
@@ -122,26 +185,30 @@
 }
 /* line 65, ../sass/_element.scss */
 .ftr-left p {
-  margin-left: 40px;
+  margin-left: 45px;
 }
 
 /* line 68, ../sass/_element.scss */
-.ftr-wrap {
+a.ftr-wrap {
   display: block;
   height: 100%;
   font-size: 0;
   color: inherit;
 }
 /* line 74, ../sass/_element.scss */
-.ftr-wrap:before {
+a.ftr-wrap:before {
   vertical-align: middle;
   content: '';
   display: inline-block;
   height: 100%;
   width: 0;
 }
+/* line 82, ../sass/_element.scss */
+a.ftr-wrap b {
+  color: #3a87ad;
+}
 
-/* line 83, ../sass/_element.scss */
+/* line 85, ../sass/_element.scss */
 .vertical-align {
   vertical-align: middle;
   position: relative;
@@ -149,22 +216,22 @@
   display: inline-block;
 }
 
-/* line 96, ../sass/_element.scss */
+/* line 98, ../sass/_element.scss */
 #thank-you .submit-header {
   text-align: center;
 }
-/* line 100, ../sass/_element.scss */
+/* line 102, ../sass/_element.scss */
 #thank-you h1 {
   font-size: 18px;
   line-height: 1.2em;
   text-shadow: none;
 }
-/* line 106, ../sass/_element.scss */
+/* line 108, ../sass/_element.scss */
 #thank-you p {
   font-size: 12px;
   line-height: 1.4em;
 }
-/* line 113, ../sass/_element.scss */
+/* line 115, ../sass/_element.scss */
 #thank-you .respond-quote {
   clear: both;
   width: auto;
@@ -175,7 +242,7 @@
   text-align: center;
   color: #FFF;
 }
-/* line 123, ../sass/_element.scss */
+/* line 125, ../sass/_element.scss */
 #thank-you .respond-quote:before {
   z-index: -1;
   top: 0;
@@ -185,47 +252,47 @@
   background: #4f6e7e;
   display: block;
 }
-/* line 134, ../sass/_element.scss */
+/* line 136, ../sass/_element.scss */
 #thank-you .respond-quote .quote, #thank-you .respond-quote .quote-author {
   text-align: center;
   min-height: 0;
 }
-/* line 142, ../sass/_element.scss */
+/* line 144, ../sass/_element.scss */
 #thank-you .quote {
   display: inline-block;
   width: 75%;
   position: relative;
 }
-/* line 147, ../sass/_element.scss */
+/* line 149, ../sass/_element.scss */
 #thank-you .quote:after, #thank-you .quote:before {
   color: #7395a7;
   position: absolute;
   top: 5px;
   font-size: 24px;
 }
-/* line 154, ../sass/_element.scss */
+/* line 156, ../sass/_element.scss */
 #thank-you .quote:before {
   left: -35px;
   content: "\f10d";
 }
-/* line 158, ../sass/_element.scss */
+/* line 160, ../sass/_element.scss */
 #thank-you .quote:after {
   right: -35px;
   content: "\f10e";
 }
 
-/* line 168, ../sass/_element.scss */
+/* line 170, ../sass/_element.scss */
 .title h1, .title--icon h1 {
   margin-top: 0;
 }
 
-/* line 174, ../sass/_element.scss */
+/* line 176, ../sass/_element.scss */
 .title--icon i {
   font-size: 24px;
   line-height: .8em;
 }
 
-/* line 181, ../sass/_element.scss */
+/* line 183, ../sass/_element.scss */
 .streak {
   height: 100px;
   position: relative;
@@ -234,7 +301,7 @@
   border-color: #c4e3f3;
 }
 
-/* line 189, ../sass/_element.scss */
+/* line 191, ../sass/_element.scss */
 .streak-number {
   position: relative;
   height: 100%;
@@ -251,13 +318,13 @@
   box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.1);
 }
 
-/* line 200, ../sass/_element.scss */
+/* line 202, ../sass/_element.scss */
 .streak-copy h5 {
   margin: 0 0 2px 0;
   line-height: 1em;
   color: #3a87ad;
 }
-/* line 206, ../sass/_element.scss */
+/* line 208, ../sass/_element.scss */
 .streak-copy p {
   height: 30px;
   margin: 0;
@@ -265,7 +332,7 @@
   color: #4196bf;
 }
 
-/* line 214, ../sass/_element.scss */
+/* line 216, ../sass/_element.scss */
 .streak-record {
   margin: 3px 0 0;
   font-size: 10px;
@@ -274,37 +341,37 @@
   color: #8ca7b4;
 }
 
-/* line 222, ../sass/_element.scss */
+/* line 224, ../sass/_element.scss */
 .streak-stars {
   display: inline-block;
 }
-/* line 225, ../sass/_element.scss */
+/* line 227, ../sass/_element.scss */
 .streak-stars.inline li {
   padding: 0;
   float: left;
 }
-/* line 230, ../sass/_element.scss */
+/* line 232, ../sass/_element.scss */
 .streak-stars .icon-star {
   color: #eb742c;
   font-size: 16px;
 }
 
-/* line 238, ../sass/_element.scss */
+/* line 240, ../sass/_element.scss */
 .cheers-new {
   margin-top: 20px;
 }
-/* line 241, ../sass/_element.scss */
+/* line 243, ../sass/_element.scss */
 .cheers-new .title--icon {
   border-bottom: 1px solid #cccccc;
   padding-left: 15px;
   margin-left: -15px;
   margin-right: -15px;
 }
-/* line 248, ../sass/_element.scss */
+/* line 250, ../sass/_element.scss */
 .cheers-new .cheers .cheer {
   padding-top: 0;
 }
-/* line 252, ../sass/_element.scss */
+/* line 254, ../sass/_element.scss */
 .cheers-new .cheer {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -314,7 +381,7 @@
   overflow: hidden;
   border: none;
 }
-/* line 258, ../sass/_element.scss */
+/* line 260, ../sass/_element.scss */
 .cheers-new .cheer h6 {
   margin-bottom: 0;
   padding: 8px;
@@ -324,35 +391,35 @@
   font-weight: normal;
   color: #FFF;
 }
-/* line 268, ../sass/_element.scss */
+/* line 270, ../sass/_element.scss */
 .cheers-new .cheer p {
   margin: 0;
   padding: 8px;
   background: #f7f7f7;
 }
-/* line 274, ../sass/_element.scss */
+/* line 276, ../sass/_element.scss */
 .cheers-new .cheer a {
   font-size: 10px;
   display: block;
   margin-top: 8px;
   color: #CCC;
 }
-/* line 279, ../sass/_element.scss */
+/* line 281, ../sass/_element.scss */
 .cheers-new .cheer a:hover {
   color: #c47a7f;
   text-decoration: none;
 }
-/* line 280, ../sass/_element.scss */
+/* line 282, ../sass/_element.scss */
 .cheers-new .cheer a i {
   color: #c47a7f;
 }
 
-/* line 285, ../sass/_element.scss */
+/* line 287, ../sass/_element.scss */
 .cheers-action {
   display: block;
   height: 30px;
 }
-/* line 289, ../sass/_element.scss */
+/* line 291, ../sass/_element.scss */
 .cheers-action .btn-wrap {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -360,15 +427,15 @@
   width: 50%;
   float: left;
 }
-/* line 294, ../sass/_element.scss */
+/* line 296, ../sass/_element.scss */
 .cheers-action .btn-wrap:first-child {
   padding-right: 5px;
 }
-/* line 295, ../sass/_element.scss */
+/* line 297, ../sass/_element.scss */
 .cheers-action .btn-wrap:last-child {
   padding-left: 5px;
 }
-/* line 297, ../sass/_element.scss */
+/* line 299, ../sass/_element.scss */
 .cheers-action .btn-wrap a {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -378,20 +445,24 @@
   width: 100%;
 }
 
-/* line 308, ../sass/_element.scss */
+/* line 310, ../sass/_element.scss */
 .feedback {
   background: #4f6e7e;
   color: #FFF;
 }
-/* line 312, ../sass/_element.scss */
+/* line 314, ../sass/_element.scss */
 .feedback h1 {
   color: #FFF;
 }
-/* line 316, ../sass/_element.scss */
+/* line 318, ../sass/_element.scss */
+.feedback .icon-comment-reverse {
+  color: #82a1b1;
+}
+/* line 322, ../sass/_element.scss */
 .feedback .feedback-input {
   position: relative;
 }
-/* line 319, ../sass/_element.scss */
+/* line 325, ../sass/_element.scss */
 .feedback .feedback-input .feedback-placeholder {
   position: absolute;
   top: 8px;
@@ -399,21 +470,21 @@
   right: 8px;
   color: #999;
 }
-/* line 328, ../sass/_element.scss */
+/* line 334, ../sass/_element.scss */
 .feedback textarea {
   resize: none;
 }
-/* line 332, ../sass/_element.scss */
+/* line 338, ../sass/_element.scss */
 .feedback a {
   display: block;
 }
 
-/* line 337, ../sass/_element.scss */
+/* line 343, ../sass/_element.scss */
 .progress-meter {
   font-size: 146%;
 }
 
-/* line 341, ../sass/_element.scss */
+/* line 347, ../sass/_element.scss */
 .circle-meter {
   position: absolute;
   overflow: hidden;
@@ -421,7 +492,7 @@
   height: 4em;
 }
 
-/* line 348, ../sass/_element.scss */
+/* line 354, ../sass/_element.scss */
 .progress-meter:before {
   content: "";
   position: absolute;
@@ -433,7 +504,7 @@
   border-radius: 1.5em;
 }
 
-/* line 359, ../sass/_element.scss */
+/* line 365, ../sass/_element.scss */
 .per0 .circle-meter,
 .per10 .circle-meter,
 .per20 .circle-meter,
@@ -443,7 +514,7 @@
   clip: rect(0, 4em, 4em, 2em);
 }
 
-/* line 367, ../sass/_element.scss */
+/* line 373, ../sass/_element.scss */
 .per60 .circle-meter,
 .per70 .circle-meter,
 .per80 .circle-meter,
@@ -452,7 +523,7 @@
   clip: rect(0, 4em, 4em, 0em);
 }
 
-/* line 375, ../sass/_element.scss */
+/* line 381, ../sass/_element.scss */
 div.first,
 div.last {
   width: 2em;
@@ -460,7 +531,7 @@ div.last {
   background: red;
 }
 
-/* line 382, ../sass/_element.scss */
+/* line 388, ../sass/_element.scss */
 div.first-full {
   width: 4em;
   height: 4em;
@@ -470,7 +541,7 @@ div.first-full {
   top: 0;
 }
 
-/* line 391, ../sass/_element.scss */
+/* line 397, ../sass/_element.scss */
 div.first {
   border-top-left-radius: 2em;
   border-bottom-left-radius: 2em;
@@ -478,7 +549,7 @@ div.first {
   position: absolute;
 }
 
-/* line 398, ../sass/_element.scss */
+/* line 404, ../sass/_element.scss */
 div.last {
   border-top-right-radius: 2em;
   border-bottom-right-radius: 2em;
@@ -489,32 +560,32 @@ div.last {
   -webkit-transform: rotate(180deg);
 }
 
-/* line 408, ../sass/_element.scss */
+/* line 414, ../sass/_element.scss */
 .per0 .first {
   -webkit-transform: rotate(0deg);
 }
 
-/* line 409, ../sass/_element.scss */
+/* line 415, ../sass/_element.scss */
 .per10 .first {
   -webkit-transform: rotate(36deg);
 }
 
-/* line 410, ../sass/_element.scss */
+/* line 416, ../sass/_element.scss */
 .per20 .first {
   -webkit-transform: rotate(72deg);
 }
 
-/* line 411, ../sass/_element.scss */
+/* line 417, ../sass/_element.scss */
 .per30 .first {
   -webkit-transform: rotate(108deg);
 }
 
-/* line 412, ../sass/_element.scss */
+/* line 418, ../sass/_element.scss */
 .per40 .first {
   -webkit-transform: rotate(144deg);
 }
 
-/* line 413, ../sass/_element.scss */
+/* line 419, ../sass/_element.scss */
 .per50 .first,
 .per60 .first,
 .per70 .first,
@@ -524,32 +595,32 @@ div.last {
   -webkit-transform: rotate(180deg);
 }
 
-/* line 422, ../sass/_element.scss */
+/* line 428, ../sass/_element.scss */
 .per60 .last {
   -webkit-transform: rotate(36deg);
 }
 
-/* line 423, ../sass/_element.scss */
+/* line 429, ../sass/_element.scss */
 .per70 .last {
   -webkit-transform: rotate(72deg);
 }
 
-/* line 424, ../sass/_element.scss */
+/* line 430, ../sass/_element.scss */
 .per80 .last {
   -webkit-transform: rotate(108deg);
 }
 
-/* line 425, ../sass/_element.scss */
+/* line 431, ../sass/_element.scss */
 .per90 .last {
   -webkit-transform: rotate(144deg);
 }
 
-/* line 426, ../sass/_element.scss */
+/* line 432, ../sass/_element.scss */
 .per100 .last {
   -webkit-transform: rotate(180deg);
 }
 
-/* line 430, ../sass/_element.scss */
+/* line 436, ../sass/_element.scss */
 .circle-number {
   display: inline-block;
   position: relative;
@@ -557,7 +628,7 @@ div.last {
   text-align: center;
   color: #FFF;
 }
-/* line 439, ../sass/_element.scss */
+/* line 445, ../sass/_element.scss */
 .circle-number:before {
   z-index: -1;
   height: 16px;
@@ -572,7 +643,7 @@ div.last {
   border-radius: 100%;
 }
 
-/* line 452, ../sass/_element.scss */
+/* line 458, ../sass/_element.scss */
 .submit-stats {
   font-size: 12px;
   font-weight: 500;

@@ -25,10 +25,25 @@
 
 // $footer
 
-.footer-ty {border-top: 1px solid #000;}
+.footer-ty {
+	border-top: 1px solid #000;
+}
+
+.ftr-right,
+.ftr-left {
+	padding: 0 15px;
+
+	i {
+		height: 55px;
+	}
+}
 
 .ftr-right {background:yellow;}
-.ftr-left  {background:pink;}
+
+.ftr-left  {
+	background:pink;
+	height: 55px;
+}
 
 
 // $Specific
@@ -36,14 +51,24 @@
 #thank-you {
 
 	h1 {
-		font-size: 16px;
+		font-size: 18px;
+		line-height: 1.2em;
+		text-shadow: none;
+	}
+
+	p {
+		font-size: 12px;
+		line-height: 1.4em;
 	}
 
 	.respond-quote {
+		clear: both;
 		width: auto;
 		position: relative;
 		z-index: 0;
+		margin-top: 10px;
 		padding: 10px 0;
+		text-align: center;
 
 		&:before{ // add background to full width
 			@extend %pseudo;
@@ -58,28 +83,47 @@
 
 		.quote, .quote-author { // overwrites text align
 			text-align: center;
+			min-height: 0; // overwrite
 		}
+
 		
 	}
 
 	.quote {
-		padding: 0 40px;
+		display: inline-block;
+		width: 75%;
+		position: relative;
+
 		&:after,&:before{ // adds quote icons
 			position: absolute;
-			top: $mbl-pad + 5px;
+			top: 5px;
 			@extend %font-awesome;
 			font-size: $size-2;
 		}
 		&:before {
-			left: 0;
+			left: -35px;
 			content: "\f10d";
 		}
 		&:after {
-			right: 0;
+			right: -35px;
 			content: "\f10e";
 		}
 	}
 }
+
+// $Title
+
+.title {
+	h1 {margin-top: 0;}
+}
+
+.title--icon {
+	@extend .title;
+
+	i {font-size: 24px; line-height: .8em}
+}
+
+
 
 // $Streak
 
@@ -91,10 +135,10 @@ $streak-height: 90px;
 }
 
 .streak-number {
+	position: relative;
 	height: 100%;
 	width:  $streak-height - ($tight-pad * 2); // height minus tight padding * 2
 	margin-right: 10px;
-	outline: 1px solid red;
 }
 
 .streak-copy {
@@ -108,3 +152,171 @@ $streak-height: 90px;
 		padding: 0;
 	}
 }
+
+// $Cheers
+
+.cheers-new {
+	margin-top: $mbl-margin;
+
+	.title--icon {
+		border-bottom: 1px solid grey;
+		padding-left: 15px;
+		margin-left:  -15px; // allows border to extend to edge
+		margin-right: -15px;
+	}
+
+	.cheers .cheer {
+		padding-top: 0; // overwrites previous css
+	}
+
+	.cheer {
+		$cheer-bg: #DDD;
+
+		h6 {
+			margin-bottom: 0;
+			padding: 5px;
+			background: $cheer-bg;
+			font-size:   10px;
+			line-height: 1.3em;
+			font-weight: normal;
+
+			a {display: inline-block;}
+		}
+
+		p {
+			padding: 8px;
+			background: lighten($cheer-bg, 10%);
+		}
+
+		a { // report abuse
+			font-size: 10px;
+			display: block;
+			margin-top: 8px;
+		}
+	}
+}
+
+.cheers-action {
+	display: block;
+	height: 30px;
+
+	.btn-wrap { // wraps buttons to allow them to expand in mobile
+		@include box-sizing(border-box);
+		width:  50%;
+		float: left;
+
+		&:first-child {padding-right:  5px;}
+		&:last-child  {padding-left:   5px;}
+
+		a { // sets size of button
+			@include box-sizing(border-box);
+			padding: 4px 8px;
+			font-size: 12px;
+			width: 100%;
+		}
+	}
+}
+
+
+// $Progress
+
+.progress-meter {
+	font-size: 146%;
+}
+
+.circle-meter{
+	position: absolute;
+	overflow: hidden;
+	width:  4em;
+	height: 4em;
+}
+
+.progress-meter:before {
+	content: "";
+	position: absolute;
+	background-color: #FFF;
+	height: 3em;
+	width:  3em;
+	z-index: 11;
+	margin: .5em;
+	border-radius: 1.5em;
+}
+
+.per0  .circle-meter,
+.per10 .circle-meter,
+.per20 .circle-meter,
+.per30 .circle-meter,
+.per40 .circle-meter,
+.per50 .circle-meter{
+  clip: rect(0,4em, 4em, 2em);
+}
+.per60 .circle-meter,
+.per70 .circle-meter,
+.per80 .circle-meter,
+.per90 .circle-meter,
+.per1000 .circle-meter{
+  clip: rect(0,4em, 4em, 0em);
+}
+
+div.first,
+div.last{
+  width:  2em;
+  height: 4em;
+  background: red;
+}
+
+div.first-full {
+  width:  4em;
+  height: 4em;
+  background: green;
+  position: absolute;
+  border-radius: 2em;
+  top: 0;
+}
+
+div.first{
+  border-top-left-radius:    2em;
+  border-bottom-left-radius: 2em;
+  -webkit-transform-origin: 100% 50%;
+  position: absolute;
+}
+
+div.last{
+  border-top-right-radius:    2em;
+  border-bottom-right-radius: 2em;
+  -webkit-transform-origin: 0% 50%;
+  margin-left: 2em;
+  position: relative;
+  z-index: 1;
+  -webkit-transform: rotate(180deg);
+}
+
+.per0   .first{  -webkit-transform: rotate(0deg);   }
+.per10  .first{  -webkit-transform: rotate(36deg);  }
+.per20  .first{  -webkit-transform: rotate(72deg);  }
+.per30  .first{  -webkit-transform: rotate(108deg); }
+.per40  .first{  -webkit-transform: rotate(144deg); }
+.per50  .first,
+.per60  .first,
+.per70  .first,
+.per80  .first,
+.per90  .first,
+.per100 .first{
+  -webkit-transform: rotate(180deg); 
+}
+
+.per60  .last{   -webkit-transform: rotate(36deg);  }
+.per70  .last{   -webkit-transform: rotate(72deg);  }
+.per80  .last{   -webkit-transform: rotate(108deg); }
+.per90  .last{   -webkit-transform: rotate(144deg); }
+.per100 .last{   -webkit-transform: rotate(180deg); }
+
+
+
+
+
+
+
+
+
+

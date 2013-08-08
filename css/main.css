@@ -1,4 +1,18 @@
-/* line 11, ../sass/general.scss */
+/* iPhone, portrait & landscape. */
+@media (min-width: 0px) and (max-width: 480px) {
+  /* line 14, ../sass/general.scss */
+  html, body {
+    -webkit-text-size-adjust: none;
+  }
+}
+/* iPad, portrait & landscape. */
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* line 18, ../sass/general.scss */
+  html, body {
+    -webkit-text-size-adjust: none !important;
+  }
+}
+/* line 21, ../sass/general.scss */
 #thank-you .quote:after, #thank-you .quote:before {
   font-family: FontAwesome;
   font-weight: normal;
@@ -7,31 +21,35 @@
   -webkit-font-smoothing: antialiased;
 }
 
-/* line 19, ../sass/general.scss */
+/* line 29, ../sass/general.scss */
 #thank-you .respond-quote:before {
   position: absolute;
   content: '';
 }
 
-/* line 24, ../sass/general.scss */
-.well--pad {
-  padding: 14px;
-}
-
-/* line 28, ../sass/general.scss */
-.well--tight {
-  padding: 3px;
+/* line 34, ../sass/general.scss */
+.well--pad, .well--tight {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
 }
 
-/* line 33, ../sass/general.scss */
+/* line 38, ../sass/general.scss */
+.well--pad {
+  padding: 14px;
+}
+
+/* line 42, ../sass/general.scss */
+.well--tight {
+  padding: 3px;
+}
+
+/* line 46, ../sass/general.scss */
 .top-text {
   margin-top: 0;
 }
 
-/* line 34, ../sass/general.scss */
+/* line 47, ../sass/general.scss */
 .btm-text {
   margin-bottom: 0;
 }
@@ -75,28 +93,50 @@
   border-top: 1px solid black;
 }
 
-/* line 30, ../sass/_element.scss */
+/* line 32, ../sass/_element.scss */
+.ftr-right,
+.ftr-left {
+  padding: 0 15px;
+}
+/* line 36, ../sass/_element.scss */
+.ftr-right i,
+.ftr-left i {
+  height: 55px;
+}
+
+/* line 41, ../sass/_element.scss */
 .ftr-right {
   background: yellow;
 }
 
-/* line 31, ../sass/_element.scss */
+/* line 43, ../sass/_element.scss */
 .ftr-left {
   background: pink;
+  height: 55px;
 }
 
-/* line 38, ../sass/_element.scss */
+/* line 53, ../sass/_element.scss */
 #thank-you h1 {
-  font-size: 16px;
+  font-size: 18px;
+  line-height: 1.2em;
+  text-shadow: none;
 }
-/* line 42, ../sass/_element.scss */
+/* line 59, ../sass/_element.scss */
+#thank-you p {
+  font-size: 12px;
+  line-height: 1.4em;
+}
+/* line 64, ../sass/_element.scss */
 #thank-you .respond-quote {
+  clear: both;
   width: auto;
   position: relative;
   z-index: 0;
+  margin-top: 10px;
   padding: 10px 0;
+  text-align: center;
 }
-/* line 48, ../sass/_element.scss */
+/* line 73, ../sass/_element.scss */
 #thank-you .respond-quote:before {
   z-index: -1;
   top: 0;
@@ -106,50 +146,276 @@
   background: yellow;
   display: block;
 }
-/* line 59, ../sass/_element.scss */
+/* line 84, ../sass/_element.scss */
 #thank-you .respond-quote .quote, #thank-you .respond-quote .quote-author {
   text-align: center;
+  min-height: 0;
 }
-/* line 65, ../sass/_element.scss */
+/* line 92, ../sass/_element.scss */
 #thank-you .quote {
-  padding: 0 40px;
+  display: inline-block;
+  width: 75%;
+  position: relative;
 }
-/* line 67, ../sass/_element.scss */
+/* line 97, ../sass/_element.scss */
 #thank-you .quote:after, #thank-you .quote:before {
   position: absolute;
-  top: 15px;
+  top: 5px;
   font-size: 24px;
 }
-/* line 73, ../sass/_element.scss */
+/* line 103, ../sass/_element.scss */
 #thank-you .quote:before {
-  left: 0;
+  left: -35px;
   content: "\f10d";
 }
-/* line 77, ../sass/_element.scss */
+/* line 107, ../sass/_element.scss */
 #thank-you .quote:after {
-  right: 0;
+  right: -35px;
   content: "\f10e";
 }
 
-/* line 88, ../sass/_element.scss */
+/* line 117, ../sass/_element.scss */
+.title h1, .title--icon h1 {
+  margin-top: 0;
+}
+
+/* line 123, ../sass/_element.scss */
+.title--icon i {
+  font-size: 24px;
+  line-height: .8em;
+}
+
+/* line 132, ../sass/_element.scss */
 .streak {
   height: 90px;
   position: relative;
 }
 
-/* line 93, ../sass/_element.scss */
+/* line 137, ../sass/_element.scss */
 .streak-number {
+  position: relative;
   height: 100%;
   width: 84px;
   margin-right: 10px;
-  outline: 1px solid red;
 }
 
-/* line 104, ../sass/_element.scss */
+/* line 148, ../sass/_element.scss */
 .streak-stars {
   display: inline-block;
 }
-/* line 107, ../sass/_element.scss */
+/* line 151, ../sass/_element.scss */
 .streak-stars.inline li {
   padding: 0;
+}
+
+/* line 158, ../sass/_element.scss */
+.cheers-new {
+  margin-top: 20px;
+}
+/* line 161, ../sass/_element.scss */
+.cheers-new .title--icon {
+  border-bottom: 1px solid grey;
+  padding-left: 15px;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+/* line 168, ../sass/_element.scss */
+.cheers-new .cheers .cheer {
+  padding-top: 0;
+}
+/* line 175, ../sass/_element.scss */
+.cheers-new .cheer h6 {
+  margin-bottom: 0;
+  padding: 5px;
+  background: #dddddd;
+  font-size: 10px;
+  line-height: 1.3em;
+  font-weight: normal;
+}
+/* line 183, ../sass/_element.scss */
+.cheers-new .cheer h6 a {
+  display: inline-block;
+}
+/* line 186, ../sass/_element.scss */
+.cheers-new .cheer p {
+  padding: 8px;
+  background: #f7f7f7;
+}
+/* line 191, ../sass/_element.scss */
+.cheers-new .cheer a {
+  font-size: 10px;
+  display: block;
+  margin-top: 8px;
+}
+
+/* line 199, ../sass/_element.scss */
+.cheers-action {
+  display: block;
+  height: 30px;
+}
+/* line 203, ../sass/_element.scss */
+.cheers-action .btn-wrap {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 50%;
+  float: left;
+}
+/* line 208, ../sass/_element.scss */
+.cheers-action .btn-wrap:first-child {
+  padding-right: 5px;
+}
+/* line 209, ../sass/_element.scss */
+.cheers-action .btn-wrap:last-child {
+  padding-left: 5px;
+}
+/* line 211, ../sass/_element.scss */
+.cheers-action .btn-wrap a {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 4px 8px;
+  font-size: 12px;
+  width: 100%;
+}
+
+/* line 223, ../sass/_element.scss */
+.progress-meter {
+  font-size: 146%;
+}
+
+/* line 227, ../sass/_element.scss */
+.circle-meter {
+  position: absolute;
+  overflow: hidden;
+  width: 4em;
+  height: 4em;
+}
+
+/* line 234, ../sass/_element.scss */
+.progress-meter:before {
+  content: "";
+  position: absolute;
+  background-color: #FFF;
+  height: 3em;
+  width: 3em;
+  z-index: 11;
+  margin: .5em;
+  border-radius: 1.5em;
+}
+
+/* line 245, ../sass/_element.scss */
+.per0 .circle-meter,
+.per10 .circle-meter,
+.per20 .circle-meter,
+.per30 .circle-meter,
+.per40 .circle-meter,
+.per50 .circle-meter {
+  clip: rect(0, 4em, 4em, 2em);
+}
+
+/* line 253, ../sass/_element.scss */
+.per60 .circle-meter,
+.per70 .circle-meter,
+.per80 .circle-meter,
+.per90 .circle-meter,
+.per1000 .circle-meter {
+  clip: rect(0, 4em, 4em, 0em);
+}
+
+/* line 261, ../sass/_element.scss */
+div.first,
+div.last {
+  width: 2em;
+  height: 4em;
+  background: red;
+}
+
+/* line 268, ../sass/_element.scss */
+div.first-full {
+  width: 4em;
+  height: 4em;
+  background: green;
+  position: absolute;
+  border-radius: 2em;
+  top: 0;
+}
+
+/* line 277, ../sass/_element.scss */
+div.first {
+  border-top-left-radius: 2em;
+  border-bottom-left-radius: 2em;
+  -webkit-transform-origin: 100% 50%;
+  position: absolute;
+}
+
+/* line 284, ../sass/_element.scss */
+div.last {
+  border-top-right-radius: 2em;
+  border-bottom-right-radius: 2em;
+  -webkit-transform-origin: 0% 50%;
+  margin-left: 2em;
+  position: relative;
+  z-index: 1;
+  -webkit-transform: rotate(180deg);
+}
+
+/* line 294, ../sass/_element.scss */
+.per0 .first {
+  -webkit-transform: rotate(0deg);
+}
+
+/* line 295, ../sass/_element.scss */
+.per10 .first {
+  -webkit-transform: rotate(36deg);
+}
+
+/* line 296, ../sass/_element.scss */
+.per20 .first {
+  -webkit-transform: rotate(72deg);
+}
+
+/* line 297, ../sass/_element.scss */
+.per30 .first {
+  -webkit-transform: rotate(108deg);
+}
+
+/* line 298, ../sass/_element.scss */
+.per40 .first {
+  -webkit-transform: rotate(144deg);
+}
+
+/* line 299, ../sass/_element.scss */
+.per50 .first,
+.per60 .first,
+.per70 .first,
+.per80 .first,
+.per90 .first,
+.per100 .first {
+  -webkit-transform: rotate(180deg);
+}
+
+/* line 308, ../sass/_element.scss */
+.per60 .last {
+  -webkit-transform: rotate(36deg);
+}
+
+/* line 309, ../sass/_element.scss */
+.per70 .last {
+  -webkit-transform: rotate(72deg);
+}
+
+/* line 310, ../sass/_element.scss */
+.per80 .last {
+  -webkit-transform: rotate(108deg);
+}
+
+/* line 311, ../sass/_element.scss */
+.per90 .last {
+  -webkit-transform: rotate(144deg);
+}
+
+/* line 312, ../sass/_element.scss */
+.per100 .last {
+  -webkit-transform: rotate(180deg);
 }

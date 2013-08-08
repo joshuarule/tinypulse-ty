@@ -1,12 +1,22 @@
 $desktop: 768px;
 
-$mbl-pad: 10px;
+$mbl-pad:    10px;
+$mbl-margin: 20px;
 
 $well-pad: 		14px;
 $tight-pad: 	 3px;
 
 $size-0: 60px;
 $size-2: 24px;
+
+/* iPhone, portrait & landscape. */
+@include breakpoint(0px 480px) {
+    html,body { -webkit-text-size-adjust:none; }
+}
+/* iPad, portrait & landscape. */
+@include breakpoint (768px 1024px) {
+    html,body { -webkit-text-size-adjust:none  !important; }
+}
 
 %font-awesome {
 	font-family: FontAwesome;
@@ -21,13 +31,16 @@ $size-2: 24px;
 	content: '';
 }
 
+.well--pad, .well--tight {
+	@include box-shadow(none);
+}
+
 .well--pad {
 	padding: $well-pad;
 }
 
 .well--tight{
 	padding: $tight-pad;
-	@include box-shadow(none);
 }
 
 .top-text {margin-top: 		0;}

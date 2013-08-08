@@ -62,7 +62,7 @@ you can use the generic selector below, but it's slower:
 }
 
 /* line 21, ../sass/general.scss */
-#thank-you .quote:after, #thank-you .quote:before {
+#thank-you .quote:after, #thank-you .quote:before, #cheers .quote:after, #cheers .quote:before {
   font-family: FontAwesome;
   font-weight: normal;
   font-style: normal;
@@ -71,7 +71,7 @@ you can use the generic selector below, but it's slower:
 }
 
 /* line 38, ../sass/general.scss */
-.ftr-left:before, #thank-you .respond-quote:before, .circle-number:before {
+.ftr-left:before, #thank-you .respond-quote:before, #cheers .respond-quote:before, .circle-number:before {
   position: absolute;
   content: '';
 }
@@ -127,17 +127,31 @@ you can use the generic selector below, but it's slower:
 }
 
 /* line 19, ../sass/_element.scss */
+.return-link {
+  padding: 0 15px;
+  display: block;
+  background: #000;
+  color: #FFF;
+  font-size: 12px;
+  line-height: 2.5em;
+}
+/* line 27, ../sass/_element.scss */
+.return-link i {
+  margin-right: 5px;
+}
+
+/* line 30, ../sass/_element.scss */
 .logo {
   display: block;
   text-align: center;
 }
-/* line 23, ../sass/_element.scss */
+/* line 34, ../sass/_element.scss */
 .logo img {
   max-height: 20px;
   display: inline-block;
 }
 
-/* line 28, ../sass/_element.scss */
+/* line 39, ../sass/_element.scss */
 .footer-ty {
   background: #FFF;
   border-top: 1px solid rgba(0, 0, 0, 0.2);
@@ -146,13 +160,13 @@ you can use the generic selector below, but it's slower:
   box-shadow: 0px -1px 2px rgba(0, 0, 0, 0.1);
 }
 
-/* line 34, ../sass/_element.scss */
+/* line 45, ../sass/_element.scss */
 .ftr-right,
 .ftr-left {
   padding: 15px;
   position: relative;
 }
-/* line 39, ../sass/_element.scss */
+/* line 50, ../sass/_element.scss */
 .ftr-right p,
 .ftr-left p {
   font-size: 12px;
@@ -160,12 +174,12 @@ you can use the generic selector below, but it's slower:
   margin: 5px 0;
 }
 
-/* line 42, ../sass/_element.scss */
+/* line 53, ../sass/_element.scss */
 .ftr-right {
   height: 300px;
 }
 
-/* line 46, ../sass/_element.scss */
+/* line 57, ../sass/_element.scss */
 .ftr-left .icon-shirt {
   line-height: 1.2em;
   font-size: 38px;
@@ -175,7 +189,7 @@ you can use the generic selector below, but it's slower:
   margin-top: -25px;
   color: #eb742c;
 }
-/* line 56, ../sass/_element.scss */
+/* line 67, ../sass/_element.scss */
 .ftr-left:before {
   background: #CCC;
   bottom: 0;
@@ -183,19 +197,19 @@ you can use the generic selector below, but it's slower:
   right: 15px;
   height: 1px;
 }
-/* line 65, ../sass/_element.scss */
+/* line 76, ../sass/_element.scss */
 .ftr-left p {
   margin-left: 45px;
 }
 
-/* line 68, ../sass/_element.scss */
+/* line 79, ../sass/_element.scss */
 a.ftr-wrap {
   display: block;
   height: 100%;
   font-size: 0;
   color: inherit;
 }
-/* line 74, ../sass/_element.scss */
+/* line 85, ../sass/_element.scss */
 a.ftr-wrap:before {
   vertical-align: middle;
   content: '';
@@ -203,12 +217,12 @@ a.ftr-wrap:before {
   height: 100%;
   width: 0;
 }
-/* line 82, ../sass/_element.scss */
+/* line 93, ../sass/_element.scss */
 a.ftr-wrap b {
   color: #3a87ad;
 }
 
-/* line 85, ../sass/_element.scss */
+/* line 96, ../sass/_element.scss */
 .vertical-align {
   vertical-align: middle;
   position: relative;
@@ -216,23 +230,23 @@ a.ftr-wrap b {
   display: inline-block;
 }
 
-/* line 98, ../sass/_element.scss */
-#thank-you .submit-header {
+/* line 109, ../sass/_element.scss */
+#thank-you .submit-header, #cheers .submit-header {
   text-align: center;
 }
-/* line 102, ../sass/_element.scss */
-#thank-you h1 {
+/* line 113, ../sass/_element.scss */
+#thank-you h1, #cheers h1 {
   font-size: 18px;
   line-height: 1.2em;
   text-shadow: none;
 }
-/* line 108, ../sass/_element.scss */
-#thank-you p {
+/* line 119, ../sass/_element.scss */
+#thank-you p, #cheers p {
   font-size: 12px;
   line-height: 1.4em;
 }
-/* line 115, ../sass/_element.scss */
-#thank-you .respond-quote {
+/* line 126, ../sass/_element.scss */
+#thank-you .respond-quote, #cheers .respond-quote {
   clear: both;
   width: auto;
   position: relative;
@@ -242,8 +256,8 @@ a.ftr-wrap b {
   text-align: center;
   color: #FFF;
 }
-/* line 125, ../sass/_element.scss */
-#thank-you .respond-quote:before {
+/* line 136, ../sass/_element.scss */
+#thank-you .respond-quote:before, #cheers .respond-quote:before {
   z-index: -1;
   top: 0;
   bottom: 0;
@@ -252,47 +266,47 @@ a.ftr-wrap b {
   background: #4f6e7e;
   display: block;
 }
-/* line 136, ../sass/_element.scss */
-#thank-you .respond-quote .quote, #thank-you .respond-quote .quote-author {
+/* line 147, ../sass/_element.scss */
+#thank-you .respond-quote .quote, #thank-you .respond-quote .quote-author, #cheers .respond-quote .quote, #cheers .respond-quote .quote-author {
   text-align: center;
   min-height: 0;
 }
-/* line 144, ../sass/_element.scss */
-#thank-you .quote {
+/* line 155, ../sass/_element.scss */
+#thank-you .quote, #cheers .quote {
   display: inline-block;
   width: 75%;
   position: relative;
 }
-/* line 149, ../sass/_element.scss */
-#thank-you .quote:after, #thank-you .quote:before {
+/* line 160, ../sass/_element.scss */
+#thank-you .quote:after, #thank-you .quote:before, #cheers .quote:after, #cheers .quote:before {
   color: #7395a7;
   position: absolute;
   top: 5px;
   font-size: 24px;
 }
-/* line 156, ../sass/_element.scss */
-#thank-you .quote:before {
+/* line 167, ../sass/_element.scss */
+#thank-you .quote:before, #cheers .quote:before {
   left: -35px;
   content: "\f10d";
 }
-/* line 160, ../sass/_element.scss */
-#thank-you .quote:after {
+/* line 171, ../sass/_element.scss */
+#thank-you .quote:after, #cheers .quote:after {
   right: -35px;
   content: "\f10e";
 }
 
-/* line 170, ../sass/_element.scss */
+/* line 181, ../sass/_element.scss */
 .title h1, .title--icon h1 {
   margin-top: 0;
 }
 
-/* line 176, ../sass/_element.scss */
+/* line 187, ../sass/_element.scss */
 .title--icon i {
   font-size: 24px;
   line-height: .8em;
 }
 
-/* line 183, ../sass/_element.scss */
+/* line 194, ../sass/_element.scss */
 .streak {
   height: 100px;
   position: relative;
@@ -301,7 +315,7 @@ a.ftr-wrap b {
   border-color: #c4e3f3;
 }
 
-/* line 191, ../sass/_element.scss */
+/* line 202, ../sass/_element.scss */
 .streak-number {
   position: relative;
   height: 100%;
@@ -318,13 +332,13 @@ a.ftr-wrap b {
   box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.1);
 }
 
-/* line 202, ../sass/_element.scss */
+/* line 213, ../sass/_element.scss */
 .streak-copy h5 {
   margin: 0 0 2px 0;
   line-height: 1em;
   color: #3a87ad;
 }
-/* line 208, ../sass/_element.scss */
+/* line 219, ../sass/_element.scss */
 .streak-copy p {
   height: 30px;
   margin: 0;
@@ -332,7 +346,7 @@ a.ftr-wrap b {
   color: #4196bf;
 }
 
-/* line 216, ../sass/_element.scss */
+/* line 227, ../sass/_element.scss */
 .streak-record {
   margin: 3px 0 0;
   font-size: 10px;
@@ -341,37 +355,37 @@ a.ftr-wrap b {
   color: #8ca7b4;
 }
 
-/* line 224, ../sass/_element.scss */
+/* line 235, ../sass/_element.scss */
 .streak-stars {
   display: inline-block;
 }
-/* line 227, ../sass/_element.scss */
+/* line 238, ../sass/_element.scss */
 .streak-stars.inline li {
   padding: 0;
   float: left;
 }
-/* line 232, ../sass/_element.scss */
+/* line 243, ../sass/_element.scss */
 .streak-stars .icon-star {
   color: #eb742c;
   font-size: 16px;
 }
 
-/* line 240, ../sass/_element.scss */
+/* line 251, ../sass/_element.scss */
 .cheers-new {
   margin-top: 20px;
 }
-/* line 243, ../sass/_element.scss */
+/* line 254, ../sass/_element.scss */
 .cheers-new .title--icon {
   border-bottom: 1px solid #cccccc;
   padding-left: 15px;
   margin-left: -15px;
   margin-right: -15px;
 }
-/* line 250, ../sass/_element.scss */
+/* line 261, ../sass/_element.scss */
 .cheers-new .cheers .cheer {
   padding-top: 0;
 }
-/* line 254, ../sass/_element.scss */
+/* line 265, ../sass/_element.scss */
 .cheers-new .cheer {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -381,7 +395,7 @@ a.ftr-wrap b {
   overflow: hidden;
   border: none;
 }
-/* line 260, ../sass/_element.scss */
+/* line 271, ../sass/_element.scss */
 .cheers-new .cheer h6 {
   margin-bottom: 0;
   padding: 8px;
@@ -391,35 +405,35 @@ a.ftr-wrap b {
   font-weight: normal;
   color: #FFF;
 }
-/* line 270, ../sass/_element.scss */
+/* line 281, ../sass/_element.scss */
 .cheers-new .cheer p {
   margin: 0;
   padding: 8px;
   background: #f7f7f7;
 }
-/* line 276, ../sass/_element.scss */
+/* line 287, ../sass/_element.scss */
 .cheers-new .cheer a {
   font-size: 10px;
   display: block;
   margin-top: 8px;
   color: #CCC;
 }
-/* line 281, ../sass/_element.scss */
+/* line 292, ../sass/_element.scss */
 .cheers-new .cheer a:hover {
   color: #c47a7f;
   text-decoration: none;
 }
-/* line 282, ../sass/_element.scss */
+/* line 293, ../sass/_element.scss */
 .cheers-new .cheer a i {
   color: #c47a7f;
 }
 
-/* line 287, ../sass/_element.scss */
+/* line 298, ../sass/_element.scss */
 .cheers-action {
   display: block;
   height: 30px;
 }
-/* line 291, ../sass/_element.scss */
+/* line 302, ../sass/_element.scss */
 .cheers-action .btn-wrap {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -427,15 +441,15 @@ a.ftr-wrap b {
   width: 50%;
   float: left;
 }
-/* line 296, ../sass/_element.scss */
+/* line 307, ../sass/_element.scss */
 .cheers-action .btn-wrap:first-child {
   padding-right: 5px;
 }
-/* line 297, ../sass/_element.scss */
+/* line 308, ../sass/_element.scss */
 .cheers-action .btn-wrap:last-child {
   padding-left: 5px;
 }
-/* line 299, ../sass/_element.scss */
+/* line 310, ../sass/_element.scss */
 .cheers-action .btn-wrap a {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -445,24 +459,24 @@ a.ftr-wrap b {
   width: 100%;
 }
 
-/* line 310, ../sass/_element.scss */
+/* line 321, ../sass/_element.scss */
 .feedback {
   background: #4f6e7e;
   color: #FFF;
 }
-/* line 314, ../sass/_element.scss */
+/* line 325, ../sass/_element.scss */
 .feedback h1 {
   color: #FFF;
 }
-/* line 318, ../sass/_element.scss */
+/* line 329, ../sass/_element.scss */
 .feedback .icon-comment-reverse {
   color: #82a1b1;
 }
-/* line 322, ../sass/_element.scss */
+/* line 333, ../sass/_element.scss */
 .feedback .feedback-input {
   position: relative;
 }
-/* line 325, ../sass/_element.scss */
+/* line 336, ../sass/_element.scss */
 .feedback .feedback-input .feedback-placeholder {
   position: absolute;
   top: 8px;
@@ -470,21 +484,21 @@ a.ftr-wrap b {
   right: 8px;
   color: #999;
 }
-/* line 334, ../sass/_element.scss */
+/* line 345, ../sass/_element.scss */
 .feedback textarea {
   resize: none;
 }
-/* line 338, ../sass/_element.scss */
+/* line 349, ../sass/_element.scss */
 .feedback a {
   display: block;
 }
 
-/* line 343, ../sass/_element.scss */
+/* line 354, ../sass/_element.scss */
 .progress-meter {
   font-size: 146%;
 }
 
-/* line 347, ../sass/_element.scss */
+/* line 358, ../sass/_element.scss */
 .circle-meter {
   position: absolute;
   overflow: hidden;
@@ -492,7 +506,7 @@ a.ftr-wrap b {
   height: 4em;
 }
 
-/* line 354, ../sass/_element.scss */
+/* line 365, ../sass/_element.scss */
 .progress-meter:before {
   content: "";
   position: absolute;
@@ -504,7 +518,7 @@ a.ftr-wrap b {
   border-radius: 1.5em;
 }
 
-/* line 365, ../sass/_element.scss */
+/* line 376, ../sass/_element.scss */
 .per0 .circle-meter,
 .per10 .circle-meter,
 .per20 .circle-meter,
@@ -514,7 +528,7 @@ a.ftr-wrap b {
   clip: rect(0, 4em, 4em, 2em);
 }
 
-/* line 373, ../sass/_element.scss */
+/* line 384, ../sass/_element.scss */
 .per60 .circle-meter,
 .per70 .circle-meter,
 .per80 .circle-meter,
@@ -523,7 +537,7 @@ a.ftr-wrap b {
   clip: rect(0, 4em, 4em, 0em);
 }
 
-/* line 381, ../sass/_element.scss */
+/* line 392, ../sass/_element.scss */
 div.first,
 div.last {
   width: 2em;
@@ -531,7 +545,7 @@ div.last {
   background: red;
 }
 
-/* line 388, ../sass/_element.scss */
+/* line 399, ../sass/_element.scss */
 div.first-full {
   width: 4em;
   height: 4em;
@@ -541,7 +555,7 @@ div.first-full {
   top: 0;
 }
 
-/* line 397, ../sass/_element.scss */
+/* line 408, ../sass/_element.scss */
 div.first {
   border-top-left-radius: 2em;
   border-bottom-left-radius: 2em;
@@ -549,7 +563,7 @@ div.first {
   position: absolute;
 }
 
-/* line 404, ../sass/_element.scss */
+/* line 415, ../sass/_element.scss */
 div.last {
   border-top-right-radius: 2em;
   border-bottom-right-radius: 2em;
@@ -560,32 +574,32 @@ div.last {
   -webkit-transform: rotate(180deg);
 }
 
-/* line 414, ../sass/_element.scss */
+/* line 425, ../sass/_element.scss */
 .per0 .first {
   -webkit-transform: rotate(0deg);
 }
 
-/* line 415, ../sass/_element.scss */
+/* line 426, ../sass/_element.scss */
 .per10 .first {
   -webkit-transform: rotate(36deg);
 }
 
-/* line 416, ../sass/_element.scss */
+/* line 427, ../sass/_element.scss */
 .per20 .first {
   -webkit-transform: rotate(72deg);
 }
 
-/* line 417, ../sass/_element.scss */
+/* line 428, ../sass/_element.scss */
 .per30 .first {
   -webkit-transform: rotate(108deg);
 }
 
-/* line 418, ../sass/_element.scss */
+/* line 429, ../sass/_element.scss */
 .per40 .first {
   -webkit-transform: rotate(144deg);
 }
 
-/* line 419, ../sass/_element.scss */
+/* line 430, ../sass/_element.scss */
 .per50 .first,
 .per60 .first,
 .per70 .first,
@@ -595,32 +609,32 @@ div.last {
   -webkit-transform: rotate(180deg);
 }
 
-/* line 428, ../sass/_element.scss */
+/* line 439, ../sass/_element.scss */
 .per60 .last {
   -webkit-transform: rotate(36deg);
 }
 
-/* line 429, ../sass/_element.scss */
+/* line 440, ../sass/_element.scss */
 .per70 .last {
   -webkit-transform: rotate(72deg);
 }
 
-/* line 430, ../sass/_element.scss */
+/* line 441, ../sass/_element.scss */
 .per80 .last {
   -webkit-transform: rotate(108deg);
 }
 
-/* line 431, ../sass/_element.scss */
+/* line 442, ../sass/_element.scss */
 .per90 .last {
   -webkit-transform: rotate(144deg);
 }
 
-/* line 432, ../sass/_element.scss */
+/* line 443, ../sass/_element.scss */
 .per100 .last {
   -webkit-transform: rotate(180deg);
 }
 
-/* line 436, ../sass/_element.scss */
+/* line 447, ../sass/_element.scss */
 .circle-number {
   display: inline-block;
   position: relative;
@@ -628,7 +642,7 @@ div.last {
   text-align: center;
   color: #FFF;
 }
-/* line 445, ../sass/_element.scss */
+/* line 456, ../sass/_element.scss */
 .circle-number:before {
   z-index: -1;
   height: 16px;
@@ -643,7 +657,7 @@ div.last {
   border-radius: 100%;
 }
 
-/* line 458, ../sass/_element.scss */
+/* line 469, ../sass/_element.scss */
 .submit-stats {
   font-size: 12px;
   font-weight: 500;

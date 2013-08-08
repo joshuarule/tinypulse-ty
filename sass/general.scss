@@ -1,22 +1,22 @@
+// Breakpoint
+
 $desktop: 768px;
+
+// Global Spacing
 
 $mbl-pad:    10px;
 $mbl-margin: 20px;
 
+// Wells
+
 $well-pad: 		14px;
-$tight-pad: 	 3px;
+$tight-pad: 	 8px;
+
+// Font Sizing
 
 $size-0: 60px;
 $size-2: 24px;
 
-/* iPhone, portrait & landscape. */
-@include breakpoint(0px 480px) {
-    html,body { -webkit-text-size-adjust:none; }
-}
-/* iPad, portrait & landscape. */
-@include breakpoint (768px 1024px) {
-    html,body { -webkit-text-size-adjust:none  !important; }
-}
 
 %font-awesome {
 	font-family: FontAwesome;
@@ -26,9 +26,25 @@ $size-2: 24px;
 	-webkit-font-smoothing: antialiased;
 }
 
+// Colors
+
+$orange: 		#eb742c;
+$royal:     	#3a87ad;
+$light-blue: 	#d9edf7;
+$grey-blue:     #8ca7b4;
+$blue-dark: 	#4f6e7e;
+$red-alert:   	#c47a7f;
+
 %pseudo {
 	position: absolute;
 	content: '';
+}
+
+%fill {
+	top: 	0;
+	bottom: 0;
+	right: 	0;
+	left: 	0;
 }
 
 .well--pad, .well--tight {

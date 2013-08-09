@@ -434,6 +434,10 @@ $streak-height: 100px;
 
 #cheers .cheers-new {
 	margin: 0; // removes  margin on history page
+
+	@include breakpoint ($desktop) {
+		margin-bottom: 20px;
+	}
 }
 
 .cheers-new {
@@ -516,6 +520,21 @@ $streak-height: 100px;
 	}
 }
 
+#cheers .cheers-action {
+	@include breakpoint ($desktop) {
+		text-align: center;
+		float: none;
+		margin-right: 0;
+
+		a {
+			padding-left:  30px;
+			padding-right: 30px;
+			width: auto;
+			display:inline-block;
+		}
+	}
+}
+
 .list-nav{
 	font-size: 18px;
 	font-weight: 600;
@@ -524,6 +543,10 @@ $streak-height: 100px;
 .list-nav--center {
 	@extend .list-nav;
 	text-align: center;
+
+	@include breakpoint($desktop) {
+		text-align: left;
+	}
 }
 
 .cheers-month,
@@ -545,6 +568,12 @@ $streak-height: 100px;
 .cheers-year {
 	height: 45px;
 	line-height: 45px;
+
+	a {
+		@include breakpoint($desktop) {
+			font-size: 16px;
+		}
+	}
 
 	&:last-child {
 		border: none;

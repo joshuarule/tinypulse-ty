@@ -52,7 +52,7 @@
 
 .ftr-right {
 	padding: 0 15px;
-	
+
 	.facebook-like-button,
 	.twitter-wrap{
 		line-height: 0;
@@ -195,9 +195,29 @@ a.ftr-wrap { // added to align text vertically
 // $headline
 
 .headline {
+	text-align: center;
 	margin: 10px 0;
-	i 	{font-size: 36px; line-height: 1.2em}
-	h1 	{font-size: 24px; text-shadow: none;}
+
+	h1 	{
+		font-size: 24px;
+		line-height: 1.3em;
+		text-shadow: none;
+		position: relative;
+		display: inline;
+	}
+
+	i 	{
+		font-size: 36px;
+		line-height: 1.2em;
+		position: absolute;
+		margin-left: -45px; // aligns icon
+		left: 0;
+	}
+
+	p {
+		margin: 20px 0;
+	}
+	
 }
 
 
@@ -275,7 +295,7 @@ $streak-height: 100px;
 // $Cheers
 
 #cheers .cheers-new {
-	margin-top: 0; // removes top margin on history page
+	margin: 0; // removes  margin on history page
 }
 
 .cheers-new {
@@ -346,22 +366,99 @@ $streak-height: 100px;
 	}
 }
 
-.cheers-nav {
-	text-align: center;
+.list-nav{
 	font-size: 18px;
 	font-weight: 600;
 }
 
-.cheers-month, .cheers-year {
+.list-nav--center {
+	@extend .list-nav;
+	text-align: center;
+}
+
+.cheers-month,
+.cheers-year,
+.share-option {
+	border-bottom: 1px solid #CCC;
+
+	a {
+		display: block;
+
+		&:hover {
+			background: rgba(#000, .05);
+			text-decoration: none;
+		}
+	}
+}
+
+.cheers-month,
+.cheers-year {
 	height: 45px;
 	line-height: 45px;
-	border-bottom: 2px solid #CCC;
 
 	&:last-child {
 		border: none;
 	}
-	a {display: block;}
-	span {font-weight: normal;}
+
+	span {font-weight: normal;} // styles # of cheers per year/month
+}
+
+.share-option {
+	height: 	 60px;
+	line-height: 60px;
+
+	&:first-child {border-top: 1px solid #CCC;}
+	&:last-child {margin-bottom: 40px;}
+
+	a {font-weight: normal}
+
+	i:first-child { // sets social icon
+		font-size: 35px;
+		width: 30px;
+		text-align: left;
+		margin: 0 20px 0 10px;
+		line-height: 12px; // for centering
+
+		&.icon-envelope-alt {
+			font-size: 30px; // mail icon looked bigger
+		}
+	}
+
+	i:last-child { // sizes chevron
+		font-size: 10px;
+		margin-left: 2px;
+	}
+}
+
+.list-nav--inner { //nested list
+
+	.cheers-month {
+		display:none;
+	}
+
+	.cheers-year {
+		border: none;
+		i {margin-left: 5px;}
+	}
+
+	&.js-active { // year active state
+		.cheers-year { 
+			background: #0088cc;
+
+			i { //rotates icon
+				@include rotate(-90deg);
+			}
+			
+			a {
+				color: #FFF;
+			}
+
+		}
+
+		.cheers-month {
+			display: block;
+		}
+	}
 }
 
 // $feedback
@@ -378,23 +475,19 @@ $streak-height: 100px;
 		color: lighten($blue-dark, 20%);
 	}
 
-	.feedback-input {
-		position: relative;
-
-		.feedback-placeholder {
-			position: absolute;
-			top:   8px;
-			left:  8px;
-			right: 8px;
-			color: #999;
-		}
-	}
-
-	textarea {
-		resize: none;
-	}
-
 	a {display: block;}
+}
+
+.textarea-input {
+	position: relative;
+
+	.feedback-placeholder {
+		position: absolute;
+		top:   8px;
+		left:  8px;
+		right: 8px;
+		color: #999;
+	}
 }
 
 // $Progress
@@ -519,6 +612,29 @@ div.last{
 	font-weight: 500;
 }
 
+// $referral
+
+.share-address-title {
+	margin-top: 20px;
+	i {
+		font-size: 20px;
+		line-height: 0.3em;
+		display: inline-block;
+		margin-right: 2px;
+	}
+}
+.share-address {margin-bottom: 20px;} 
+
+// $Send
+
+.cheers-as {
+	display: block !important;
+	width: 100%;
+	margin-bottom: 10px;
+	button {width: 100%; text-align: left;}
+}
+
+.submit-cheer {margin-bottom: 20px;}
 
 
 

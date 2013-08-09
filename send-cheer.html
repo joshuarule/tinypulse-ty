@@ -3,14 +3,21 @@ layout: secondary
 title: tinyPulse
 ---
 
-<div id="send-cheer" class="row-fluid">
+<div id="send-cheer" class="row-fluid xjs-active">
 	<div class="headline">
-		<h1><i class="icon-star-empty"></i>Cheers for Peers</h1>
+		<div class="headline--icon">
+			<i class="icon-star-empty"></i>
+			<h1>Cheers for Peers</h1>
+		</div>
 		<p>
 			Recognize someone who helped you, brought you sunshine, or went the extra mile with a Cheers! 
 		</p>
 	</div>
-	<p>Logged in as <b>Joe.Rufa@gmail.com</b> <a href="#">(not you?)</a>
+	<h2 class="cheers-confirmation">
+		Your Cheers has been sent to Jordan.Dobson@brothe.rs
+	</h2>
+	<p class="active-account">Logged in as: <b>Joe.Excalante@washingtonmutual.com</b> <a href="#">(not you?)</a>
+	</p>
 	<select class="span2">
 		<option value="" disabled selected>Choose Recipient</option>
 		<option>1</option>
@@ -19,14 +26,14 @@ title: tinyPulse
 		<option>4</option>
 		<option>5</option>
 	</select>
-	<a href="#">They're not in the list<i class="icon-chevron-right"></i></a>
+	<p class="add-email"><a href="#">They're not in the list <i class="icon-chevron-right"></i></a></p>
 	<div class="textarea-input">
 		<textarea class="input-block-level"rows="5"></textarea>
 		<p class="feedback-placeholder">Enter your message here.</p>
 	</div>
 	<div class="cheers-as btn-group btn-group-vertical" data-toggle="buttons-radio">
 	  <button type="button" class="btn active">Josh.Dobson@gmail.com</button>
-	  <button type="button" class="btn">Joe.Rufa@gmail.com</button>
+	  <button type="button" class="btn">anonymous</button>
 	</div>
 	<button class="submit-cheer btn btn-warning span2">Submit</button>
 </div>

@@ -5,7 +5,7 @@
 	padding-right:  15px;
 
 	@include breakpoint ($desktop) {
-		margin: 0;
+		padding: 0;
 	}
 }
 
@@ -23,6 +23,12 @@
 	color: #FFF;
 	font-size: 12px;
 	line-height: 2.5em;
+
+	&:hover {
+		background: $royal;
+		text-decoration: none;
+		color: #FFF;
+	}
 
 	i {margin-right: 5px;}
 }
@@ -53,6 +59,25 @@
 .ftr-right {
 	padding: 0 15px;
 
+	@include breakpoint($desktop) {
+		padding: 0;
+		position: relative;
+
+		.buttons {margin-left: 20px;} // adds middle spacing on desktop
+	}
+
+	&:after { // adds verticle separator
+		@extend %pseudo;
+		left: 0;
+		top:    19px;
+		bottom: 19px;
+		background: #CCC;
+		width: 1px;
+		display: block;
+	}
+
+
+
 	.facebook-like-button,
 	.twitter-wrap{
 		line-height: 0;
@@ -62,23 +87,20 @@
 
 	.facebook-like-button {
 		border-bottom: 1px solid #CCC;
-	}
 
-	.twitter-wrap {
-
-	}
+		@include breakpoint($desktop) {
+			border: none;
+			padding-bottom: 0;
+		}
+	}	
 }
 
 .ftr-left  {
 	padding: 15px;
-	.icon-shirt {
-		line-height: 1.2em;
-		font-size:  38px;
-		position: absolute;
-		top: 50%;
-		height: 50px;
-		margin-top: -25px;
-		color: $orange;
+
+	@include breakpoint($desktop) {
+		padding-left: 0;
+		padding-right: 0;
 	}
 
 	&:before { // bottom line
@@ -88,9 +110,35 @@
 		left:  15px;
 		right: 15px;
 		height: 1px;
+
+		@include breakpoint($desktop) {
+			display: none;
+		}
 	}
 
-	p {margin-left: 45px;}
+	.icon-shirt {
+		line-height: 1.2em;
+		font-size:  38px;
+		position: absolute;
+		top: 50%;
+		height: 50px;
+		margin-top: -25px;
+		color: $orange;
+
+		@include breakpoint($desktop) {
+			font-size: 45px;
+			line-height: 1em;
+		}
+	}
+
+	p {
+		margin-left: 45px;
+ 
+		@include breakpoint($desktop) {
+			font-size: 14px;
+			margin-left: 65px;
+		}
+	}
 }
 
 a.ftr-wrap { // added to align text vertically
@@ -125,12 +173,22 @@ a.ftr-wrap { // added to align text vertically
 
 	.submit-header {
 		text-align: center;
+
+		@include breakpoint($desktop) {
+			text-align: left;
+		}
 	}
 
 	h1 {
 		font-size: 18px;
 		line-height: 1.2em;
 		text-shadow: none;
+
+		@include breakpoint($desktop) {
+			font-size: 36px;
+			line-height: 1.1em;
+			margin-bottom: 20px;
+		}
 	}
 
 	p {
@@ -153,12 +211,17 @@ a.ftr-wrap { // added to align text vertically
 		&:before{ // add background to full width
 			@extend %pseudo;
 			z-index: -1;
+			left: 0;
+			right: 0;
 			top: 0;
 			bottom: 0;
-			left: -100%;
-			right: -100%;
 			background: $blue-dark;
 			display: block;
+			@include border-radius(5px);
+		}
+
+		@include breakpoint($desktop) {
+			// margin-top: $margin;
 		}
 
 		.quote, .quote-author { // overwrites text align
@@ -172,7 +235,12 @@ a.ftr-wrap { // added to align text vertically
 	.quote {
 		display: inline-block;
 		width: 75%;
-		position: relative; 
+		position: relative;
+
+		@include breakpoint($desktop) {
+			width: auto;
+			font-size: 14px;
+		}
 
 		&:after,&:before{ // adds quote icons
 			color: lighten($blue-dark, 15%);
@@ -196,7 +264,7 @@ a.ftr-wrap { // added to align text vertically
 
 .headline {
 	text-align: center;
-	margin: 10px 0;
+	margin: 20px 0 10px 0;
 
 	h1 	{
 		font-size: 24px;
@@ -209,15 +277,34 @@ a.ftr-wrap { // added to align text vertically
 	i 	{
 		font-size: 36px;
 		line-height: 1.2em;
-		position: absolute;
-		margin-left: -45px; // aligns icon
-		left: 0;
+		// position: absolute;
+		// margin-left: -45px; // aligns icon
+		// left: 0;
 	}
 
 	p {
-		margin: 20px 0;
+		margin: 10px 0 20px 0;
+		font-size: 14px;
 	}
 	
+}
+
+.headline--icon {
+	display: inline-block;
+	position: relative;
+	@include box-sizing(border-box);
+	padding-left: 45px;
+
+	i {
+		$size: 40px;
+		position: absolute;
+		left: 0;
+		height: $size;
+		width:  $size;
+		top: 50%;
+		margin-top: -$size / 2;
+		line-height: 1em; // adjusts centering slightly
+	}
 }
 
 
@@ -348,11 +435,23 @@ $streak-height: 100px;
 .cheers-action {
 	display: block;
 	height: 30px;
+	float: none;
+
+	@include breakpoint ($desktop) {
+		margin-right: 47px;
+		float: right;
+	}
+
+	@include breakpoint ($med) {
+		margin-right: 50px;
+	}
 
 	.btn-wrap { // wraps buttons to allow them to expand in mobile
 		@include box-sizing(border-box);
 		width:  50%;
 		float: left;
+
+		@include breakpoint($desktop) {width: auto;}
 
 		&:first-child {padding-right:  5px;}
 		&:last-child  {padding-left:   5px;}
@@ -461,13 +560,26 @@ $streak-height: 100px;
 	}
 }
 
+.col1 {background: green;}
+.col2 {background: blue;}
+.col3 {background: green;}
+.col4 {background: blue;}
+.col5 {background: green;}
+.col6 {background: blue;}
+.col7 {background: green;}
+.col8 {background: blue;}
+.col9 {background: green;}
+.col10 {background: blue;}
+.col11 {background: green;}
+.col12 {background: blue;}
+
 // $feedback
 
 .feedback {
 	background: $blue-dark;
 	color: #FFF;
 
-	h1 {
+	h2 {
 		color: #FFF;
 	}
 
@@ -475,7 +587,11 @@ $streak-height: 100px;
 		color: lighten($blue-dark, 20%);
 	}
 
-	a {display: block;}
+	.submit-feedback { // submit button
+		display: block;
+
+		@include breakpoint($desktop) {float:right;}
+	} 
 }
 
 .textarea-input {
@@ -627,15 +743,40 @@ div.last{
 
 // $Send
 
-.cheers-as {
+.cheers-as { // button toggle for cheers as
 	display: block !important;
 	width: 100%;
 	margin-bottom: 10px;
-	button {width: 100%; text-align: left;}
+
+	.btn {
+		width: 100%;
+		text-align: left;
+		font-size: 12px;
+		text-shadow: none;
+	}
 }
 
 .submit-cheer {margin-bottom: 20px;}
 
+.cheers-confirmation { // confirms sent cheer
+	display: none; // hidden on load
+	text-align: center;
+	font-size: 18px;
+	line-height: 1.4em;
+	padding: 10px;
+	margin-bottom: 20px;
+	border: 1px solid #CCC;
+	background: #FFF;
+	@include box-sizing(border-box);
+	.js-active & {display: block;}
+}
+
+.active-account {font-size: 12px;} // logged in as
+
+.add-email { // email not on list link
+	font-size: 12px;
+	i {font-size: 8px;}
+}
 
 
 

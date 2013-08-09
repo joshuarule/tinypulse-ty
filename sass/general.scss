@@ -1,11 +1,14 @@
 // Breakpoint
 
 $desktop: 768px;
+$med: 980px;
 
 // Global Spacing
 
 $mbl-pad:    10px;
 $mbl-margin: 20px;
+
+$margin: 20px;
 
 // Wells
 
@@ -34,6 +37,14 @@ $light-blue: 	#d9edf7;
 $grey-blue:     #8ca7b4;
 $blue-dark: 	#4f6e7e;
 $red-alert:   	#c47a7f;
+
+html, body {
+	-webkit-font-smoothing: antialiased;
+}
+
+.container-ty {
+	max-width: 770px;
+}
 
 %pseudo {
 	position: absolute;

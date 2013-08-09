@@ -29,42 +29,54 @@
         <!-- <div class="container">
           <div class="row cols"><div class="span1"></div><div class="span1"></div><div class="span1"></div><div class="span1"></div><div class="span1"></div><div class="span1"></div><div class="span1"></div><div class="span1"></div><div class="span1"></div><div class="span1"></div><div class="span1"></div><div class="span1"></div></div>
         </div> -->
-
-        <div class="container">
           
           <div class="header-ty row-fluid">
-            <a href="{{ site.baseurl }}/" class="span2 offset1 logo"><img src="{{ site.baseurl }}/images/pulseLogo.png"/></a>
-            <span class="pull-right visible-desktop">34 TINYpulses since Oct. 2012</span>
-            <a href="/" class="return-link"><i class="icon-chevron-left"> </i>Return to overview</a>
+            <div class="container container-ty">
+              <a href="{{ site.baseurl }}/" class="logo span2"><img src="{{ site.baseurl }}/images/pulseLogo.png"/></a>
+              <span class="pull-right visible-desktop">34 TINYpulses since Oct. 2012</span>
+            </div>
+            <a href="/" class="return-link">
+              <div class="container container-ty">
+              <i class="icon-chevron-left"> </i>Return to overview
+              </div>
+            </a>
           </div>
 
-          <div class="content">
-            {{ content }}
+          <div class="container container-ty">
+                      
+            <!-- Grid -->
+
+             <!--  <div class="row-fluid cols"><div class="span1"></div><div class="span1"></div><div class="span1"></div><div class="span1"></div><div class="span1"></div><div class="span1"></div><div class="span1"></div><div class="span1"></div><div class="span1"></div><div class="span1"></div><div class="span1"></div><div class="span1"></div></div> -->
+
+            <div class="content">
+              {{ content }}
+            </div>
           </div>
 
           <footer class="footer-ty row-fluid">
-            <div class="span7 ftr-left">
-              <a href="{{ site.baseurl }}/referral.html" class="ftr-wrap">
-                <div class="vertical-align">
-                  <i class="icon-shirt pull-left"></i>
-                  <p>Get a free shirt & a discount next month when refer a friend to TINYpulse! <b>Learn more <i class="icon-chevron-right"></i></b></p>
-                </div>
-              </a>
-            </div>
-            <div class="span5 ftr-right">
-              <div class="buttons">
+            <div class="container container-ty">
+              <div class="span7 ftr-left">
+                <a href="{{ site.baseurl }}/referral.html" class="ftr-wrap">
+                  <div class="vertical-align">
+                    <i class="icon-shirt pull-left"></i>
+                    <p>Get a free shirt & a discount next month when refer a friend to TINYpulse! <b>Learn more <i class="icon-chevron-right"></i></b></p>
+                  </div>
+                </a>
+              </div>
+              <div class="span5 ftr-right">
+                <div class="buttons">
                   <div class="facebook-like-button">
                     <div class="fb-like" data-href="https://www.facebook.com/TINYpulse" data-send="true" data-width="300" data-show-faces="false"></div>
                   </div>
                   <div class="twitter-wrap">
-                  <a href="https://twitter.com/TINYpulse" class="twitter-follow-button" data-show-count="false" data-dnt="true">Follow @TINYpulse</a>
+                    <a href="https://twitter.com/TINYpulse" class="twitter-follow-button" data-show-count="false" data-dnt="true">Follow @TINYpulse</a>
                   
-                  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
                   </div>
                 </div>
+              </div>
             </div>
           </footer>
-        </div> <!-- /container -->
 
     </body>
 </html>

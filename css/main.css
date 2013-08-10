@@ -1389,27 +1389,33 @@ div.last {
   line-height: 1.4em;
   padding: 10px;
   margin-bottom: 20px;
-  border: 1px solid #cccccc;
-  background: #FFF;
+  border: 2px solid #8fbd5a;
+  background: #a9d773;
+  color: #38541d;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 939, ../sass/_element.scss */
+/* line 941, ../sass/_element.scss */
 .js-active .cheers-confirmation {
   display: block;
 }
 
-/* line 942, ../sass/_element.scss */
+/* line 944, ../sass/_element.scss */
 .active-account {
   font-size: 12px;
 }
 
-/* line 944, ../sass/_element.scss */
+/* line 946, ../sass/_element.scss */
 .add-email {
   font-size: 12px;
 }
-/* line 946, ../sass/_element.scss */
+/* line 948, ../sass/_element.scss */
 .add-email i {
   font-size: 8px;
 }

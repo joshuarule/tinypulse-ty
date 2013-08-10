@@ -933,8 +933,10 @@ div.last{
 	line-height: 1.4em;
 	padding: 10px;
 	margin-bottom: 20px;
-	border: 1px solid #CCC;
-	background: #FFF;
+	border: 2px solid #8fbd5a;
+	background: #a9d773;
+	color: #38541d;
+	@include border-radius(5px);
 	@include box-sizing(border-box);
 	.js-active & {display: block;}
 }

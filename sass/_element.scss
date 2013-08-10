@@ -316,6 +316,9 @@ a.ftr-wrap { // added to align text vertically
 			font-size:   45px;
 			line-height: 1em;
 			margin-left: -55px;
+			// margin-left: -55px;
+
+			#referral & {margin-left:0;}
 		}
 	}
 
@@ -329,7 +332,6 @@ a.ftr-wrap { // added to align text vertically
 			margin-bottom: 10px;
 		}
 	}
-	
 }
 
 .headline--icon {
@@ -353,6 +355,10 @@ a.ftr-wrap { // added to align text vertically
 		margin-top: -$size / 2;
 		line-height: 1em; // adjusts centering slightly
 	}
+}
+
+.headline-wrap {
+	position: relative;
 }
 
 
@@ -588,8 +594,6 @@ $streak-height: 100px;
 		display: block;
 
 		&:hover {
-			// background: rgba(#000, .05);
-			// text-decoration: none;
 			i {text-decoration: none}
 		}
 	}
@@ -602,7 +606,11 @@ $streak-height: 100px;
 
 	a {
 		@include breakpoint($desktop) {
-			font-size: 16px;
+			font-size: 14px;
+		}
+
+		@include breakpoint($desktop) {
+			font-size: 14px;
 		}
 	}
 
@@ -630,7 +638,7 @@ $streak-height: 100px;
 
 	i:first-child { // sets social icon
 		font-size: 35px;
-		width: 30px;
+		width: 25px;
 		text-align: left;
 		margin: 0 20px 0 10px;
 		line-height: 12px; // for centering
@@ -654,12 +662,13 @@ $streak-height: 100px;
 
 	.cheers-year {
 		border: none;
-		i {margin-left: 5px;}
+		i {margin-left: 5px; font-size: 10px;}
 	}
 
 	&.js-active { // year active state
 		.cheers-year { 
 			background: #0088cc;
+			padding-left: 5px;
 
 			i { //rotates icon
 				@include rotate(-90deg);

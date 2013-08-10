@@ -103,13 +103,45 @@ html, body {
 	padding: $tight-pad;
 }
 
-
-
 .top-text {margin-top: 		0;}
 .btm-text {margin-bottom:   0;}
 
 textarea {
 	resize: none;
+}
+
+// Social Icon Colors // fix into a mixin
+
+a i.icon-facebook-sign 			{color: #00549f;}
+a i.icon-google-plus-sign 		{color: #ee5a46;}
+a i.icon-twitter-sign 			{color: #38cdff;}
+
+// Added Button Color
+
+.btn-feedback {
+	color: #FFFFFF;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+	background-color: #2F596E;
+	*background-color: #2F596E;
+	background-image: -moz-linear-gradient(top, #4F6E7E, #2F596E);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#4F6E7E), to(#2F596E));
+	background-image: -webkit-linear-gradient(top, #4F6E7E, #2F596E);
+	background-image: -o-linear-gradient(top, #4F6E7E, #2F596E);
+	background-image: linear-gradient(to bottom, #4F6E7E, #2F596E);
+	background-repeat: repeat-x;
+	border-color: #2F596E;
+	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4F6E7E', endColorstr='#2F596E', GradientType=0);
+	filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+}
+.btn-feedback:hover,
+.btn-feedback:active,
+.btn-feedback.active,
+.btn-feedback.disabled,
+.btn-feedback[disabled] {
+	color: #FFFFFF;
+	background-color: #2F596E;
+	*background-color: #003bb3;
 }
 
 

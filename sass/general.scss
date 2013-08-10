@@ -59,6 +59,20 @@ $red-alert:   	#c47a7f;
 
 html, body {
 	-webkit-font-smoothing: antialiased;
+	height: 100%;
+}
+
+
+.wrapper{ // for sticky footer
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -110px;
+}
+
+.push { //for sticky footer
+	height: 110px;
+	clear: both;
 }
 
 .container-ty {
@@ -88,6 +102,8 @@ html, body {
 .well--tight{
 	padding: $tight-pad;
 }
+
+
 
 .top-text {margin-top: 		0;}
 .btm-text {margin-bottom:   0;}

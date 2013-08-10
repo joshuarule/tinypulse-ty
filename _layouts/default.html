@@ -24,25 +24,26 @@
           js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=299296556842403";
           fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));</script>
+        <div class="wrapper">
+          <div class="header-ty row-fluid">
+            <div class="container container-ty">
+            <a href="{{ site.baseurl }}/" class="span2 logo"><img src="{{ site.baseurl }}/images/pulseLogo.png"/></a>
+            <span class="pull-right visible-desktop">34 TINYpulses since Oct. 2012</span>
+            </div>
+          </div>
 
-        <div class="header-ty row-fluid">
           <div class="container container-ty">
-          <a href="{{ site.baseurl }}/" class="span2 logo"><img src="{{ site.baseurl }}/images/pulseLogo.png"/></a>
-          <span class="pull-right visible-desktop">34 TINYpulses since Oct. 2012</span>
-          </div>
+              
+              <!-- Grid -->
+
+             <!--  <div class="row-fluid cols"><div class="span1"></div><div class="span1"></div><div class="span1"></div><div class="span1"></div><div class="span1"></div><div class="span1"></div><div class="span1"></div><div class="span1"></div><div class="span1"></div><div class="span1"></div><div class="span1"></div><div class="span1"></div></div> -->
+
+            <div class="content">
+              {{ content }}
+            </div>
+            <div class="push"></div>
+          </div> <!-- /container -->
         </div>
-
-        <div class="container container-ty">
-            
-            <!-- Grid -->
-
-           <!--  <div class="row-fluid cols"><div class="span1"></div><div class="span1"></div><div class="span1"></div><div class="span1"></div><div class="span1"></div><div class="span1"></div><div class="span1"></div><div class="span1"></div><div class="span1"></div><div class="span1"></div><div class="span1"></div><div class="span1"></div></div> -->
-
-          <div class="content">
-            {{ content }}
-          </div>
-
-        </div> <!-- /container -->
 
         <footer class="footer-ty row-fluid">
           <div class="container container-ty">
@@ -68,6 +69,5 @@
             </div>
           </div>
         </footer>
-
     </body>
 </html>

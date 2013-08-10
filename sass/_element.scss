@@ -430,7 +430,7 @@ $streak-height: 100px;
 	margin-right: 2px;
 	height: 20px;
 	width: 20px;
-	@include background-image(image-url("/images/Honeycomb2x.png"));
+	// @include background-image(image-url("/images/Honeycomb2x.png"));
 	@include background-size(contain);
 }
 

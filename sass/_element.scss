@@ -215,7 +215,7 @@ a.ftr-wrap { // added to align text vertically
 
 	.respond-quote {
 		clear: both;
-		width: auto;
+		// width: auto;
 		position: relative;
 		z-index: 0;
 		margin-top: 0px;
@@ -226,13 +226,18 @@ a.ftr-wrap { // added to align text vertically
 		&:before{ // add background to full width
 			@extend %pseudo;
 			z-index: -1;
-			left: 0;
-			right: 0;
-			top: 0;
+			left: 	-15px; // offset for mobile side padding
+			right: 	-15px;
+			top: 	0;
 			bottom: 0;
 			background: $blue-dark;
 			display: block;
-			@include border-radius(5px);
+			
+			@include breakpoint($desktop) {
+				left: 	0;
+				right: 	0;
+				@include border-radius(5px);
+			}
 		}
 
 		.quote, .quote-author { // overwrites text align
@@ -297,10 +302,16 @@ a.ftr-wrap { // added to align text vertically
 
 	i 	{
 		font-size: 35px;
-		line-height: 1.2em;
-		// position: absolute;
-		// margin-left: -45px; // aligns icon
-		// left: 0;
+		line-height: .9em;
+		position: absolute;
+		margin-left: -45px; // aligns icon
+		left: 0;
+
+		@include breakpoint($desktop) {
+			font-size:   45px;
+			line-height: 1em;
+			margin-left: -55px;
+		}
 	}
 
 	p {
@@ -397,14 +408,14 @@ $streak-height: 100px;
 	h5 {
 		margin: 0 0 2px 0;
 		line-height: 1em;
-		color: $royal;
+		color: #eb742c;
 	}
 
 	p {
 		height: 30px;
-		margin: 0;
-		line-height: 1.1em;
-		color: lighten($royal, 5%);
+		margin: 5px 0 0 0;
+		line-height: 1.1em !important; //fix
+		color: #636466;
 	}
 }
 
@@ -413,7 +424,7 @@ $streak-height: 100px;
 	font-size: 10px;
 	font-weight: 500;
 	line-height: 1.5em;
-	color: $grey-blue;
+	color: #3a87ad;
 }
 
 .streak-stars {
@@ -448,6 +459,8 @@ $streak-height: 100px;
 		padding-left: 15px;
 		margin-left:  -15px; // allows border to extend to edge
 		margin-right: -15px;
+
+		i {color:#cccccc;}
 	}
 
 	.cheers .cheer {
@@ -489,7 +502,6 @@ $streak-height: 100px;
 
 .cheers-action {
 	display: block;
-	height: 30px;
 	float: none;
 
 	@include breakpoint ($desktop) {
@@ -662,11 +674,12 @@ $streak-height: 100px;
 // $feedback
 
 .feedback {
-	background: $blue-dark;
-	color: #FFF;
+	background: $light-blue;
+	border-color: darken($light-blue, 5%);
+	color: #4f6e7e;
 
 	h2 {
-		color: #FFF;
+		color: #4f6e7e;
 	}
 
 	.icon-comment-reverse {
@@ -675,6 +688,12 @@ $streak-height: 100px;
 
 	.submit-feedback { // submit button
 		display: block;
+		@include background-image(linear-gradient(#4f6e7e, #2f596e));
+		border-color:#2c5469;
+
+		&:hover {
+			background-color: #2c5469;
+		}
 
 		@include breakpoint($desktop) {float:right;}
 	} 
@@ -690,6 +709,11 @@ $streak-height: 100px;
 		right: 8px;
 		color: #999;
 	}
+}
+
+.email-input {
+	float: none;
+	@include breakpoint($desktop) {float: right;}
 }
 
 // $Progress
@@ -788,7 +812,7 @@ div.last{
 // $circle
 
 .circle-number {
-	$circle-size: 16px;
+	$circle-size: 20px;
 
 	display: inline-block;
 	position: relative;
@@ -803,6 +827,7 @@ div.last{
 		width:  $circle-size;
 		left: 50%;
 		margin-left: -$circle-size / 2;
+		margin-top: -2px;
 		background: $orange;
 		@include border-radius(100%);
 		
@@ -844,15 +869,37 @@ div.last{
 	width: 100%;
 	margin-bottom: 10px;
 
+	@include breakpoint($desktop) {margin-bottom: 0;}
+
 	.btn {
 		width: 100%;
 		text-align: left;
 		font-size: 12px;
 		text-shadow: none;
+
+		@include breakpoint ($desktop) { // convert to horizontal button group
+			width: auto;
+			float: left;
+		}
+	}
+
+	&.btn-group-vertical>.btn:first-child { // convert to horizontal button group
+		@include breakpoint ($desktop) {
+			@include border-radius(4px 0 0 4px);
+		}
+	}
+
+	&.btn-group-vertical>.btn:last-child { // convert to horizontal button group
+		@include breakpoint ($desktop) {
+			@include border-radius(0 4px 4px 0);
+			margin-top: 0;
+		}
 	}
 }
 
 .submit-cheer {margin-bottom: 20px;}
+
+.add-cheer {margin-bottom: 10px;}
 
 .cheers-confirmation { // confirms sent cheer
 	display: none; // hidden on load

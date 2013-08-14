@@ -248,6 +248,10 @@ a.ftr-wrap { // added to align text vertically
 		@include breakpoint($desktop) {
 			text-align: left;
 		}
+
+		@include breakpoint ($med) {
+			h1 {font-size: $size-0; margin-top: 25px;}
+		}
 	}
 
 	h1 {
@@ -425,13 +429,15 @@ a.ftr-wrap { // added to align text vertically
 		$size: 40px;
 
 		position: absolute;
-		left: 0;
+		left: -50px;
 		height: $size;
 		width:  $size;
 		top: 50%;
 		margin-top: -$size / 2;
 		line-height: 1em; // adjusts centering slightly
 		color: $icon-grey;
+
+		@include breakpoint ($desktop) {left: 0;}
 	}
 }
 
@@ -974,6 +980,10 @@ div.last{
 .submit-stats {
 	font-size: 12px;
 	font-weight: 500;
+
+	@include breakpoint ($med) {
+		margin-bottom: 20px;
+	}
 }
 
 
@@ -1008,6 +1018,19 @@ div.last{
 
 .share-address {margin-bottom: 20px;}
 
+.tshirt {
+	max-width: 320px;
+	text-align: center;
+	display: block;
+	margin: 0 auto;
+
+	@include breakpoint ($desktop) {
+		max-width: none;
+		width: 100%;
+		margin: 0;
+	}
+}
+
 
 //                        _ 
 //                       | |
@@ -1024,7 +1047,7 @@ div.last{
 	width: 100%;
 	margin-bottom: 10px;
 
-	@include breakpoint($desktop) {margin-bottom: 0;}
+	@include breakpoint($med) {margin-bottom: 0;}
 
 	.btn {
 		width: 100%;
@@ -1032,20 +1055,20 @@ div.last{
 		// font-size: 12px;
 		text-shadow: none;
 
-		@include breakpoint ($desktop) { // convert to horizontal button group
+		@include breakpoint ($med) { // convert to horizontal button group
 			width: auto;
 			float: left;
 		}
 	}
 
 	&.btn-group-vertical>.btn:first-child { // convert to horizontal button group
-		@include breakpoint ($desktop) {
+		@include breakpoint ($med) {
 			@include border-radius(4px 0 0 4px);
 		}
 	}
 
 	&.btn-group-vertical>.btn:last-child { // convert to horizontal button group
-		@include breakpoint ($desktop) {
+		@include breakpoint ($med) {
 			@include border-radius(0 4px 4px 0);
 			margin-top: 0;
 		}

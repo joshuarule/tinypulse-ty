@@ -1,0 +1,200 @@
+// Breakpoint
+
+$desktop: 768px;
+$med: 980px;
+
+// Global Spacing
+
+$mbl-pad:    10px;
+$mbl-margin: 20px;
+
+$margin: 20px;
+
+// Wells
+
+$well-pad: 		14px;
+$tight-pad: 	 8px;
+
+// Font Sizing
+
+$size-0: 60px;
+$size-1: 34px;
+$size-2: 24px;
+$size-3: 18px;
+$size-4: 14px;
+$size-5: 12px;
+$size-6: 10px;
+
+.tight {margin-left: 0;}
+
+%font-awesome {
+	font-family: FontAwesome;
+	font-weight: normal;
+	font-style: normal;
+	text-decoration: inherit;
+	-webkit-font-smoothing: antialiased;
+}
+
+// Colors
+$black: 		#000;
+$white: 		#FFF;
+$orange: 		#eb742c;
+$royal:     	#3a87ad;
+$light-blue: 	#d9edf7;
+$grey-blue:     #8ca7b4;
+$blue-dark: 	#4f6e7e;
+$red-alert:   	#c47a7f;
+$grey-text: 	#999;
+$icon-grey: 	#ccc;
+
+$color-facebook: 	#00549f;
+$color-twitter: 	#38cdff;
+$color-google: 		#38cdff;
+
+$border-header:  	#b1b1b1;
+$return-link-color: #4f6e7e;
+
+
+
+html, body {
+	-webkit-font-smoothing: antialiased;
+	height: 100%;
+}
+
+
+.wrapper{ // for sticky footer
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -110px;
+}
+
+.push { //for sticky footer
+	height: 110px;
+	clear: both;
+}
+
+.container-ty {
+	max-width: 960px;
+}
+
+%pseudo {
+	position: absolute;
+	content: '';
+}
+
+%fill {
+	top: 	0;
+	bottom: 0;
+	right: 	0;
+	left: 	0;
+}
+
+.well--pad, .well--tight {
+	@include box-shadow(none);
+}
+
+.well--pad {
+	padding: $well-pad;
+}
+
+.well--tight{
+	padding: $tight-pad;
+}
+
+.top-text {margin-top: 		0;}
+.btm-text {margin-bottom:   0;}
+
+textarea {
+	resize: none; // fix?
+	padding: 7px;
+}
+
+// Social Icon Colors
+
+a i.icon-facebook-sign 			{color: $color-facebook;}
+a i.icon-google-plus-sign 		{color: $color-twitter;}
+a i.icon-twitter-sign 			{color: $color-google;}
+
+
+// Button Font Sizes
+
+.btn-large{
+	padding: 9px 12px !important;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.btn-large i {
+	font-size: 18px;
+	line-height: 0.4em;
+	margin-right: 2px;
+
+	@include breakpoint($desktop) {
+		line-height: .8em;
+	}
+
+	&.icon-chevron-right,
+	&.icon-chevron-left{
+		font-size:   12px;
+		line-height: 1em;
+	}
+}
+
+.btn.btn-large {
+	@include breakpoint ($desktop) {font-size: $size-3;}
+}
+
+.btn {
+	@include breakpoint ($desktop) {font-size: $size-4;}
+}
+
+.btn-group > .btn {
+	font-size: $size-5;
+	@include breakpoint($desktop) {font-size: $size-4;}
+}
+
+// Added Feeback Button Color
+
+.btn-feedback {
+	color: #FFFFFF;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+	background-color: #2F596E;
+	*background-color: #2F596E;
+	background-image: -moz-linear-gradient(top, #4F6E7E, #2F596E);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#4F6E7E), to(#2F596E));
+	background-image: -webkit-linear-gradient(top, #4F6E7E, #2F596E);
+	background-image: -o-linear-gradient(top, #4F6E7E, #2F596E);
+	background-image: linear-gradient(to bottom, #4F6E7E, #2F596E);
+	background-repeat: repeat-x;
+	border-color: #2F596E;
+	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4F6E7E', endColorstr='#2F596E', GradientType=0);
+	filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+}
+.btn-feedback:hover,
+.btn-feedback:active,
+.btn-feedback.active,
+.btn-feedback.disabled,
+.btn-feedback[disabled] {
+	color: #FFFFFF;
+	background-color: #2F596E;
+	*background-color: #003bb3;
+}
+
+// grid
+
+.col1 {background: green;}
+.col2 {background: blue;}
+.col3 {background: green;}
+.col4 {background: blue;}
+.col5 {background: green;}
+.col6 {background: blue;}
+.col7 {background: green;}
+.col8 {background: blue;}
+.col9 {background: green;}
+.col10 {background: blue;}
+.col11 {background: green;}
+.col12 {background: blue;}
+
+

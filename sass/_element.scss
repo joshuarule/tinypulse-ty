@@ -1,6 +1,29 @@
-// .container {overflow: hidden;} // added to cut full width background
+//                      _                 _        
+//                     | |               | |       
+//   ___   ___   _ __  | |_   ___  _ __  | |_  ___ 
+//  / __| / _ \ | '_ \ | __| / _ \| '_ \ | __|/ __|
+// | (__ | (_) || | | || |_ |  __/| | | || |_ \__ \
+//  \___| \___/ |_| |_| \__| \___||_| |_| \__||___/
+//
+// search with $
+                                                
+// 	$header
+//	$footer
+//	$specific - page specific styles
+//	$headline
+// 	$title
+// 	$streak
+//	$cheers
+//	$feedback
+//	$progress
+//	$circle -  background circle for numbers
+//	$referral
+//	$send
 
-.content {
+// =====================================================================
+
+
+.content { // add padding to side of page
 	padding-left:   15px;
 	padding-right:  15px;
 
@@ -9,21 +32,33 @@
 	}
 }
 
+//  _                       _             
+// | |                     | |            
+// | |__    ___   __ _   __| |  ___  _ __ 
+// | '_ \  / _ \ / _` | / _` | / _ \| '__|
+// | | | ||  __/| (_| || (_| ||  __/| |   
+// |_| |_| \___| \__,_| \__,_| \___||_|   
+
 // $header
 
 .header-ty {
-	background: #FFF;
+	background: $white;
 	line-height: 40px;
 	position: relative;
-	border-bottom: 1px solid #b1b1b1;
+	border-bottom: 1px solid $border-header;
+}
+
+.pulsing-since {
+	font-size: $size-5;
+	color: $grey-text;
 }
 
 .return-link {
 	padding: 0 15px;
 	display: block;
-	background: #4f6e7e;
-	color: #FFF;
-	font-size: 12px;
+	background: $return-link-color;
+	color: $white;
+	font-size: $size-5;
 	line-height: 2.5em;
 
 	@include breakpoint ($desktop) {
@@ -43,29 +78,40 @@
 		@extend %fill;
 		z-index: -1;
 		height: inherit;
-		background: #000;
+		background: $black;
 		display: block;
 	}
 
 	
 
-	i {margin-right: 5px;}
+	i {margin-right: 5px;} // spaces chevron
 }
 
 .logo {
 	display: block;
 	text-align: center;
 
+	@include breakpoint ($desktop) {float: left;}
+
 	img {max-height: 20px; display: inline-block;}
 }
 
+
+
+
+//   __                _               
+//  / _|              | |              
+// | |_   ___    ___  | |_   ___  _ __ 
+// |  _| / _ \  / _ \ | __| / _ \| '__|
+// | |  | (_) || (_) || |_ |  __/| |   
+// |_|   \___/  \___/  \__| \___||_|   
+                                                                      
 // $footer
 
 .footer-ty {
-	// padding-bottom: 20px;
-	background: #FFF;
-	border-top: 1px solid rgba(#000, .2);
-	@include box-shadow(0px -1px 2px rgba(#000, .1));
+	background: $white;
+	border-top: 1px solid rgba($white, .2);
+	@include box-shadow(0px -1px 2px rgba($white, .1));
 	@include breakpoint($desktop) {height: 110px;}
 }
 
@@ -73,7 +119,7 @@
 .ftr-left {
 	position: relative;
 
-	p {font-size: 12px; line-height: 1.4em; margin: 5px 0;}
+	p {font-size: $size-5; line-height: 1.4em; margin: 5px 0;}
 }
 
 .ftr-right {
@@ -86,7 +132,7 @@
 		.buttons {margin-left: 20px;} // adds middle spacing on desktop
 	}
 
-	&:after { // adds verticle separator
+	&:after { // adds vertical separator
 		@extend %pseudo;
 		left: 0;
 		top:    19px;
@@ -95,8 +141,6 @@
 		width: 1px;
 		display: block;
 	}
-
-
 
 	.facebook-like-button,
 	.twitter-wrap{
@@ -155,7 +199,7 @@
 		margin-left: 45px;
  
 		@include breakpoint($desktop) {
-			font-size: 14px;
+			font-size: $size-4;
 			margin-left: 65px;
 		}
 	}
@@ -183,9 +227,16 @@ a.ftr-wrap { // added to align text vertically
 	position: relative;
 	z-index: 2;
 	display: inline-block;
-	// font-size: medium;
 }
 
+//                          _   __  _       
+//                         (_) / _|(_)      
+//  ___  _ __    ___   ___  _ | |_  _   ___ 
+// / __|| '_ \  / _ \ / __|| ||  _|| | / __|
+// \__ \| |_) ||  __/| (__ | || |  | || (__ 
+// |___/| .__/  \___| \___||_||_|  |_| \___|
+//      | |                                 
+//      |_|   
 
 // $Specific
 
@@ -200,7 +251,7 @@ a.ftr-wrap { // added to align text vertically
 	}
 
 	h1 {
-		font-size: 18px;
+		font-size: $size-3;
 		line-height: 1.2em;
 		text-shadow: none;
 
@@ -213,7 +264,7 @@ a.ftr-wrap { // added to align text vertically
 	}
 
 	p {
-		font-size: 12px;
+		// font-size: $size-5;
 		line-height: 1.4em;
 	}
 
@@ -228,6 +279,11 @@ a.ftr-wrap { // added to align text vertically
 		padding: 10px 0;
 		text-align: center;
 		color: #FFF;
+
+		@include breakpoint($desktop) {
+			padding-left:  60px;
+			padding-right: 60px;
+		}
 
 		&:before{ // add background to full width
 			@extend %pseudo;
@@ -261,7 +317,7 @@ a.ftr-wrap { // added to align text vertically
 
 		@include breakpoint($desktop) {
 			width: auto;
-			font-size: 14px;
+			font-size: $size-3;
 		}
 
 		&:after,&:before{ // adds quote icons
@@ -282,6 +338,15 @@ a.ftr-wrap { // added to align text vertically
 	}
 }
 
+
+//  _                       _  _  _              
+// | |                     | || |(_)             
+// | |__    ___   __ _   __| || | _  _ __    ___ 
+// | '_ \  / _ \ / _` | / _` || || || '_ \  / _ \
+// | | | ||  __/| (_| || (_| || || || | | ||  __/
+// |_| |_| \___| \__,_| \__,_||_||_||_| |_| \___|
+                                              
+                                              
 // $headline
 
 .headline {
@@ -294,7 +359,7 @@ a.ftr-wrap { // added to align text vertically
 	}
 
 	h1 	{
-		font-size: 24px;
+		font-size: $size-2;
 		line-height: 1.3em;
 		text-shadow: none;
 		position: relative;
@@ -302,21 +367,24 @@ a.ftr-wrap { // added to align text vertically
 
 		@include breakpoint ($desktop) {
 			text-align: left;
-			font-size: 34px;
+			font-size: $size-1;
 		}
 	}
 
 	i 	{
 		font-size: 35px;
-		line-height: .9em;
-		position: absolute;
-		margin-left: -45px; // aligns icon
+		// line-height: .9em;
+		// position: absolute;
+		// margin-left: -45px; // aligns icon
 		left: 0;
+
+		line-height: 0.5em;
+		margin-right: 13px;
 
 		@include breakpoint($desktop) {
 			font-size:   45px;
 			line-height: 1em;
-			margin-left: -55px;
+			// margin-left: -55px;
 			// margin-left: -55px;
 
 			#referral & {margin-left:0;}
@@ -335,6 +403,13 @@ a.ftr-wrap { // added to align text vertically
 	}
 }
 
+.headline--offset {
+	@extend .headline;
+	h1 {
+		@include breakpoint ($desktop) {margin-left: -57px;}
+	}
+}
+
 .headline--icon {
 	display: inline-block;
 	position: relative;
@@ -348,6 +423,7 @@ a.ftr-wrap { // added to align text vertically
 
 	i {
 		$size: 40px;
+
 		position: absolute;
 		left: 0;
 		height: $size;
@@ -355,6 +431,7 @@ a.ftr-wrap { // added to align text vertically
 		top: 50%;
 		margin-top: -$size / 2;
 		line-height: 1em; // adjusts centering slightly
+		color: $icon-grey;
 	}
 }
 
@@ -363,6 +440,14 @@ a.ftr-wrap { // added to align text vertically
 }
 
 
+//  _    _  _    _       
+// | |  (_)| |  | |      
+// | |_  _ | |_ | |  ___ 
+// | __|| || __|| | / _ \
+// | |_ | || |_ | ||  __/
+//  \__||_| \__||_| \___|
+                      
+                      
 // $Title
 
 .title {
@@ -372,7 +457,7 @@ a.ftr-wrap { // added to align text vertically
 		line-height: 1em;	
 
 		@include breakpoint ($desktop) {
-			font-size: 24px;
+			font-size: $size-2;
 		}
 	}
 
@@ -383,17 +468,33 @@ a.ftr-wrap { // added to align text vertically
 	@extend .title;
 
 	i {
-		font-size: 24px;
+		font-size: $size-2;
 		line-height: .7em;
+		color: $icon-grey;
 
 		@include breakpoint ($desktop) {
-			font-size:    34px;
-			margin-left:  3px;
-			margin-right: 15px !important; // overwrite icon.pull left
+			font-size:    $size-1;
+			margin-left: 2px;
+			margin-right: 12px !important;
+			
+		}
+
+		@include breakpoint ($med) {
+			margin-left:  10px;
+			margin-right: 23px !important; // overwrite icon.pull left
 		}
 	}
 }
 
+
+//       _                       _    
+//      | |                     | |   
+//  ___ | |_  _ __   ___   __ _ | | __
+// / __|| __|| '__| / _ \ / _` || |/ /
+// \__ \| |_ | |   |  __/| (_| ||   < 
+// |___/ \__||_|    \___| \__,_||_|\_\
+                                   
+                                   
 // $Streak
 
 $streak-height: 100px;
@@ -427,6 +528,7 @@ $streak-height: 100px;
 
 	p {
 		height: 30px;
+		font-size: $size-5;
 		margin: 5px 0 0 0;
 		line-height: 1.1em !important; //fix
 		color: #636466;
@@ -443,7 +545,7 @@ $streak-height: 100px;
 
 .streak-record {
 	margin: 3px 0 0;
-	font-size: 10px;
+	font-size: $size-6;
 	font-weight: 500;
 	line-height: 1.5em;
 	color: #3a87ad;
@@ -466,6 +568,14 @@ $streak-height: 100px;
 	}
 }
 
+//        _                            
+//       | |                           
+//   ___ | |__    ___   ___  _ __  ___ 
+//  / __|| '_ \  / _ \ / _ \| '__|/ __|
+// | (__ | | | ||  __/|  __/| |   \__ \
+//  \___||_| |_| \___| \___||_|   |___/
+                                    
+                                    
 // $Cheers
 
 #cheers .cheers-new {
@@ -484,8 +594,6 @@ $streak-height: 100px;
 		padding-left: 15px;
 		margin-left:  -15px; // allows border to extend to edge
 		margin-right: -15px;
-
-		i {color:#cccccc;}
 	}
 
 	.cheers .cheer {
@@ -502,7 +610,7 @@ $streak-height: 100px;
 			margin-bottom: 0;
 			padding: 8px;
 			background: $cheer-bg;
-			font-size:   12px;
+			font-size:   $size-5;
 			line-height: 1.3em;
 			font-weight: normal;
 			color: #FFF;
@@ -530,12 +638,12 @@ $streak-height: 100px;
 	float: none;
 
 	@include breakpoint ($desktop) {
-		margin-right: 47px;
+		// margin-right: 47px;
 		float: right;
 	}
 
 	@include breakpoint ($med) {
-		margin-right: 50px;
+		// margin-right: 50px;
 	}
 
 	.btn-wrap { // wraps buttons to allow them to expand in mobile
@@ -551,7 +659,7 @@ $streak-height: 100px;
 		a { // sets size of button
 			@include box-sizing(border-box);
 			padding: 4px 8px;
-			font-size: 12px;
+			// font-size: 12px;
 			width: 100%;
 		}
 	}
@@ -573,7 +681,7 @@ $streak-height: 100px;
 }
 
 .list-nav{
-	font-size: 18px;
+	font-size: $size-3;
 	font-weight: 600;
 }
 
@@ -602,14 +710,10 @@ $streak-height: 100px;
 
 .cheers-month,
 .cheers-year {
-	height: 45px;
-	line-height: 45px;
+	height: 		45px;
+	line-height: 	45px;
 
 	a {
-		@include breakpoint($desktop) {
-			font-size: 14px;
-		}
-
 		@include breakpoint($desktop) {
 			font-size: 14px;
 		}
@@ -627,12 +731,11 @@ $streak-height: 100px;
 	line-height: 60px;
 
 	&:first-child {border-top: 1px solid #CCC;}
+
 	&:last-child {
 		margin-bottom: 40px;
 
-		@include breakpoint($desktop) {
-			border: none;
-		}
+		@include breakpoint($desktop) {border: none;} //turns border off
 	}
 
 	a {font-weight: normal}
@@ -645,7 +748,7 @@ $streak-height: 100px;
 		line-height: 12px; // for centering
 
 		&.icon-envelope-alt {
-			font-size: 30px; // mail icon looked bigger
+			font-size: 30px; // adjustment for mail icon
 		}
 	}
 
@@ -687,19 +790,14 @@ $streak-height: 100px;
 	}
 }
 
-.col1 {background: green;}
-.col2 {background: blue;}
-.col3 {background: green;}
-.col4 {background: blue;}
-.col5 {background: green;}
-.col6 {background: blue;}
-.col7 {background: green;}
-.col8 {background: blue;}
-.col9 {background: green;}
-.col10 {background: blue;}
-.col11 {background: green;}
-.col12 {background: blue;}
-
+//   __                  _  _                   _    
+//  / _|                | || |                 | |   
+// | |_   ___   ___   __| || |__    __ _   ___ | | __
+// |  _| / _ \ / _ \ / _` || '_ \  / _` | / __|| |/ /
+// | |  |  __/|  __/| (_| || |_) || (_| || (__ |   < 
+// |_|   \___| \___| \__,_||_.__/  \__,_| \___||_|\_\
+                                                  
+                                                  
 // $feedback
 
 .feedback {
@@ -738,6 +836,14 @@ $streak-height: 100px;
 	float: none;
 	@include breakpoint($desktop) {float: right !important;}
 }
+
+                                              
+//  _ __   _ __   ___    __ _  _ __   ___  ___  ___ 
+// | '_ \ | '__| / _ \  / _` || '__| / _ \/ __|/ __|
+// | |_) || |   | (_) || (_| || |   |  __/\__ \\__ \
+// | .__/ |_|    \___/  \__, ||_|    \___||___/|___/
+// | |                   __/ |                      
+// |_|                  |___/                       
 
 // $Progress
 
@@ -832,6 +938,15 @@ div.last{
 .per90  .last{   -webkit-transform: rotate(144deg); }
 .per100 .last{   -webkit-transform: rotate(180deg); }
 
+
+//        _              _           _  _   
+//       (_)            | |        _| || |_ 
+//   ___  _  _ __   ___ | |  ___  |_  __  _|
+//  / __|| || '__| / __|| | / _ \  _| || |_ 
+// | (__ | || |   | (__ | ||  __/ |_  __  _|
+//  \___||_||_|    \___||_| \___|   |_||_|  
+
+
 // $circle
 
 .circle-number {
@@ -853,7 +968,6 @@ div.last{
 		margin-top: -2px;
 		background: $orange;
 		@include border-radius(100%);
-		
 	}
 }
 
@@ -862,6 +976,15 @@ div.last{
 	font-weight: 500;
 }
 
+
+//               __                           _ 
+//              / _|                         | |
+//  _ __   ___ | |_   ___  _ __  _ __   __ _ | |
+// | '__| / _ \|  _| / _ \| '__|| '__| / _` || |
+// | |   |  __/| |  |  __/| |   | |   | (_| || |
+// |_|    \___||_|   \___||_|   |_|    \__,_||_|
+                                             
+                                             
 // $referral
 
 .share-address-title {
@@ -883,7 +1006,16 @@ div.last{
 	}
 }
 
-.share-address {margin-bottom: 20px;} 
+.share-address {margin-bottom: 20px;}
+
+
+//                        _ 
+//                       | |
+//  ___   ___  _ __    __| |
+// / __| / _ \| '_ \  / _` |
+// \__ \|  __/| | | || (_| |
+// |___/ \___||_| |_| \__,_|
+                         
 
 // $Send
 
@@ -897,7 +1029,7 @@ div.last{
 	.btn {
 		width: 100%;
 		text-align: left;
-		font-size: 12px;
+		// font-size: 12px;
 		text-shadow: none;
 
 		@include breakpoint ($desktop) { // convert to horizontal button group
@@ -930,7 +1062,7 @@ div.last{
 .cheers-confirmation { // confirms sent cheer
 	display: none; // hidden on load
 	text-align: center;
-	font-size: 18px;
+	font-size: $size-4;
 	line-height: 1.4em;
 	padding: 10px;
 	margin-bottom: 20px;
@@ -940,6 +1072,8 @@ div.last{
 	@include border-radius(5px);
 	@include box-sizing(border-box);
 	.js-active & {display: block;}
+
+	@include breakpoint ($desktop) {font-size: $size-3; margin-bottom: 10px;}
 }
 
 .active-account {font-size: 12px;} // logged in as

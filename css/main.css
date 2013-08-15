@@ -1747,12 +1747,12 @@ a.ftr-wrap b {
   text-align: center;
   display: block;
   margin: 0 auto;
+  width: 100%;
 }
 @media (min-width: 768px) {
   /* line 1102, ../sass/_element.scss */
   .tshirt {
     max-width: none;
-    width: 100%;
     margin: 0;
   }
 }

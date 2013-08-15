@@ -1,0 +1,138 @@
+/* line 1, ../sass/animate-custom.scss */
+.animated {
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  -ms-animation-duration: 1s;
+  -o-animation-duration: 1s;
+  animation-duration: 1s;
+}
+
+/* line 1, ../sass/animate-custom.scss */
+.animated.hinge {
+  -webkit-animation-duration: 2s;
+  -moz-animation-duration: 2s;
+  -ms-animation-duration: 2s;
+  -o-animation-duration: 2s;
+  animation-duration: 2s;
+}
+
+@-webkit-keyframes tada {
+  /* line 2, ../sass/animate-custom.scss */
+  0% {
+    -webkit-transform: scale(1);
+  }
+
+  /* line 2, ../sass/animate-custom.scss */
+  10%, 20% {
+    -webkit-transform: scale(0.9) rotate(-3deg);
+  }
+
+  /* line 3, ../sass/animate-custom.scss */
+  30%, 50%, 70%, 90% {
+    -webkit-transform: scale(1.1) rotate(3deg);
+  }
+
+  /* line 4, ../sass/animate-custom.scss */
+  40%, 60%, 80% {
+    -webkit-transform: scale(1.1) rotate(-3deg);
+  }
+
+  /* line 5, ../sass/animate-custom.scss */
+  100% {
+    -webkit-transform: scale(1) rotate(0);
+  }
+}
+
+@-moz-keyframes tada {
+  /* line 9, ../sass/animate-custom.scss */
+  0% {
+    -moz-transform: scale(1);
+  }
+
+  /* line 10, ../sass/animate-custom.scss */
+  10%, 20% {
+    -moz-transform: scale(0.9) rotate(-3deg);
+  }
+
+  /* line 11, ../sass/animate-custom.scss */
+  30%, 50%, 70%, 90% {
+    -moz-transform: scale(1.1) rotate(3deg);
+  }
+
+  /* line 12, ../sass/animate-custom.scss */
+  40%, 60%, 80% {
+    -moz-transform: scale(1.1) rotate(-3deg);
+  }
+
+  /* line 13, ../sass/animate-custom.scss */
+  100% {
+    -moz-transform: scale(1) rotate(0);
+  }
+}
+
+@-o-keyframes tada {
+  /* line 17, ../sass/animate-custom.scss */
+  0% {
+    -o-transform: scale(1);
+  }
+
+  /* line 18, ../sass/animate-custom.scss */
+  10%, 20% {
+    -o-transform: scale(0.9) rotate(-3deg);
+  }
+
+  /* line 19, ../sass/animate-custom.scss */
+  30%, 50%, 70%, 90% {
+    -o-transform: scale(1.1) rotate(3deg);
+  }
+
+  /* line 20, ../sass/animate-custom.scss */
+  40%, 60%, 80% {
+    -o-transform: scale(1.1) rotate(-3deg);
+  }
+
+  /* line 21, ../sass/animate-custom.scss */
+  100% {
+    -o-transform: scale(1) rotate(0);
+  }
+}
+
+@keyframes tada {
+  /* line 25, ../sass/animate-custom.scss */
+  0% {
+    transform: scale(1);
+  }
+
+  /* line 26, ../sass/animate-custom.scss */
+  10%, 20% {
+    transform: scale(0.9) rotate(-3deg);
+  }
+
+  /* line 27, ../sass/animate-custom.scss */
+  30%, 50%, 70%, 90% {
+    transform: scale(1.1) rotate(3deg);
+  }
+
+  /* line 28, ../sass/animate-custom.scss */
+  40%, 60%, 80% {
+    transform: scale(1.1) rotate(-3deg);
+  }
+
+  /* line 29, ../sass/animate-custom.scss */
+  100% {
+    transform: scale(1) rotate(0);
+  }
+}
+
+/* line 32, ../sass/animate-custom.scss */
+.tada {
+  -webkit-animation-name: tada;
+  -moz-animation-name: tada;
+  -o-animation-name: tada;
+  animation-name: tada;
+}

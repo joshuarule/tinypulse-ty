@@ -7,18 +7,18 @@
 //
 // search with $
                                                 
-// 	$header
-//	$footer
-//	$specific - page specific styles
-//	$headline
-// 	$title
-// 	$streak
-//	$cheers
-//	$feedback
-//	$progress
-//	$circle -  background circle for numbers
-//	$referral
-//	$send
+// 	header
+//	footer
+//	specific - page specific styles
+//	headline
+// 	title
+// 	streak
+//	cheers
+//	feedback
+//	progress
+//	circle -  background circle for numbers
+//	referral
+//	send
 
 // =====================================================================
 
@@ -518,7 +518,8 @@ $streak-height: 100px;
 	height: 100%;
 	width:  $streak-height - ($tight-pad * 2); // height minus tight padding * 2
 	margin-right: 10px;
-	background: #ffbc52;
+	// background: #ffbc52;
+	background: $white;
 	border: 3px solid #FFF;
 	@include box-sizing(border-box);
 	@include border-radius(5px);
@@ -853,96 +854,175 @@ $streak-height: 100px;
 
 // $Progress
 
-.progress-meter {
-	font-size: 146%;
-}
+$size: 74px;
+$circle-bg:    #529b90;
+$circle-meter: #87d6c6;
 
-.circle-meter{
-	position: absolute;
-	overflow: hidden;
-	width:  4em;
-	height: 4em;
-}
-
-.progress-meter:before {
-	content: "";
-	position: absolute;
-	background-color: #FFF;
-	height: 3em;
-	width:  3em;
-	z-index: 11;
-	margin: .5em;
-	border-radius: 1.5em;
-}
-
-.per0  .circle-meter,
-.per10 .circle-meter,
-.per20 .circle-meter,
-.per30 .circle-meter,
-.per40 .circle-meter,
-.per50 .circle-meter{
-  clip: rect(0,4em, 4em, 2em);
-}
-.per60 .circle-meter,
-.per70 .circle-meter,
-.per80 .circle-meter,
-.per90 .circle-meter,
-.per1000 .circle-meter{
-  clip: rect(0,4em, 4em, 0em);
-}
-
-div.first,
-div.last{
-  width:  2em;
-  height: 4em;
-  background: red;
-}
-
-div.first-full {
-  width:  4em;
-  height: 4em;
-  background: green;
-  position: absolute;
-  border-radius: 2em;
-  top: 0;
-}
-
-div.first{
-  border-top-left-radius:    2em;
-  border-bottom-left-radius: 2em;
-  -webkit-transform-origin: 100% 50%;
-  position: absolute;
-}
-
-div.last{
-  border-top-right-radius:    2em;
-  border-bottom-right-radius: 2em;
-  -webkit-transform-origin: 0% 50%;
-  margin-left: 2em;
+.streak-circle { // green background circle
+  background: $circle-bg; 
   position: relative;
+  display: block;
+  width:  $size;
+  height: $size;
+  @include border-radius(100%);
+  -webkit-transform:translate3d();
+  
+  &:before { // white center
+    content: '';
+    position: absolute;
+    z-index: 1;
+    top:  50%;
+    left: 50%;
+    margin-left: -35%;
+    margin-top:  -35%;  
+    height:    70%;
+    width:     70%;
+    background: white;
+    @include border-radius(100%);
+  }
+}
+
+.streak-num { // number
+  position: absolute; 
+  font-size: $size-1;
+  color: $grey-text;
+  font-weight: bold;
+  width: 100%;
+  line-height: $size;
+  text-align: center;
   z-index: 1;
-  -webkit-transform: rotate(180deg);
 }
 
-.per0   .first{  -webkit-transform: rotate(0deg);   }
-.per10  .first{  -webkit-transform: rotate(36deg);  }
-.per20  .first{  -webkit-transform: rotate(72deg);  }
-.per30  .first{  -webkit-transform: rotate(108deg); }
-.per40  .first{  -webkit-transform: rotate(144deg); }
-.per50  .first,
-.per60  .first,
-.per70  .first,
-.per80  .first,
-.per90  .first,
-.per100 .first{
-  -webkit-transform: rotate(180deg); 
+.left, .right { // circle halves
+  position: absolute;
+  display: block;
+  width:  $size;
+  height: $size;
+  @include border-radius(100%);
+  -webkit-transform:translate3d();
+} 
+
+.left { // left circle starts under the right circle
+  background: $circle-meter;
+  clip: rect(0, $size, $size, ($size / 2)); 
+  @include rotate(180deg);
 }
 
-.per60  .last{   -webkit-transform: rotate(36deg);  }
-.per70  .last{   -webkit-transform: rotate(72deg);  }
-.per80  .last{   -webkit-transform: rotate(108deg); }
-.per90  .last{   -webkit-transform: rotate(144deg); }
-.per100 .last{   -webkit-transform: rotate(180deg); }
+.right { // right circle starts on left then flips 50% to right
+  background: $circle-bg;
+  clip: rect(0, ($size / 2), $size, 0);
+  @include rotate(0deg); 
+}
+
+$time: 2s;
+
+.streak1 .left{
+    animation:         left1 $time linear 1;
+    -webkit-animation: left1 $time linear 1;
+    animation-fill-mode: forwards; 
+    -webkit-animation-fill-mode: forwards;
+}
+
+.streak2 .left {
+    animation:         left2 $time linear 1;
+    -webkit-animation: left2 $time linear 1;
+    animation-fill-mode: forwards; 
+    -webkit-animation-fill-mode: forwards;
+}
+
+.streak3 {
+  .left  {
+    animation:         left3 $time linear 1;
+    -webkit-animation: left3 $time linear 1;
+    animation-fill-mode: forwards; 
+    -webkit-animation-fill-mode: forwards;
+  }
+  .right {
+    animation:         right3 $time linear 1;
+    -webkit-animation: right3 $time linear 1;
+    animation-fill-mode: forwards; 
+    -webkit-animation-fill-mode: forwards;
+  }
+}
+
+.streak4 {
+  .left  {
+    animation:         left3 $time linear 1;
+    -webkit-animation: left3 $time linear 1;
+    animation-fill-mode: forwards; 
+    -webkit-animation-fill-mode: forwards;
+  }
+  .right {
+    animation:         right4 $time linear 1;
+    -webkit-animation: right4 $time linear 1;
+    animation-fill-mode: forwards; 
+    -webkit-animation-fill-mode: forwards;
+  }
+}
+
+@keyframes left1 {
+  0%   { @include rotate(-180deg); }
+  20%  { @include rotate(-108deg); }
+  100% { @include rotate(-108deg); }
+}
+@-webkit-keyframes left1 {
+  0%   { @include rotate(-180deg); }
+  20%  { @include rotate(-108deg); }
+  100% { @include rotate(-108deg); }
+}
+
+@keyframes left2 {
+  0%   { @include rotate(-180deg); }
+  40%  { @include rotate(-36deg); }
+  100% { @include rotate(-36deg); }
+}
+@-webkit-keyframes left2 {
+  0%   { @include rotate(-180deg); }
+  40%  { @include rotate(-36deg); }
+  100%  { @include rotate(-36deg); }
+}
+
+@keyframes left3 {
+  0%   { @include rotate(-180deg); }
+  50%  { @include rotate(0deg); }
+  100% { @include rotate(0deg); }
+}
+@-webkit-keyframes left3 {
+  0%   { @include rotate(-180deg); }
+  50%  { @include rotate(0deg); }
+  100%  { @include rotate(0deg); }
+}
+
+@keyframes right3 {
+  0%     {@include rotate(0deg);}
+  50%    {@include rotate(0deg);   background-color: $circle-bg;}
+  50.01% {@include rotate(180deg); background-color: $circle-meter;}
+  100%   {@include rotate(216deg); background-color: $circle-meter;}
+}
+
+@-webkit-keyframes right3 { 
+  0%     {@include rotate(0deg);}
+  50%    {@include rotate(0deg);   background-color: $circle-bg;}
+  50.01% {@include rotate(180deg); background-color: $circle-meter;}
+  60%    {@include rotate(216deg); background-color: $circle-meter;}
+  100%   {@include rotate(216deg); background-color: $circle-meter;}
+}
+
+@keyframes right4 {
+  0%     {@include rotate(0deg);}
+  50%    {@include rotate(0deg);   background-color: $circle-bg;}
+  50.1%  {@include rotate(180deg); background-color: $circle-meter;}
+  80%    {@include rotate(288deg); background-color: $circle-meter;} 
+  100%   {@include rotate(288deg); background-color: $circle-meter;}
+}
+
+@-webkit-keyframes right4 { 
+  0%     {@include rotate(0deg);}
+  50%    {@include rotate(0deg);   background-color: $circle-bg;}
+  50.1%  {@include rotate(180deg); background-color: $circle-meter;}
+  80%    {@include rotate(288deg); background-color: $circle-meter;} 
+  100%   {@include rotate(288deg); background-color: $circle-meter;}
+}
 
 
 //        _              _           _  _   
@@ -1105,6 +1185,9 @@ div.last{
 	font-size: 12px;
 	i {font-size: 8px;}
 }
+
+
+
 
 
 

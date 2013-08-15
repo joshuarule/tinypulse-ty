@@ -385,9 +385,9 @@ a i.icon-twitter-sign {
 .footer-ty {
   background: white;
   border-top: 1px solid rgba(255, 255, 255, 0.2);
-  -webkit-box-shadow: 0px -1px 2px rgba(255, 255, 255, 0.1);
-  -moz-box-shadow: 0px -1px 2px rgba(255, 255, 255, 0.1);
-  box-shadow: 0px -1px 2px rgba(255, 255, 255, 0.1);
+  -webkit-box-shadow: 0px -1px 2px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px -1px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px -1px 2px rgba(0, 0, 0, 0.1);
 }
 @media (min-width: 768px) {
   /* line 111, ../sass/_element.scss */
@@ -1187,6 +1187,7 @@ a.ftr-wrap b {
   display: block;
   width: 74px;
   height: 74px;
+  margin: 0 auto;
   -webkit-border-radius: 100%;
   -moz-border-radius: 100%;
   -ms-border-radius: 100%;
@@ -1194,7 +1195,7 @@ a.ftr-wrap b {
   border-radius: 100%;
   -webkit-transform: translate3d();
 }
-/* line 870, ../sass/_element.scss */
+/* line 871, ../sass/_element.scss */
 .streak-circle:before {
   content: '';
   position: absolute;
@@ -1213,7 +1214,7 @@ a.ftr-wrap b {
   border-radius: 100%;
 }
 
-/* line 885, ../sass/_element.scss */
+/* line 886, ../sass/_element.scss */
 .streak-num {
   position: absolute;
   font-size: 34px;
@@ -1225,7 +1226,7 @@ a.ftr-wrap b {
   z-index: 1;
 }
 
-/* line 896, ../sass/_element.scss */
+/* line 897, ../sass/_element.scss */
 .left, .right {
   position: absolute;
   display: block;
@@ -1239,7 +1240,7 @@ a.ftr-wrap b {
   -webkit-transform: translate3d();
 }
 
-/* line 905, ../sass/_element.scss */
+/* line 906, ../sass/_element.scss */
 .left {
   background: #87d6c6;
   clip: rect(0, 74px, 74px, 37px);
@@ -1250,7 +1251,7 @@ a.ftr-wrap b {
   transform: rotate(180deg);
 }
 
-/* line 911, ../sass/_element.scss */
+/* line 912, ../sass/_element.scss */
 .right {
   background: #529b90;
   clip: rect(0, 37px, 74px, 0);
@@ -1261,7 +1262,7 @@ a.ftr-wrap b {
   transform: rotate(0deg);
 }
 
-/* line 919, ../sass/_element.scss */
+/* line 920, ../sass/_element.scss */
 .streak1 .left {
   animation: left1 2s linear 1;
   -webkit-animation: left1 2s linear 1;
@@ -1269,7 +1270,7 @@ a.ftr-wrap b {
   -webkit-animation-fill-mode: forwards;
 }
 
-/* line 926, ../sass/_element.scss */
+/* line 927, ../sass/_element.scss */
 .streak2 .left {
   animation: left2 2s linear 1;
   -webkit-animation: left2 2s linear 1;
@@ -1277,14 +1278,14 @@ a.ftr-wrap b {
   -webkit-animation-fill-mode: forwards;
 }
 
-/* line 934, ../sass/_element.scss */
+/* line 935, ../sass/_element.scss */
 .streak3 .left {
   animation: left3 2s linear 1;
   -webkit-animation: left3 2s linear 1;
   animation-fill-mode: forwards;
   -webkit-animation-fill-mode: forwards;
 }
-/* line 940, ../sass/_element.scss */
+/* line 941, ../sass/_element.scss */
 .streak3 .right {
   animation: right3 2s linear 1;
   -webkit-animation: right3 2s linear 1;
@@ -1292,14 +1293,14 @@ a.ftr-wrap b {
   -webkit-animation-fill-mode: forwards;
 }
 
-/* line 949, ../sass/_element.scss */
+/* line 950, ../sass/_element.scss */
 .streak4 .left {
   animation: left3 2s linear 1;
   -webkit-animation: left3 2s linear 1;
   animation-fill-mode: forwards;
   -webkit-animation-fill-mode: forwards;
 }
-/* line 955, ../sass/_element.scss */
+/* line 956, ../sass/_element.scss */
 .streak4 .right {
   animation: right4 2s linear 1;
   -webkit-animation: right4 2s linear 1;
@@ -1308,7 +1309,7 @@ a.ftr-wrap b {
 }
 
 @keyframes left1 {
-  /* line 964, ../sass/_element.scss */
+  /* line 965, ../sass/_element.scss */
   0% {
     -webkit-transform: rotate(-180deg);
     -moz-transform: rotate(-180deg);
@@ -1317,7 +1318,7 @@ a.ftr-wrap b {
     transform: rotate(-180deg);
   }
 
-  /* line 965, ../sass/_element.scss */
+  /* line 966, ../sass/_element.scss */
   20% {
     -webkit-transform: rotate(-108deg);
     -moz-transform: rotate(-108deg);
@@ -1326,7 +1327,7 @@ a.ftr-wrap b {
     transform: rotate(-108deg);
   }
 
-  /* line 966, ../sass/_element.scss */
+  /* line 967, ../sass/_element.scss */
   100% {
     -webkit-transform: rotate(-108deg);
     -moz-transform: rotate(-108deg);
@@ -1337,7 +1338,7 @@ a.ftr-wrap b {
 }
 
 @-webkit-keyframes left1 {
-  /* line 969, ../sass/_element.scss */
+  /* line 970, ../sass/_element.scss */
   0% {
     -webkit-transform: rotate(-180deg);
     -moz-transform: rotate(-180deg);
@@ -1346,7 +1347,7 @@ a.ftr-wrap b {
     transform: rotate(-180deg);
   }
 
-  /* line 970, ../sass/_element.scss */
+  /* line 971, ../sass/_element.scss */
   20% {
     -webkit-transform: rotate(-108deg);
     -moz-transform: rotate(-108deg);
@@ -1355,7 +1356,7 @@ a.ftr-wrap b {
     transform: rotate(-108deg);
   }
 
-  /* line 971, ../sass/_element.scss */
+  /* line 972, ../sass/_element.scss */
   100% {
     -webkit-transform: rotate(-108deg);
     -moz-transform: rotate(-108deg);
@@ -1366,7 +1367,7 @@ a.ftr-wrap b {
 }
 
 @keyframes left2 {
-  /* line 975, ../sass/_element.scss */
+  /* line 976, ../sass/_element.scss */
   0% {
     -webkit-transform: rotate(-180deg);
     -moz-transform: rotate(-180deg);
@@ -1375,7 +1376,7 @@ a.ftr-wrap b {
     transform: rotate(-180deg);
   }
 
-  /* line 976, ../sass/_element.scss */
+  /* line 977, ../sass/_element.scss */
   40% {
     -webkit-transform: rotate(-36deg);
     -moz-transform: rotate(-36deg);
@@ -1384,7 +1385,7 @@ a.ftr-wrap b {
     transform: rotate(-36deg);
   }
 
-  /* line 977, ../sass/_element.scss */
+  /* line 978, ../sass/_element.scss */
   100% {
     -webkit-transform: rotate(-36deg);
     -moz-transform: rotate(-36deg);
@@ -1395,7 +1396,7 @@ a.ftr-wrap b {
 }
 
 @-webkit-keyframes left2 {
-  /* line 980, ../sass/_element.scss */
+  /* line 981, ../sass/_element.scss */
   0% {
     -webkit-transform: rotate(-180deg);
     -moz-transform: rotate(-180deg);
@@ -1404,7 +1405,7 @@ a.ftr-wrap b {
     transform: rotate(-180deg);
   }
 
-  /* line 981, ../sass/_element.scss */
+  /* line 982, ../sass/_element.scss */
   40% {
     -webkit-transform: rotate(-36deg);
     -moz-transform: rotate(-36deg);
@@ -1413,7 +1414,7 @@ a.ftr-wrap b {
     transform: rotate(-36deg);
   }
 
-  /* line 982, ../sass/_element.scss */
+  /* line 983, ../sass/_element.scss */
   100% {
     -webkit-transform: rotate(-36deg);
     -moz-transform: rotate(-36deg);
@@ -1424,7 +1425,7 @@ a.ftr-wrap b {
 }
 
 @keyframes left3 {
-  /* line 986, ../sass/_element.scss */
+  /* line 987, ../sass/_element.scss */
   0% {
     -webkit-transform: rotate(-180deg);
     -moz-transform: rotate(-180deg);
@@ -1433,7 +1434,7 @@ a.ftr-wrap b {
     transform: rotate(-180deg);
   }
 
-  /* line 987, ../sass/_element.scss */
+  /* line 988, ../sass/_element.scss */
   50% {
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
@@ -1442,7 +1443,7 @@ a.ftr-wrap b {
     transform: rotate(0deg);
   }
 
-  /* line 988, ../sass/_element.scss */
+  /* line 989, ../sass/_element.scss */
   100% {
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
@@ -1453,7 +1454,7 @@ a.ftr-wrap b {
 }
 
 @-webkit-keyframes left3 {
-  /* line 991, ../sass/_element.scss */
+  /* line 992, ../sass/_element.scss */
   0% {
     -webkit-transform: rotate(-180deg);
     -moz-transform: rotate(-180deg);
@@ -1462,7 +1463,7 @@ a.ftr-wrap b {
     transform: rotate(-180deg);
   }
 
-  /* line 992, ../sass/_element.scss */
+  /* line 993, ../sass/_element.scss */
   50% {
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
@@ -1471,7 +1472,7 @@ a.ftr-wrap b {
     transform: rotate(0deg);
   }
 
-  /* line 993, ../sass/_element.scss */
+  /* line 994, ../sass/_element.scss */
   100% {
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
@@ -1482,7 +1483,7 @@ a.ftr-wrap b {
 }
 
 @keyframes right3 {
-  /* line 997, ../sass/_element.scss */
+  /* line 998, ../sass/_element.scss */
   0% {
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
@@ -1491,7 +1492,7 @@ a.ftr-wrap b {
     transform: rotate(0deg);
   }
 
-  /* line 998, ../sass/_element.scss */
+  /* line 999, ../sass/_element.scss */
   50% {
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
@@ -1501,7 +1502,7 @@ a.ftr-wrap b {
     background-color: #529b90;
   }
 
-  /* line 999, ../sass/_element.scss */
+  /* line 1000, ../sass/_element.scss */
   50.01% {
     -webkit-transform: rotate(180deg);
     -moz-transform: rotate(180deg);
@@ -1511,7 +1512,7 @@ a.ftr-wrap b {
     background-color: #87d6c6;
   }
 
-  /* line 1000, ../sass/_element.scss */
+  /* line 1001, ../sass/_element.scss */
   100% {
     -webkit-transform: rotate(216deg);
     -moz-transform: rotate(216deg);
@@ -1523,7 +1524,7 @@ a.ftr-wrap b {
 }
 
 @-webkit-keyframes right3 {
-  /* line 1004, ../sass/_element.scss */
+  /* line 1005, ../sass/_element.scss */
   0% {
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
@@ -1532,7 +1533,7 @@ a.ftr-wrap b {
     transform: rotate(0deg);
   }
 
-  /* line 1005, ../sass/_element.scss */
+  /* line 1006, ../sass/_element.scss */
   50% {
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
@@ -1542,7 +1543,7 @@ a.ftr-wrap b {
     background-color: #529b90;
   }
 
-  /* line 1006, ../sass/_element.scss */
+  /* line 1007, ../sass/_element.scss */
   50.01% {
     -webkit-transform: rotate(180deg);
     -moz-transform: rotate(180deg);
@@ -1552,7 +1553,7 @@ a.ftr-wrap b {
     background-color: #87d6c6;
   }
 
-  /* line 1007, ../sass/_element.scss */
+  /* line 1008, ../sass/_element.scss */
   60% {
     -webkit-transform: rotate(216deg);
     -moz-transform: rotate(216deg);
@@ -1562,7 +1563,7 @@ a.ftr-wrap b {
     background-color: #87d6c6;
   }
 
-  /* line 1008, ../sass/_element.scss */
+  /* line 1009, ../sass/_element.scss */
   100% {
     -webkit-transform: rotate(216deg);
     -moz-transform: rotate(216deg);
@@ -1574,7 +1575,7 @@ a.ftr-wrap b {
 }
 
 @keyframes right4 {
-  /* line 1012, ../sass/_element.scss */
+  /* line 1013, ../sass/_element.scss */
   0% {
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
@@ -1583,7 +1584,7 @@ a.ftr-wrap b {
     transform: rotate(0deg);
   }
 
-  /* line 1013, ../sass/_element.scss */
+  /* line 1014, ../sass/_element.scss */
   50% {
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
@@ -1593,7 +1594,7 @@ a.ftr-wrap b {
     background-color: #529b90;
   }
 
-  /* line 1014, ../sass/_element.scss */
+  /* line 1015, ../sass/_element.scss */
   50.1% {
     -webkit-transform: rotate(180deg);
     -moz-transform: rotate(180deg);
@@ -1603,7 +1604,7 @@ a.ftr-wrap b {
     background-color: #87d6c6;
   }
 
-  /* line 1015, ../sass/_element.scss */
+  /* line 1016, ../sass/_element.scss */
   80% {
     -webkit-transform: rotate(288deg);
     -moz-transform: rotate(288deg);
@@ -1613,7 +1614,7 @@ a.ftr-wrap b {
     background-color: #87d6c6;
   }
 
-  /* line 1016, ../sass/_element.scss */
+  /* line 1017, ../sass/_element.scss */
   100% {
     -webkit-transform: rotate(288deg);
     -moz-transform: rotate(288deg);
@@ -1625,7 +1626,7 @@ a.ftr-wrap b {
 }
 
 @-webkit-keyframes right4 {
-  /* line 1020, ../sass/_element.scss */
+  /* line 1021, ../sass/_element.scss */
   0% {
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
@@ -1634,7 +1635,7 @@ a.ftr-wrap b {
     transform: rotate(0deg);
   }
 
-  /* line 1021, ../sass/_element.scss */
+  /* line 1022, ../sass/_element.scss */
   50% {
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
@@ -1644,7 +1645,7 @@ a.ftr-wrap b {
     background-color: #529b90;
   }
 
-  /* line 1022, ../sass/_element.scss */
+  /* line 1023, ../sass/_element.scss */
   50.1% {
     -webkit-transform: rotate(180deg);
     -moz-transform: rotate(180deg);
@@ -1654,7 +1655,7 @@ a.ftr-wrap b {
     background-color: #87d6c6;
   }
 
-  /* line 1023, ../sass/_element.scss */
+  /* line 1024, ../sass/_element.scss */
   80% {
     -webkit-transform: rotate(288deg);
     -moz-transform: rotate(288deg);
@@ -1664,7 +1665,7 @@ a.ftr-wrap b {
     background-color: #87d6c6;
   }
 
-  /* line 1024, ../sass/_element.scss */
+  /* line 1025, ../sass/_element.scss */
   100% {
     -webkit-transform: rotate(288deg);
     -moz-transform: rotate(288deg);
@@ -1675,7 +1676,7 @@ a.ftr-wrap b {
   }
 }
 
-/* line 1038, ../sass/_element.scss */
+/* line 1039, ../sass/_element.scss */
 .circle-number {
   display: inline-block;
   position: relative;
@@ -1683,7 +1684,7 @@ a.ftr-wrap b {
   text-align: center;
   color: #FFF;
 }
-/* line 1047, ../sass/_element.scss */
+/* line 1048, ../sass/_element.scss */
 .circle-number:before {
   z-index: -1;
   height: 20px;
@@ -1699,23 +1700,23 @@ a.ftr-wrap b {
   border-radius: 100%;
 }
 
-/* line 1060, ../sass/_element.scss */
+/* line 1061, ../sass/_element.scss */
 .submit-stats {
   font-size: 12px;
   font-weight: 500;
 }
 @media (min-width: 980px) {
-  /* line 1060, ../sass/_element.scss */
+  /* line 1061, ../sass/_element.scss */
   .submit-stats {
     margin-bottom: 20px;
   }
 }
 
-/* line 1080, ../sass/_element.scss */
+/* line 1081, ../sass/_element.scss */
 .share-address-title {
   margin-top: 20px;
 }
-/* line 1082, ../sass/_element.scss */
+/* line 1083, ../sass/_element.scss */
 .share-address-title i {
   font-size: 20px;
   line-height: 0.3em;
@@ -1723,24 +1724,24 @@ a.ftr-wrap b {
   margin-right: 2px;
 }
 
-/* line 1092, ../sass/_element.scss */
+/* line 1093, ../sass/_element.scss */
 .referral-content h2 {
   font-size: 18px;
   line-height: 1.4em;
 }
 @media (min-width: 768px) {
-  /* line 1092, ../sass/_element.scss */
+  /* line 1093, ../sass/_element.scss */
   .referral-content h2 {
     font-size: 24px;
   }
 }
 
-/* line 1099, ../sass/_element.scss */
+/* line 1100, ../sass/_element.scss */
 .share-address {
   margin-bottom: 20px;
 }
 
-/* line 1101, ../sass/_element.scss */
+/* line 1102, ../sass/_element.scss */
 .tshirt {
   max-width: 320px;
   text-align: center;
@@ -1748,7 +1749,7 @@ a.ftr-wrap b {
   margin: 0 auto;
 }
 @media (min-width: 768px) {
-  /* line 1101, ../sass/_element.scss */
+  /* line 1102, ../sass/_element.scss */
   .tshirt {
     max-width: none;
     width: 100%;
@@ -1756,33 +1757,33 @@ a.ftr-wrap b {
   }
 }
 
-/* line 1125, ../sass/_element.scss */
+/* line 1126, ../sass/_element.scss */
 .cheers-as {
   display: block !important;
   width: 100%;
   margin-bottom: 10px;
 }
 @media (min-width: 980px) {
-  /* line 1125, ../sass/_element.scss */
+  /* line 1126, ../sass/_element.scss */
   .cheers-as {
     margin-bottom: 0;
   }
 }
-/* line 1132, ../sass/_element.scss */
+/* line 1133, ../sass/_element.scss */
 .cheers-as .btn {
   width: 100%;
   text-align: left;
   text-shadow: none;
 }
 @media (min-width: 980px) {
-  /* line 1132, ../sass/_element.scss */
+  /* line 1133, ../sass/_element.scss */
   .cheers-as .btn {
     width: auto;
     float: left;
   }
 }
 @media (min-width: 980px) {
-  /* line 1144, ../sass/_element.scss */
+  /* line 1145, ../sass/_element.scss */
   .cheers-as.btn-group-vertical > .btn:first-child {
     -webkit-border-radius: 4px 0 0 4px;
     -moz-border-radius: 4px 0 0 4px;
@@ -1792,7 +1793,7 @@ a.ftr-wrap b {
   }
 }
 @media (min-width: 980px) {
-  /* line 1150, ../sass/_element.scss */
+  /* line 1151, ../sass/_element.scss */
   .cheers-as.btn-group-vertical > .btn:last-child {
     -webkit-border-radius: 0 4px 4px 0;
     -moz-border-radius: 0 4px 4px 0;
@@ -1802,26 +1803,26 @@ a.ftr-wrap b {
     margin-top: 0;
   }
 }
-/* line 1157, ../sass/_element.scss */
+/* line 1158, ../sass/_element.scss */
 .cheers-as.btn-group .btn.active {
   background: #899ca5;
 }
-/* line 1158, ../sass/_element.scss */
+/* line 1159, ../sass/_element.scss */
 .cheers-as.btn-group .btn:active {
   background: #899ca5;
 }
 
-/* line 1161, ../sass/_element.scss */
+/* line 1162, ../sass/_element.scss */
 .submit-cheer {
   margin-bottom: 20px;
 }
 
-/* line 1163, ../sass/_element.scss */
+/* line 1164, ../sass/_element.scss */
 .add-cheer {
   margin-bottom: 10px;
 }
 
-/* line 1165, ../sass/_element.scss */
+/* line 1166, ../sass/_element.scss */
 .cheers-confirmation {
   display: none;
   text-align: center;
@@ -1841,28 +1842,28 @@ a.ftr-wrap b {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 1177, ../sass/_element.scss */
+/* line 1178, ../sass/_element.scss */
 .js-active .cheers-confirmation {
   display: block;
 }
 @media (min-width: 768px) {
-  /* line 1165, ../sass/_element.scss */
+  /* line 1166, ../sass/_element.scss */
   .cheers-confirmation {
     font-size: 18px;
     margin-bottom: 10px;
   }
 }
 
-/* line 1182, ../sass/_element.scss */
+/* line 1183, ../sass/_element.scss */
 .active-account {
   font-size: 12px;
 }
 
-/* line 1184, ../sass/_element.scss */
+/* line 1185, ../sass/_element.scss */
 .add-email {
   font-size: 12px;
 }
-/* line 1186, ../sass/_element.scss */
+/* line 1187, ../sass/_element.scss */
 .add-email i {
   font-size: 8px;
 }

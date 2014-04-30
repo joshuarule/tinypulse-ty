@@ -1,0 +1,634 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Local Maven</title>
+	<link rel="stylesheet" media="all" href="css/all.css" type="text/css">
+	<link href='http://fonts.googleapis.com/css?family=Lato:400,700,300' rel='stylesheet' type='text/css'>
+	<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="js/jquery.main.js"></script>
+	<!--[if lt IE 9]><link rel="stylesheet" type="text/css" href="css/ie.css"><![endif]-->
+	<!--[if IE]><script type="text/javascript" src="js/ie.js"></script><![endif]-->
+</head>
+<body>
+	<header id="header">
+		<strong class="logo"><a href="#">Maven</a></strong>
+		<div class="user-nav-area">
+			<span class="user-nav-heading">I am a:</span>
+			<nav class="user-nav">
+				<ul>
+					<li class="active"><a href="#">Business</a></li>
+					<li><a href="#">Maven</a></li>
+					<li><a href="#">Customer</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div class="nav-holder">
+			<nav id="nav">
+				<ul>
+					<li class="home active"><a href="#">Home</a></li>
+					<li class="deals"><a href="#">Deals</a></li>
+					<li class="finance"><a href="#">Finance</a></li>
+					<li class="network"><a href="#">Network</a></li>
+				</ul>
+			</nav>
+			<div class="setting-holder">
+				<div class="holder">
+					<a href="#">
+						<span data-picture data-alt="image description">
+							<span data-src="images/img.jpg" data-width="25px" data-height="23px" ></span>
+							<span data-src="images/img-2x.jpg" data-width="25px" data-height="23px" data-media="(-webkit-min-device-pixel-ratio:1.5), (min-resolution:144dpi)" ></span>
+							<!--[if (lt IE 9) & (!IEMobile)]>
+								<span data-src="images/img.jpg"></span>
+							<![endif]-->
+							<!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
+							<noscript><img src="images/img.jpg" width="25" height="23" alt="image description" ></noscript>
+						</span>
+						<span class="arrow">arrow</span>
+					</a>
+					<div class="setting-area">
+						<strong class="heading">Account Settings</strong>
+						<ul class="setting-info">
+							<li class="active"><a href="#">My Account</a></li>
+							<li><a href="#">Public Profile</a></li>
+							<li><a href="#">Add Redeemers</a></li>
+							<li><a href="#">Invite to Your Network</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div id="main">
+		<header class="heading-area">
+			<h1>Dashboard</h1>
+			<div class="btn-area">
+				<a href="#" class="tertiary">Add Staff Members</a>
+				<a href="#popup1" class="mavens lightbox">Add Mavens</a>
+			</div>
+		</header>
+		<div class="navitem-area add">
+			<span class="help"><a href="#">Need Help?</a> Visit Our Support Desk</span>
+			<div class="navitem-holder">
+				<h2>Accept A Referral</h2>
+			</div>
+		</div>
+		<div class="form-holder">
+			<form action="#" class="form-frame">
+				<fieldset>
+					<div class="form-area">
+						<input type="submit" value="Accept Now">
+						<div class="input-area">
+							<input type="text" placeholder="P3H4 HJOQ">
+						</div>
+					</div>
+				</fieldset>
+			</form>
+		</div>
+		<section class="payment-holder">
+			<h2>Finance Overview</h2>
+			<div class="payment-area">
+				<ul class="payment">
+					<li>
+						<strong class="heading">Next payment scheduled for</strong>
+						<div class="box-holder">
+							<div class="box-frame">
+								<div class="box">
+									<span class="month">MAR</span>
+									<time datetime="2014-02-13">13</time>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<strong class="heading">Commission + Fees = Total Cost</strong>
+						<div class="box-holder">
+							<div class="box-frame">
+								<div class="box">
+									<span class="price">$670.00</span>
+								</div>
+							</div>
+								<div class="paymnent-block">
+								<dl>
+									<dt>Commissions:</dt>
+									<dd>$570.00</dd>
+									<dt>Fees:</dt>
+									<dd>$57.00</dd>
+									<dt class="total">Total:</dt>
+									<dd class="total-price">$670.00</dd>
+								</dl>
+							</div>
+						</div>
+					</li>
+					<li>
+						<strong class="heading">Total Commissions Paid</strong>
+						<div class="box-holder">
+							<div class="box-frame">
+								<div class="box">
+									<span class="price">$0.00</span>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<a class="view" href="#">View All Finance</a>
+		</section>
+		<section class="overview-area">
+			<div class="number-overview">
+				<h2>Deal Overview</h2>
+				<div class="number-overview-holder">
+					<ul>
+						<li>
+							<span class="text">Active deals</span>
+							<span class="number">200</span>
+						</li>
+						<li>
+							<span class="text">Mavens you’re connected with</span>
+							<span class="number">20</span>
+						</li>
+						<li>
+							<span class="text">Number of  staff members</span>
+							<span class="number">130</span>
+						</li>
+					</ul>
+				</div>
+				<a href="#" class="view">Views All Deals</a>
+			</div>
+			<div class="bar-overview-area">
+				<h2>Referral Overview</h2>
+				<div class="bar-overview">
+					<div class="referrals-area">
+						<h3>Referrals redeemed</h3>
+						<div class="progress-bar">
+							<span class="bar">bar</span>
+						</div>
+						<div class="percantage-area">
+							<span class="number">30</span>
+							<span class="percantage">80%</span>
+						</div>
+					</div>
+					<ul>
+						<li>
+							<span class="text">Referrals issued against your deals</span>
+							<span class="number">20</span>
+						</li>
+					</ul>
+				</div>
+				<a href="#" class="view">View All Refferals</a>
+			</div>
+		</section>
+		<section class="overview-area connectoin-area">
+			<div class="number-overview">
+				<h2>Network Overview</h2>
+				<div class="number-overview-holder">
+					<ul>
+						<li>
+							<span class="text">Connections</span>
+							<span class="number">200</span>
+						</li>
+						<li>
+							<span class="text">Invites Received</span>
+							<span class="number">130</span>
+						</li>
+						<li>
+							<span class="text">Invites Sent</span>
+							<span class="number">20</span>
+						</li>
+					</ul>
+				</div>
+				<a href="#" class="view">Build Your Network</a>
+			</div>
+			<div class="bar-overview-area">
+				<h2>Your Connections</h2>
+				<div class="bar-overview">
+					<ul class="connectoin">
+						<li>
+							<div class="image-holder">
+								<a href="#">
+									<span data-picture data-alt="image description">
+										<span data-src="images/img10.jpg" data-width="60px" data-height="60px" ></span>
+										<span data-src="images/img10-2x.jpg" data-width="60px" data-height="60px" data-media="(-webkit-min-device-pixel-ratio:1.5), (min-resolution:144dpi)" ></span>
+										<!--[if (lt IE 9) & (!IEMobile)]>
+											<span data-src="images/img10.jpg"></span>
+										<![endif]-->
+										<!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
+										<noscript><img src="images/img10.jpg" width="60" height="60" alt="image description" ></noscript>
+									</span>
+								</a>
+							</div>
+							<div class="description">
+								<h3><a href="#">James Pages</a></h3>
+								<span class="city">Brooklyn, NY</span>
+							</div>
+						</li>
+						<li>
+							<div class="image-holder">
+								<a href="#">
+									<span data-picture data-alt="image description">
+										<span data-src="images/img10.jpg" data-width="60px" data-height="60px"></span>
+										<span data-src="images/img10-2x.jpg" data-width="60px" data-height="60px" data-media="(-webkit-min-device-pixel-ratio:1.5), (min-resolution:144dpi)" ></span>
+										<!--[if (lt IE 9) & (!IEMobile)]>
+											<span data-src="images/img10.jpg"></span>
+										<![endif]-->
+										<!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
+										<noscript><img src="images/img10.jpg" width="60" height="60" alt="image description" ></noscript>
+									</span>
+								</a>
+							</div>
+							<div class="description">
+								<h3><a href="#">James Pages</a></h3>
+								<span class="city">New York, NY</span>
+							</div>
+						</li>
+						<li>
+							<div class="image-holder">
+								<a href="#">
+									<span data-picture data-alt="image description">
+										<span data-src="images/img10.jpg" data-width="60px" data-height="60px"></span>
+										<span data-src="images/img10-2x.jpg" data-width="60px" data-height="60px" data-media="(-webkit-min-device-pixel-ratio:1.5), (min-resolution:144dpi)" ></span>
+										<!--[if (lt IE 9) & (!IEMobile)]>
+											<span data-src="images/img10.jpg"></span>
+										<![endif]-->
+										<!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
+										<noscript><img src="images/img10.jpg" width="60" height="60" alt="image description" ></noscript>
+									</span>
+								</a>
+							</div>
+							<div class="description">
+								<h3><a href="#">James Pages</a></h3>
+								<span class="city">New York, NY</span>
+							</div>
+						</li>
+						<li>
+							<div class="image-holder">
+								<a href="#">
+									<span data-picture data-alt="image description">
+										<span data-src="images/img9.jpg" data-width="60px" data-height="60px"></span>
+										<span data-src="images/img9-2x.jpg" data-width="60px" data-height="60px" data-media="(-webkit-min-device-pixel-ratio:1.5), (min-resolution:144dpi)" ></span>
+										<!--[if (lt IE 9) & (!IEMobile)]>
+											<span data-src="images/img9.jpg"></span>
+										<![endif]-->
+										<!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
+										<noscript><img src="images/img9.jpg" width="60" height="60" alt="image description" ></noscript>
+									</span>
+								</a>
+							</div>
+							<div class="description">
+								<h3><a href="#">Lita Ford</a></h3>
+								<span class="city">Brooklyn, NY</span>
+							</div>
+						</li>
+						<li>
+							<div class="image-holder">
+								<a href="#">
+									<span data-picture data-alt="image description">
+										<span data-src="images/img9.jpg" data-width="60px" data-height="60px" ></span>
+										<span data-src="images/img9-2x.jpg" data-width="60px" data-height="60px" data-media="(-webkit-min-device-pixel-ratio:1.5), (min-resolution:144dpi)" ></span>
+										<!--[if (lt IE 9) & (!IEMobile)]>
+											<span data-src="images/img9.jpg"></span>
+										<![endif]-->
+										<!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
+										<noscript><img src="images/img9.jpg" width="60" height="60" alt="image description" ></noscript>
+									</span>
+								</a>
+							</div>
+							<div class="description">
+								<h3><a href="#">Lita Ford</a></h3>
+								<span class="city">New York, NY</span>
+							</div>
+						</li>
+						<li>
+							<div class="image-holder">
+								<a href="#">
+									<span data-picture data-alt="image description">
+										<span data-src="images/img9.jpg" data-width="60px" data-height="60px"></span>
+										<span data-src="images/img9-2x.jpg" data-width="60px" data-height="60px" data-media="(-webkit-min-device-pixel-ratio:1.5), (min-resolution:144dpi)" ></span>
+										<!--[if (lt IE 9) & (!IEMobile)]>
+											<span data-src="images/img9.jpg"></span>
+										<![endif]-->
+										<!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
+										<noscript><img src="images/img9.jpg" width="60" height="60" alt="image description" ></noscript>
+									</span>
+								</a>
+							</div>
+							<div class="description">
+								<h3><a href="#">Lita Ford</a></h3>
+								<span class="city">New York, NY</span>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<a href="#" class="view">View All Connections</a>
+			</div>
+		</section>
+	</div>
+	<div class="popup-holder">
+		<div id="popup1" class="lightbox">
+			<div class="mavens-deal-holder">
+				<div class="mavens-deal">
+					<h1>Add Mavens To A Deal</h1>
+					<p>Select the deal that you would like to add Mavens to.</p>
+					<form action="#" class="select-deal">
+						<fieldset>
+							<select title="Select A Deal" class="switch-select">
+								<option data-url="#popup2">Item One</option>
+								<option data-url="#popup2">Item Two</option>
+							</select>
+						</fieldset>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="popup-holder">
+		<div id="popup2" class="lightbox">
+			<div class="tabs-holder">
+				<ul class="tabset">
+					<li class="active"><a href="#tab1">In Network</a></li>
+					<li><a href="#tab2">Out Of Network</a></li>
+				</ul>
+				<div class="tab-content">
+					<div id="tab2">
+						<header class="heading">
+							<h1>Add New Mavens Outside<br>Of Your Network</h1>
+							<p>Select Mavens in your Network or add new Mavens</p>
+						</header>
+						<div class="box-holder">
+							<div class="box">
+								<p>Separate each phone # or email by a  comma.</p>
+								<p>eg: 555-555-5555, <a href="mailto:&#097;&#100;&#100;&#114;&#101;&#115;&#115;&#064;&#100;&#111;&#109;&#097;&#105;&#110;&#046;&#099;&#111;&#109;">&#097;&#100;&#100;&#114;&#101;&#115;&#115;&#064;&#100;&#111;&#109;&#097;&#105;&#110;&#046;&#099;&#111;&#109;</a></p>
+							</div>
+							<span class="group">OR <a href="#">Select a group</a></span>
+						</div>
+					</div>
+					<div id="tab1">
+						<header class="heading">
+							<h1>Add Mavens To A Deal</h1>
+							<p>Select Mavens in your Network or add new Mavens</p>
+						</header>
+						<form action="#" class="form-holder">
+							<fieldset>
+								<div class="search-holder">
+									<input type="search" placeholder="Search Your Network">
+								</div>
+								<div class="checkbox-holder">
+									<div class="checkbox-heading">
+										<input id="checkbox1" type="checkbox">
+										<label for="checkbox1">Select All Mavens</label>
+									</div>
+									<div class="checkbox-area scrollable-area">
+										<ul class="info-area">
+											<li class="active">
+												<div class="info">
+													<input type="checkbox">
+													<div class="description-holder">
+														<span data-picture data-alt="image description">
+															<span data-src="images/img11.jpg" ></span>
+															<span data-src="images/img11-2x.jpg" data-media="(-webkit-min-device-pixel-ratio:1.5), (min-resolution:144dpi)" ></span>
+															<!--[if (lt IE 9) & (!IEMobile)]>
+																<span data-src="images/img11.jpg"></span>
+															<![endif]-->
+															<!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
+															<noscript><img src="images/img11.jpg" alt="image description" ></noscript>
+														</span>
+														<div class="description">
+															<h2>Chris Wallace</h2>
+															<span class="city">Brooklyn, NY</span>
+														</div>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="info">
+													<input type="checkbox">
+													<div class="description-holder">
+														<span data-picture data-alt="image description">
+															<span data-src="images/img11.jpg" ></span>
+															<span data-src="images/img11-2x.jpg" data-media="(-webkit-min-device-pixel-ratio:1.5), (min-resolution:144dpi)" ></span>
+															<!--[if (lt IE 9) & (!IEMobile)]>
+																<span data-src="images/img11.jpg"></span>
+															<![endif]-->
+															<!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
+															<noscript><img src="images/img11.jpg" alt="image description" ></noscript>
+														</span>
+														<div class="description">
+															<h2>Chris Wallace</h2>
+															<span class="city">New York, NY</span>
+														</div>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="info">
+													<input type="checkbox">
+													<div class="description-holder">
+														<span data-picture data-alt="image description">
+															<span data-src="images/img12.jpg" ></span>
+															<span data-src="images/img12-2x.jpg" data-media="(-webkit-min-device-pixel-ratio:1.5), (min-resolution:144dpi)" ></span>
+															<!--[if (lt IE 9) & (!IEMobile)]>
+																<span data-src="images/img12.jpg"></span>
+															<![endif]-->
+															<!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
+															<noscript><img src="images/img12.jpg" alt="image description" ></noscript>
+														</span>
+														<div class="description">
+															<h2>James Pages</h2>
+															<span class="city">Brooklyn, NY</span>
+														</div>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="info">
+													<input type="checkbox">
+													<div class="description-holder">
+														<span data-picture data-alt="image description">
+															<span data-src="images/img12.jpg" ></span>
+															<span data-src="images/img12-2x.jpg" data-media="(-webkit-min-device-pixel-ratio:1.5), (min-resolution:144dpi)" ></span>
+															<!--[if (lt IE 9) & (!IEMobile)]>
+																<span data-src="images/img12.jpg"></span>
+															<![endif]-->
+															<!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
+															<noscript><img src="images/img12.jpg" alt="image description" ></noscript>
+														</span>
+														<div class="description">
+															<h2>James Pages</h2>
+															<span class="city">New York, NY</span>
+														</div>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="info">
+													<input type="checkbox">
+													<div class="description-holder">
+														<span data-picture data-alt="image description">
+															<span data-src="images/img13.jpg" ></span>
+															<span data-src="images/img13-2x.jpg" data-media="(-webkit-min-device-pixel-ratio:1.5), (min-resolution:144dpi)" ></span>
+															<!--[if (lt IE 9) & (!IEMobile)]>
+																<span data-src="images/img13.jpg"></span>
+															<![endif]-->
+															<!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
+															<noscript><img src="images/img13.jpg" alt="image description" ></noscript>
+														</span>
+														<div class="description">
+															<h2>Lita Ford</h2>
+															<span class="city">Brooklyn, NY</span>
+														</div>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="info">
+													<input type="checkbox">
+													<div class="description-holder">
+														<span data-picture data-alt="image description">
+															<span data-src="images/img13.jpg" ></span>
+															<span data-src="images/img13-2x.jpg" data-media="(-webkit-min-device-pixel-ratio:1.5), (min-resolution:144dpi)" ></span>
+															<!--[if (lt IE 9) & (!IEMobile)]>
+																<span data-src="images/img13.jpg"></span>
+															<![endif]-->
+															<!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
+															<noscript><img src="images/img13.jpg" alt="image description" ></noscript>
+														</span>
+														<div class="description">
+															<h2>Lita Ford</h2>
+															<span class="city">New York, NY</span>
+														</div>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="info">
+													<input type="checkbox">
+													<div class="description-holder">
+														<span data-picture data-alt="image description">
+															<span data-src="images/img14.jpg" ></span>
+															<span data-src="images/img14-2x.jpg" data-media="(-webkit-min-device-pixel-ratio:1.5), (min-resolution:144dpi)" ></span>
+															<!--[if (lt IE 9) & (!IEMobile)]>
+																<span data-src="images/img14.jpg"></span>
+															<![endif]-->
+															<!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
+															<noscript><img src="images/img14.jpg" alt="image description" ></noscript>
+														</span>
+														<div class="description">
+															<h2>Eric Clapton</h2>
+															<span class="city">Brooklyn, NY</span>
+														</div>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="info">
+													<input type="checkbox">
+													<div class="description-holder">
+														<span data-picture data-alt="image description">
+															<span data-src="images/img14.jpg" ></span>
+															<span data-src="images/img14-2x.jpg" data-media="(-webkit-min-device-pixel-ratio:1.5), (min-resolution:144dpi)" ></span>
+															<!--[if (lt IE 9) & (!IEMobile)]>
+																<span data-src="images/img14.jpg"></span>
+															<![endif]-->
+															<!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
+															<noscript><img src="images/img14.jpg" alt="image description" ></noscript>
+														</span>
+														<div class="description">
+															<h2>Eric Clapton</h2>
+															<span class="city">New York, NY</span>
+														</div>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="info">
+													<input type="checkbox">
+													<div class="description-holder">
+														<span data-picture data-alt="image description">
+															<span data-src="images/img14.jpg" ></span>
+															<span data-src="images/img14-2x.jpg" data-media="(-webkit-min-device-pixel-ratio:1.5), (min-resolution:144dpi)" ></span>
+															<!--[if (lt IE 9) & (!IEMobile)]>
+																<span data-src="images/img14.jpg"></span>
+															<![endif]-->
+															<!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
+															<noscript><img src="images/img14.jpg" alt="image description" ></noscript>
+														</span>
+														<div class="description">
+															<h2>Eric Clapton</h2>
+															<span class="city">Brooklyn, NY</span>
+														</div>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="info">
+													<input type="checkbox">
+													<div class="description-holder">
+														<span data-picture data-alt="image description">
+															<span data-src="images/img14.jpg" ></span>
+															<span data-src="images/img14-2x.jpg" data-media="(-webkit-min-device-pixel-ratio:1.5), (min-resolution:144dpi)" ></span>
+															<!--[if (lt IE 9) & (!IEMobile)]>
+																<span data-src="images/img14.jpg"></span>
+															<![endif]-->
+															<!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
+															<noscript><img src="images/img14.jpg" alt="image description" ></noscript>
+														</span>
+														<div class="description">
+															<h2>Eric Clapton</h2>
+															<span class="city">Brooklyn, NY</span>
+														</div>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="info">
+													<input type="checkbox">
+													<div class="description-holder">
+														<span data-picture data-alt="image description">
+															<span data-src="images/img14.jpg" ></span>
+															<span data-src="images/img14-2x.jpg" data-media="(-webkit-min-device-pixel-ratio:1.5), (min-resolution:144dpi)" ></span>
+															<!--[if (lt IE 9) & (!IEMobile)]>
+																<span data-src="images/img14.jpg"></span>
+															<![endif]-->
+															<!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
+															<noscript><img src="images/img14.jpg" alt="image description" ></noscript>
+														</span>
+														<div class="description">
+															<h2>Eric Clapton</h2>
+															<span class="city">New York, NY</span>
+														</div>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="info">
+													<input type="checkbox">
+													<div class="description-holder">
+														<span data-picture data-alt="image description">
+															<span data-src="images/img14.jpg" ></span>
+															<span data-src="images/img14-2x.jpg" data-media="(-webkit-min-device-pixel-ratio:1.5), (min-resolution:144dpi)" ></span>
+															<!--[if (lt IE 9) & (!IEMobile)]>
+																<span data-src="images/img14.jpg"></span>
+															<![endif]-->
+															<!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
+															<noscript><img src="images/img14.jpg" alt="image description" ></noscript>
+														</span>
+														<div class="description">
+															<h2>Eric Clapton</h2>
+															<span class="city">New York, NY</span>
+														</div>
+													</div>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</fieldset>
+						</form>
+					</div>
+				</div>
+				<a href="#" class="addnow-holder"><span class="addnow">Add Now</span></a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

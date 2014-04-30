@@ -1092,25 +1092,31 @@ input[type="text"], input[type="submit"], input[type="email"], input[type="numbe
 	text-decoration:none;
 	color:#1f8ab5;
 }
+.daashboard-frame.referral_page .col2 { width: 14.8%; }
 .daashboard-frame .col2 { width: 24.2%; }
+.daashboard-frame.referral_page .col5 .meta,
 .daashboard-frame .col2 .meta {
 	display: block;
 	margin: 0;
 }
+.daashboard-frame.referral_page .col5 .meta .meta-text,
 .daashboard-frame .col2 .meta .meta-text {
 	font: 700 14px/18px 'Lato', sans-serif, Arial, Helvetica, sans-serif;
 	color: #555c5e;
 }
+.daashboard-frame.referral_page .col5 .meta time,
 .daashboard-frame .col2 .meta time {
 	font: 14px/18px 'Lato', sans-serif, Arial, Helvetica, sans-serif;
 	color: #555c5e;
 }
+.daashboard-frame.referral_page .col3 { width: 14.8%; }
 .daashboard-frame .col3 {
 	font: 14px/18px 'Lato', sans-serif, Arial, Helvetica, sans-serif;
 	color: #555c5e;
 	width: 17.1%;
 }
 .daashboard-frame .add { font: 700 16px/20px 'Lato', sans-serif, Arial, Helvetica, sans-serif; }
+.daashboard-frame.referral_page .col4 { width: 14.8%; }
 .daashboard-frame .col4 { width: 17.1%; }
 .daashboard-frame .col4 .mavens {
 	min-width: 100px;
@@ -1140,6 +1146,8 @@ input[type="text"], input[type="submit"], input[type="email"], input[type="numbe
 	right: -12px;
 	top: -12px;
 }
+
+.daashboard-frame.referral_page .col5 { width: 21.8%; }
 .daashboard-holder .help img { display: block; }
 .about-deal-area { overflow: hidden; }
 .about-deal-area .image-area {

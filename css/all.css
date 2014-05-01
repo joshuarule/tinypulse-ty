@@ -366,9 +366,8 @@ input[type="text"], input[type="submit"], input[type="email"], input[type="numbe
 .navitem-area .sort-area.short_form {
 	width: 60%;
 }
-.navitem-area .sort-area .sort-select.date_select {
-	width: 35%;
-}
+
+
 .navitem-area .sort-area .sort-select {
 	width: 24%;
 	overflow: hidden;
@@ -1997,8 +1996,16 @@ input[type="text"], input[type="submit"], input[type="email"], input[type="numbe
 }
 
 .inline_filter_fields li {
-	display: inline;
+	display: inline-block;
+	padding-right: 5px;
+}
+.inline_filter_fields li  div {
+	display: block;
 }
 .business-info-links li {
 	display: inline;
+}
+
+.navitem-area .sort-area .inline_filter_fields .sort-select{
+	width: 100%;
 }

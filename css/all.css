@@ -362,6 +362,10 @@ input[type="text"], input[type="submit"], input[type="email"], input[type="numbe
 	width: 70%;
 	font: 700 16px/47px 'Lato', sans-serif, Arial, Helvetica, sans-serif;
 }
+
+.navitem-area .sort-area.short_form {
+	width: 60%;
+}
 .navitem-area .sort-area .sort-select {
 	width: 24%;
 	overflow: hidden;

@@ -1,0 +1,305 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Local Maven</title>
+	<link rel="stylesheet" media="all" href="css/all.css" type="text/css">
+	<link href='http://fonts.googleapis.com/css?family=Lato:400,700,300' rel='stylesheet' type='text/css'>
+	<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="js/jquery.main.js"></script>
+	<!--[if lt IE 9]><link rel="stylesheet" type="text/css" href="css/ie.css"><![endif]-->
+	<!--[if IE]><script type="text/javascript" src="js/ie.js"></script><![endif]-->
+</head>
+<body>
+	<header id="header">
+		<strong class="logo"><a href="#">Maven</a></strong>
+		<div class="user-nav-area">
+			<span class="user-nav-heading">I am a:</span>
+			<nav class="user-nav">
+				<ul>
+					<li class="active"><a href="#">Business</a></li>
+					<li><a href="#">Maven</a></li>
+					<li><a href="#">Customer</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div class="nav-holder">
+			<nav id="nav">
+				<ul>
+					<li class="home"><a href="#">Home</a></li>
+					<li class="deals "><a href="#">Deals</a></li>
+					<li class="finance active"><a href="#">Finance</a></li>
+					<li class="network"><a href="#">Network</a></li>
+				</ul>
+			</nav>
+			<div class="setting-holder">
+				<div class="holder">
+					<a href="#">
+						<span data-picture data-alt="image description">
+							<span data-src="images/img.jpg" data-width="25px" data-height="23px" ></span>
+							<span data-src="images/img-2x.jpg" data-width="25px" data-height="23px" data-media="(-webkit-min-device-pixel-ratio:1.5), (min-resolution:144dpi)" ></span>
+							<!--[if (lt IE 9) & (!IEMobile)]>
+								<span data-src="images/img.jpg"></span>
+							<![endif]-->
+							<!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
+							<noscript><img src="images/img.jpg" width="25" height="23" alt="image description" ></noscript>
+						</span>
+						<span class="arrow">arrow</span>
+					</a>
+					<div class="setting-area">
+						<strong class="heading">Account Settings</strong>
+						<ul class="setting-info">
+							<li class="active"><a href="#">My Account</a></li>
+							<li><a href="#">Public Profile</a></li>
+							<li><a href="#">Add Redeemers</a></li>
+							<li><a href="#">Invite to Your Network</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div id="main">
+		<header class="heading-area">
+			<h1>Finance</h1>
+
+		</header>
+		<section class="payment-holder">
+			<div class="payment-area">
+				<ul class="payment">
+					<li>
+						<strong class="heading">Next payment scheduled for</strong>
+						<div class="box-holder">
+							<div class="box-frame">
+								<div class="box">
+									<span class="month">MAR</span>
+									<time datetime="2014-02-13">13</time>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<strong class="heading">Commission + Fees = Total Cost</strong>
+						<div class="box-holder">
+							<div class="box-frame">
+								<div class="box">
+									<span class="price">$670.00</span>
+								</div>
+							</div>
+								<div class="paymnent-block">
+								<dl>
+									<dt>Commissions:</dt>
+									<dd>$570.00</dd>
+									<dt>Fees:</dt>
+									<dd>$57.00</dd>
+									<dt class="total">Total:</dt>
+									<dd class="total-price">$670.00</dd>
+								</dl>
+							</div>
+						</div>
+					</li>
+					<li>
+						<strong class="heading">Total Commissions Paid</strong>
+						<div class="box-holder">
+							<div class="box-frame">
+								<div class="box">
+									<span class="price">$0.00</span>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<a href="#" class="help">
+					<span data-picture data-alt="image description">
+					<span data-src="images/img2.png" ></span>
+					<span data-src="images/img2-2x.png" data-media="(-webkit-min-device-pixel-ratio:1.5), (min-resolution:144dpi)" ></span>
+					<!--[if (lt IE 9) & (!IEMobile)]>
+						<span data-src="images/img2.png"></span>
+					<![endif]-->
+					<!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
+					<noscript><img src="images/img2.png" alt="image description" ></noscript>
+					</span>
+				</a>
+			</div>
+			<a class="view" href="#">View All</a>
+		</section>
+
+		<div class="navitem-area add1">
+			<span class="help"><a href="#">Need Help?</a> Visit Our Support Desk</span>
+			<div class="navitem-holder">
+				Sort By:
+				<form action="#" class="sort-area">
+					<fieldset>
+
+						<div class="sort-select">
+							<select>
+								<option>Deal Type</option>
+								<option>Deal Type</option>
+								<option>Deal Type</option>
+							</select>
+						</div>
+
+						<div class="sort-select date_select">
+							<select>
+								<option>From 03-31-2014</option>
+
+							</select>
+						</div>
+
+						<div class="sort-select date_select">
+							<select>
+								<option>From 03-31-2014</option>
+
+							</select>
+						</div>
+
+
+
+					</fieldset>
+				</form>
+			</div>
+		</div>
+
+		<section class="daashboard-area">
+			<div class="daashboard-holder">
+				<table class="daashboard-frame">
+					<thead>
+						<tr>
+							<td class="col1">Deal</td>
+							<td class="col2">Duration</td>
+							<td class="col3 add">Commission</td>
+							<td class="col4">Actions</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="col1">
+								<span data-picture data-alt="image description">
+									<span data-src="images/img3.jpg" data-width="91px" data-height="91px" ></span>
+									<span data-src="images/img3-2x.jpg" data-width="91px" data-height="91px" data-media="(-webkit-min-device-pixel-ratio:1.5), (min-resolution:144dpi)" ></span>
+									<!--[if (lt IE 9) & (!IEMobile)]>
+										<span data-src="images/img3.jpg"></span>
+									<![endif]-->
+									<!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
+									<noscript><img src="images/img3.jpg" width="91" height="91" alt="image description" ></noscript>
+								</span>
+								<h2><a href="#">Free Nourishing Cleanser</a></h2>
+							</td>
+							<td class="col2">
+								<strong class="meta">
+									<span class="meta-text">Starts:</span>
+									<time datetime="2014-03-23">Mar 23, 2014  at 12:00 am</time>
+								</strong>
+								<strong class="meta">
+									<span class="meta-text">Expires:</span>
+									<time datetime="2014-03-23">Apr 23, 2014  at 11:59 pm</time>
+								</strong>
+							</td>
+							<td class="col3">$20.00</td>
+							<td class="col4">
+								<a href="#" class="mavens">Add Mavens</a>
+							</td>
+						</tr>
+						<tr>
+							<td class="col1">
+								<span data-picture data-alt="image description">
+									<span data-src="images/img4.jpg" data-width="91px" data-height="91px" ></span>
+									<span data-src="images/img4-2x.jpg" data-width="91px" data-height="91px" data-media="(-webkit-min-device-pixel-ratio:1.5), (min-resolution:144dpi)" ></span>
+									<!--[if (lt IE 9) & (!IEMobile)]>
+										<span data-src="images/img4.jpg"></span>
+									<![endif]-->
+									<!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
+									<noscript><img src="images/img4.jpg" width="91" height="91" alt="image description" ></noscript>
+								</span>
+								<h2><a href="#">Free trip to Israel</a></h2>
+							</td>
+							<td class="col2">
+								<strong class="meta">
+									<span class="meta-text">Starts:</span>
+									<time datetime="2014-03-23">Mar 23, 2014  at 12:00 am</time>
+								</strong>
+								<strong class="meta">
+									<span class="meta-text">Expires:</span>
+									<time datetime="2014-03-23">Apr 23, 2014  at 11:59 pm</time>
+								</strong>
+							</td>
+							<td class="col3">5%</td>
+							<td class="col4">
+								<a href="#" class="mavens">Add Mavens</a>
+							</td>
+						</tr>
+						<tr>
+							<td class="col1">
+								<span data-picture data-alt="image description">
+									<span data-src="images/img5.jpg" data-width="91px" data-height="91px" ></span>
+									<span data-src="images/img5-2x.jpg" data-width="91px" data-height="91px" data-media="(-webkit-min-device-pixel-ratio:1.5), (min-resolution:144dpi)" ></span>
+									<!--[if (lt IE 9) & (!IEMobile)]>
+										<span data-src="images/img5.jpg"></span>
+									<![endif]-->
+									<!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
+									<noscript><img src="images/img5.jpg" width="91" height="91" alt="image description" ></noscript>
+								</span>
+								<h2><a href="#">Free Month of Wired Magazine</a></h2>
+							</td>
+							<td class="col2">
+								<strong class="meta">
+									<span class="meta-text">Starts:</span>
+									<time datetime="2014-03-23">Mar 23, 2014  at 12:00 am</time>
+								</strong>
+								<strong class="meta">
+									<span class="meta-text">Expires:</span>
+									<time datetime="2014-03-23">Apr 23, 2014  at 11:59 pm</time>
+								</strong>
+							</td>
+							<td class="col3">20%</td>
+							<td class="col4">
+								<a href="#" class="mavens">Add Mavens</a>
+							</td>
+						</tr>
+						<tr>
+							<td class="col1">
+								<span data-picture data-alt="image description">
+									<span data-src="images/img6.jpg" data-width="91px" data-height="91px" ></span>
+									<span data-src="images/img6-2x.jpg" data-width="91px" data-height="91px" data-media="(-webkit-min-device-pixel-ratio:1.5), (min-resolution:144dpi)" ></span>
+									<!--[if (lt IE 9) & (!IEMobile)]>
+										<span data-src="images/img6.jpg"></span>
+									<![endif]-->
+									<!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
+									<noscript><img src="images/img6.jpg" width="91" height="91" alt="image description" ></noscript>
+								</span>
+								<h2><a href="#">Free oil change with a 50,000<br>mile service</a></h2>
+							</td>
+							<td class="col2">
+								<strong class="meta">
+									<span class="meta-text">Starts:</span>
+									<time datetime="2014-03-23">Mar 23, 2014  at 12:00 am</time>
+								</strong>
+								<strong class="meta">
+									<span class="meta-text">Expires:</span>
+									<time datetime="2014-03-23">Apr 23, 2014  at 11:59 pm</time>
+								</strong>
+							</td>
+							<td class="col3">$20.00</td>
+							<td class="col4">
+								<a href="#" class="mavens">Add Mavens</a>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<a href="#" class="help">
+					<span data-picture data-alt="image description">
+					<span data-src="images/img2.png" ></span>
+					<span data-src="images/img2-2x.png" data-media="(-webkit-min-device-pixel-ratio:1.5), (min-resolution:144dpi)" ></span>
+					<!--[if (lt IE 9) & (!IEMobile)]>
+						<span data-src="images/img2.png"></span>
+					<![endif]-->
+					<!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
+					<noscript><img src="images/img2.png" alt="image description" ></noscript>
+					</span>
+				</a>
+			</div>
+		</section>
+
+	</div>
+</body>
+</html>

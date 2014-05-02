@@ -429,7 +429,16 @@ input[type="text"], input[type="submit"], input[type="email"], input[type="numbe
 	clear: both;
 	content: '';
 }
+a.btn {
+	color: #fff;
+	display: inline-block;
+	vertical-align: middle;
+	padding: 13px 10px;
+	text-align: center;
+}
+a.btn,
 .buttons-state ul li { margin: 0 0 27px; }
+
 .buttons-state ul li a {
 	color: #fff;
 	display: inline-block;
@@ -437,16 +446,22 @@ input[type="text"], input[type="submit"], input[type="email"], input[type="numbe
 	padding: 0 10px;
 	text-align: center;
 }
+a.btn:hover,
 .buttons-state ul li a:hover { text-decoration: none; }
+
+a.btn.primary,
 .buttons-state ul li.primary a {
 	min-width: 143px;
 	background: #fb435f;
 }
+a.btn.primary:hover,
 .buttons-state ul li.primary a:hover, .buttons-state ul li.primary.hover a { background: #fc8597; }
+a.btn.secondary,
 .buttons-state ul li.secondary a {
 	min-width: 157px;
 	background: #26ade3;
 }
+a.btn.secondary:hover,
 .buttons-state ul li.secondary a:hover, .buttons-state ul li.secondary.hover a { background: #7bc6e4; }
 .buttons-state ul li.tertiary a {
 	min-width: 145px;
@@ -459,27 +474,37 @@ input[type="text"], input[type="submit"], input[type="email"], input[type="numbe
 	padding: 0 10px 0 34px;
 }
 .buttons-state ul li.mavens a:hover, .buttons-state ul li.mavens.hover a { background: url(../images/sprite.png) no-repeat #7bc6e4 -408px -28px; }
+a.btn.pending,
 .buttons-state ul li.pending a {
 	min-width: 99px;
 	background: #4dbcea;
 }
+a.btn.pending:hover,
 .buttons-state ul li.pending a:hover { background: #ea4d4d; }
+a.btn.refused,
 .buttons-state ul li.refused { margin: 0 0 35px; }
+a.btn.refused,
 .buttons-state ul li.refused a {
 	min-width: 99px;
 	background: #555c5e;
 }
+a.btn.refused:hover,
 .buttons-state ul li.refused a:hover { background: #8bc240; }
+a.btn.refuse,
 .buttons-state ul li.refuse a {
 	min-width: 99px;
 	background: #ea4d4d;
 }
+a.btn.refuse:hover,
 .buttons-state ul li.refuse a:hover { text-decoration: underline; }
+a.btn.reinstate,
 .buttons-state ul li.reinstate { margin: 0 0 35px; }
+a.btn.reinstate,
 .buttons-state ul li.reinstate a {
 	min-width: 99px;
 	background: #8bc240;
 }
+a.btn.reinstate:hover,
 .buttons-state ul li.reinstate a:hover { text-decoration: underline; }
 .buttons-state ul li.setting {
 	text-align: center;
@@ -1124,6 +1149,7 @@ input[type="text"], input[type="submit"], input[type="email"], input[type="numbe
 .daashboard-frame .add { font: 700 16px/20px 'Lato', sans-serif, Arial, Helvetica, sans-serif; }
 .daashboard-frame.referral_page .col4 { width: 14.8%; }
 .daashboard-frame .col4 { width: 17.1%; }
+.finance-page .daashboard-frame .col4 {width: 11% ;}
 .daashboard-frame .col4 .mavens {
 	min-width: 100px;
 	background: url(../images/sprite.png) no-repeat #26ade3 -455px 14px;
@@ -1871,6 +1897,7 @@ input[type="text"], input[type="submit"], input[type="email"], input[type="numbe
 .payment-area .paymnent-block { left: -232px; }
 .image-area .image-list li { width:17%;}
 .daashboard-frame .col4 { width:19.1%;}
+
 }
 @media (max-width: 1280px) {
 #header { padding: 20px 2% 0; }
@@ -2015,10 +2042,10 @@ input[type="text"], input[type="submit"], input[type="email"], input[type="numbe
 #main.finance-page .heading-area {
 	margin-bottom: 37px;
 }
-
 #view_all_stats_link {
 	float: right;
 	color: #26ADE3;
 }
 #view_all_stats_link:hover {
 	color:#1F8AB5;
+}

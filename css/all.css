@@ -2011,3 +2011,7 @@ input[type="text"], input[type="submit"], input[type="email"], input[type="numbe
 .navitem-area .sort-area .inline_filter_fields .sort-select{
 	width: 100%;
 }
+
+#main.finance-page .heading-area {
+	margin-bottom: 37px;
+}

@@ -2015,3 +2015,10 @@ input[type="text"], input[type="submit"], input[type="email"], input[type="numbe
 #main.finance-page .heading-area {
 	margin-bottom: 37px;
 }
+
+#view_all_stats_link {
+	float: right;
+	color: #26ADE3;
+}
+#view_all_stats_link:hover {
+	color:#1F8AB5;

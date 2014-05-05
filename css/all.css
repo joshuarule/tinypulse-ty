@@ -388,6 +388,8 @@ input[type="text"], input[type="submit"], input[type="email"], input[type="numbe
 	width: 24%;
 	overflow: hidden;
 	margin: 0 0 0 26px;
+	float: left;
+	min-width: 126px;
 }
 .button-rollover-holder {
 	overflow: hidden;
@@ -677,6 +679,7 @@ a.btn.reinstate:hover,
 	width: 68.3%;
 	font: 700 16px/46px 'Lato', sans-serif, Arial, Helvetica, sans-serif;
 }
+.go_btn,
 .select-area-holder input[type="submit"] {
 	background: #555c5e;
 	width: 81px;
@@ -2077,3 +2080,12 @@ a.btn.reinstate:hover,
 	.navitem-area .sort-area.short_form {
 		width: 24%;
 	}
+.finance-page .payment-holder {
+	border-bottom: none;
+	margin-bottom: 0px;
+	padding-bottom: 30px;
+}
+
+.finance-page .navitem-area {
+	padding-bottom: 30px;
+}

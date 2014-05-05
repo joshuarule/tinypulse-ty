@@ -2065,3 +2065,8 @@ a.btn.reinstate:hover,
 #view_all_stats_link:hover {
 	color:#1F8AB5;
 }
+
+.finance-page .btn-area input {
+	width: 423px;
+	margin-right: 15px;
+}

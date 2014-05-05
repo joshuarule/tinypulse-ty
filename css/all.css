@@ -2089,3 +2089,10 @@ a.btn.reinstate:hover,
 .finance-page .navitem-area {
 	padding-bottom: 30px;
 }
+#main.network-page .heading-area {
+	margin-bottom: 12px;
+}
+
+.network-page  .navitem-area {
+	padding-bottom: 12px;
+}

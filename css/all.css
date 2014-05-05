@@ -2070,3 +2070,10 @@ a.btn.reinstate:hover,
 	width: 423px;
 	margin-right: 15px;
 }
+
+	.navitem-area .sort-area.short_form .sort-select {
+		width: 100%;
+	}
+	.navitem-area .sort-area.short_form {
+		width: 24%;
+	}

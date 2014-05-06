@@ -1144,6 +1144,8 @@ a.btn.reinstate:hover,
 }
 .daashboard-frame.referral_page .col2 { width: 14.8%; }
 .daashboard-frame .col2 { width: 24.2%; }
+.invites_sent .col2 { width: 48%;}
+.invites_sent .col3 { width: 18%;}
 .daashboard-frame.referral_page .col5 .meta,
 .daashboard-frame .col2 .meta {
 	display: block;

@@ -2141,3 +2141,7 @@ a.btn.reinstate:hover,
 	text-indent: -999em;
 	padding: 0px;
 }
+.btn.trash:hover {
+	filter: alpha(opacity=50);
+	opacity: 0.5;
+}

@@ -2132,3 +2132,11 @@ a.btn.reinstate:hover,
 	filter: alpha(opacity=50);
 	opacity: 0.5;
 }
+
+.btn.trash {
+	background: url('../images/trash-2x.png') no-repeat transparent;
+	width: 57px;
+	height: 47px;
+	text-indent: -999em;
+	padding: 0px;
+}

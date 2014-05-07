@@ -2109,3 +2109,26 @@ a.btn.reinstate:hover,
 .network-page .search-box {
 	width: 425px;margin-right: 10px;
 }
+
+.btn.check {
+	background: url('../images/check-2x.png') no-repeat transparent;
+	width: 95px;
+	height: 47px;
+	text-indent: -999em;
+	padding: 0px;
+}
+.btn.check:hover {
+	filter: alpha(opacity=50);
+	opacity: 0.5;
+}
+.btn.red_x {
+	background: url('../images/red_x-2x.png') no-repeat transparent;
+	width: 65px;
+	height: 47px;
+	text-indent: -999em;
+	padding: 0px;
+}
+.btn.red_x:hover {
+	filter: alpha(opacity=50);
+	opacity: 0.5;
+}

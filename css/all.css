@@ -1150,6 +1150,7 @@ a.btn.reinstate:hover,
 .daashboard-frame .col2 { width: 24.2%; }
 .invites_sent .col2 { width: 48%;}
 .invites_sent .col3 { width: 18%; }
+.network_page .col2 { width: 22%;}
 .invites_sent .col3 .btn {
 	margin-bottom: 0px;
 }

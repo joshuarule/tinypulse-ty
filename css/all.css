@@ -2145,3 +2145,57 @@ a.btn.reinstate:hover,
 	filter: alpha(opacity=50);
 	opacity: 0.5;
 }
+
+.profile_container .profile_box {
+	float: left;
+	width: 33.3%;
+		overflow: hidden;
+	margin: 0 0 25px;
+	background: #fff;
+	padding: 25px 35px 17px 30px;
+	-webkit-box-shadow: 0 0 3px rgba(0,0,0,.14);
+	box-shadow: 0 0 3px rgba(0,0,0,.14);
+	margin-right: 3.7%;
+}
+.personal_profile {
+	text-align: center;
+}
+.personal_profile h1 {
+	font-size: 2em;
+}
+.personal_profile p.personal_bio {
+	border-bottom: 1px solid #d6d7d7;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+}
+.personal_profile p.contact_info {
+	margin-top: 0px;
+	margin-bottom: 8px;
+}
+.business_address a,
+.contact_info a {
+	color:#26ADE3;
+}
+.business_address a:hover,
+.contact_info a:hover {
+	color:#1F8AB5;
+}
+
+.business_profile h1 {
+	border-bottom: 1px solid #d6d7d7;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+}
+.business_profile .image_wrapper {
+	float: left;
+	width: 50%;
+}
+
+.business_address {
+	float: left;
+	width: 50%;
+}
+.business_address p{
+	margin-top: 0px;
+	margin-bottom: 2px;
+}

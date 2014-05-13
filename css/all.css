@@ -22,7 +22,7 @@ form, fieldset {
 	padding: 0;
 	border-style: none;
 }
-input[type="text"], input[type="submit"], input[type="email"], input[type="number"], input[type="tel"], input[type="password"], input[type="search"], input[type="radio"], input[type="checkbox"], textarea { -webkit-appearance: none; }
+/* input[type="text"], input[type="submit"], input[type="email"], input[type="number"], input[type="tel"], input[type="password"], input[type="search"], input[type="radio"], input[type="checkbox"], textarea { -webkit-appearance: none; } */
 ::-webkit-input-placeholder {
  color: #afb9bc;
 }
@@ -160,6 +160,17 @@ input[type="text"], input[type="submit"], input[type="email"], input[type="numbe
 	padding: 0 0 0 12px;
 	position: relative;
 }
+
+/* Universal Elements */
+
+.shadow-box {
+	-webkit-box-shadow: 0 0 3px rgba(0,0,0,.14);
+	box-shadow: 0 0 3px rgba(0,0,0,.14);
+	background: #fff;
+	padding: 38px 2% 41px;
+	position: relative;
+}
+
 .setting-holder .number {
 	position: absolute;
 	top: -13px;
@@ -240,8 +251,10 @@ input[type="text"], input[type="submit"], input[type="email"], input[type="numbe
 #main .heading-area {
 	overflow: hidden;
 	margin: 0 0 23px;
-	border-bottom: 1px solid #d3dadd;
 	padding: 0 0 38px;
+}
+#main .separator {
+	border-bottom: 1px solid #d3dadd;
 }
 #main .heading-area h1 {
 	color: #555c5e;
@@ -279,8 +292,6 @@ input[type="text"], input[type="submit"], input[type="email"], input[type="numbe
 	background: #7BC6E4;
 	text-decoration: none;
 }
-
-
 .heading-area .btn-area .tertiary {
 	min-width: 158px;
 	float: right;
@@ -583,7 +594,6 @@ a.btn.reinstate:hover,
 }
 .form-elements-holder {
 	overflow: hidden;
-	border-bottom: 1px solid #d3dadd;
 	padding: 0 42px 68px 0;
 	margin: 0 0 36px;
 }
@@ -662,11 +672,6 @@ a.btn.reinstate:hover,
 	float: right;
 	text-align: center;
 }
-.select-area-holder {
-	float: right;
-	width: 41.3%;
-	margin: 3px 0 0;
-}
 .select-area-holder .select-holder {
 	overflow: hidden;
 	margin: 0 0 29px;
@@ -702,6 +707,21 @@ a.btn.reinstate:hover,
 	display: block;
 	margin: 0 0 9px;
 }
+.input-holder textarea {
+	border: 1px solid #d3dadd;
+	margin: 0;
+	float: left;
+	width: 100%;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	background: #eaeced;
+	font: 16px/19px 'Lato', sans-serif, Arial, Helvetica, sans-serif;
+	height: 150px;
+	padding: 16px 13px;
+	color: #555c5e;
+	outline: none;
+}
 .input-holder input[type="text"] {
 	border: 1px solid #d3dadd;
 	margin: 0;
@@ -714,12 +734,11 @@ a.btn.reinstate:hover,
 	font: 16px/19px 'Lato', sans-serif, Arial, Helvetica, sans-serif;
 	height: 56px;
 	padding: 16px 13px;
-	color: #bdbfbf;
+	color: #555c5e;
 	outline: none;
 }
 .select-area-holder .select {
 	overflow: hidden;
-	width: 100%;
 	font: 700 16px/56px 'Lato', sans-serif, Arial, Helvetica, sans-serif;
 }
 .payment-holder {
@@ -2148,10 +2167,11 @@ a.btn.reinstate:hover,
 	opacity: 0.5;
 }
 
-.profile_container .profile_box {
+.profile-container .profile-box {
 	float: left;
-	width: 33.3%;
-		overflow: hidden;
+	width: 35%;
+	max-width: 400px;
+	overflow: hidden;
 	margin: 0 0 25px;
 	background: #fff;
 	padding: 25px 35px 17px 30px;
@@ -2159,27 +2179,29 @@ a.btn.reinstate:hover,
 	box-shadow: 0 0 3px rgba(0,0,0,.14);
 	margin-right: 3.7%;
 }
-.personal_profile {
+.personal-profile {
 	text-align: center;
 }
-.personal_profile h1 {
+.personal-profile h1 {
 	font-size: 2em;
 }
-.personal_profile p.personal_bio {
+.personal-profile p.personal-bio {
 	border-bottom: 1px solid #d6d7d7;
-	padding-bottom: 20px;
-	margin-bottom: 20px;
+	padding-bottom: 25px;
+	margin-bottom: 25px;
 }
-.personal_profile p.contact_info {
-	margin-top: 0px;
-	margin-bottom: 8px;
+.personal-profile .contact-info {
+	margin:0 0 25px 0;
+	padding: 0;
+	text-align: center;
+	list-style: none;
 }
-.business_address a,
-.contact_info a {
+.business-address a,
+.contact-info a {
 	color:#26ADE3;
 }
-.business_address a:hover,
-.contact_info a:hover {
+.business-address a:hover,
+.contact-info a:hover {
 	color:#1F8AB5;
 }
 
@@ -2193,11 +2215,65 @@ a.btn.reinstate:hover,
 	width: 50%;
 }
 
-.business_address {
+.business-address {
+	margin:0 0 25px 0;
+	padding: 0;
+	text-align: left;
+	list-style: none;
 	float: left;
-	width: 50%;
 }
-.business_address p{
+.business-address p{
 	margin-top: 0px;
 	margin-bottom: 2px;
 }
+
+/* Deal Creation */
+
+.create-deal h1 {
+	font-size: 30px;
+	line-height: 38px;
+	margin: 0px auto 10px auto;
+}
+.create-deal h2 {
+	color:#26ADE3;
+	font-size: 22px;
+	border-bottom: 1px solid #d6d7d7;
+	padding-bottom: 10px;
+	margin-bottom: 30px;
+}
+.create-deal .left-nav {
+	float: left;
+}
+.create-deal .right-nav {
+	float: right;
+}
+.create-deal .left-nav .deal-type {
+	height:66px;
+	background: #9da7aa;
+	margin: 0 0 1px 0;
+	position: absolute;
+	left:0;
+	
+}
+
+
+.create-deal .form-content {
+	width: 50%;
+	margin: 0 auto;
+}
+.create-deal .form-content input,
+.create-deal .form-content textarea,
+.create-deal .form-content .select {
+	margin: 0 0 20px 0;
+}
+.create-deal .deal-date {
+	width: 48%;
+	margin: 0px 0 20px 0;
+}
+
+.deal-group .left {float: left;}
+.deal-group .right {float: right;}
+
+.deal-group {width:100%; float:left;}
+
+

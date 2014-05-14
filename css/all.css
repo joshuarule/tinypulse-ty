@@ -167,7 +167,7 @@ form, fieldset {
 	-webkit-box-shadow: 0 0 3px rgba(0,0,0,.14);
 	box-shadow: 0 0 3px rgba(0,0,0,.14);
 	background: #fff;
-	padding: 38px 2% 41px;
+	padding: 25px 35px 17px 30px;
 	position: relative;
 }
 
@@ -758,12 +758,8 @@ a.btn.reinstate:hover,
 	text-transform: capitalize;
 }
 .payment-area {
-	background: #fff;
 	margin: 0 0 23px;
-	-webkit-box-shadow: 0 0 3px rgba(0,0,0,.14);
-	box-shadow: 0 0 3px rgba(0,0,0,.14);
-	padding: 38px 2% 41px;
-	position: relative;
+	padding: 50px 0 50px 0;
 	text-align:center;
 }
 .payment-area:after {
@@ -790,19 +786,15 @@ a.btn.reinstate:hover,
 .payment-area .payment li:first-child {
 	border: none;
 }
-.payment-area .paymnent-block {
+.payment-area .payment-block {
 	position: absolute;
 	top: 0;
 	left: -232px;
 	width: 195px;
 	text-align: left;
-	background: #fff;
-	padding: 19px 19px 12px 25px;
-	-webkit-box-shadow: 0 0 3px rgba(0,0,0,.14);
-	box-shadow: 0 0 3px rgba(0,0,0,.14);
 	display: none;
 }
-.payment-area .paymnent-block:after {
+.payment-area .payment-block:after {
 	left: 100%;
 	top: 55%;
 	border: solid transparent;
@@ -815,12 +807,12 @@ a.btn.reinstate:hover,
 	border-width: 12px;
 	margin-top: -15px;
 }
-.paymnent-block dl {
+.payment-block dl {
 	overflow: hidden;
 	padding: 0;
 	margin: 0;
 }
-.paymnent-block dl dt {
+.payment-block dl dt {
 	float: left;
 	width: 111px;
 	text-align: right;
@@ -829,19 +821,19 @@ a.btn.reinstate:hover,
 	font: 18px/22px 'Lato', sans-serif, Arial, Helvetica, sans-serif;
 	margin: 0 0 8px;
 }
-.paymnent-block dl dd {
+.payment-block dl dd {
 	overflow: hidden;
 	font: 300 18px/22px 'Lato', sans-serif, Arial, Helvetica, sans-serif;
 	color: #555c5e;
 	margin: 0 0 8px;
 	text-align: right;
 }
-.paymnent-block .total {
+.payment-block .total {
 	border-top: 1px solid #f3f3f3;
 	padding: 15px 19px 0 0;
 	margin: 10px 0;
 }
-.paymnent-block .total-price {
+.payment-block .total-price {
 	border-top: 1px solid #f3f3f3;
 	padding: 15px 0 0;
 	margin: 18px 0 10px;
@@ -874,7 +866,7 @@ a.btn.reinstate:hover,
 	vertical-align: middle;
 	position: relative;
 }
-.payment-area .payment li .box-holder:hover .paymnent-block { display: block; }
+.payment-area .payment li .box-holder:hover .payment-block { display: block; }
 .payment li .box .month {
 	color: #fff;
 	font: 700 26px/30px 'Lato', sans-serif, Arial, Helvetica, sans-serif;
@@ -980,10 +972,6 @@ a.btn.reinstate:hover,
 .number-overview-holder {
 	overflow: hidden;
 	margin: 0 0 25px;
-	background: #fff;
-	padding: 25px 35px 17px 30px;
-	-webkit-box-shadow: 0 0 3px rgba(0,0,0,.14);
-	box-shadow: 0 0 3px rgba(0,0,0,.14);
 }
 .number-overview-holder ul {
 	overflow: hidden;
@@ -1014,10 +1002,6 @@ a.btn.reinstate:hover,
 .bar-overview {
 	overflow: hidden;
 	margin: 0 0 25px;
-	background: #fff;
-	padding: 24px 33px 18px 34px;
-	-webkit-box-shadow: 0 0 3px rgba(0,0,0,.14);
-	box-shadow: 0 0 3px rgba(0,0,0,.14);
 }
 .connectoin-area .bar-overview { padding: 24px 3% 10px 4%; }
 .bar-overview .referrals-area {
@@ -1101,105 +1085,100 @@ a.btn.reinstate:hover,
 	color: #555c5e;
 	font: 700 18px/22px 'Lato', sans-serif, Arial, Helvetica, sans-serif;
 }
-.daashboard-area { position: relative; }
-.daashboard-area:after {
+.dashboard-area { position: relative; }
+.dashboard-area:after {
 	display: block;
 	clear: both;
 	content: '';
 }
-.daashboard-area h2 {
+.dashboard-area h2 {
 	color: #555c5e;
 	font: 700 22px/26px 'Lato', sans-serif, Arial, Helvetica, sans-serif;
 	margin: 0 0 26px;
 	text-transform: capitalize;
 }
-.daashboard-area .invites_sent h2  {
+.dashboard-area .invites_sent h2  {
 	text-transform: none;
 }
-.daashboard-holder {
+.dashboard-holder {
 	margin: 0 0 25px;
-	background: #fff;
-	position: relative;
-	padding: 9px 42px 48px 38px;
-	-webkit-box-shadow: 0 0 3px rgba(0,0,0,.14);
-	box-shadow: 0 0 3px rgba(0,0,0,.14);
 }
-.daashboard-holder:after {
+.dashboard-holder:after {
 	display: block;
 	clear: both;
 	content: '';
 }
-.daashboard-frame {
+.dashboard-frame {
 	overflow: hidden;
 	width: 100%;
 	border-collapse: collapse;
 }
-.daashboard-frame thead td {
+.dashboard-frame thead td {
 	color: #555c5e;
 	padding: 17px 0 19px;
 	vertical-align: top;
 	font: 700 16px/20px 'Lato', sans-serif, Arial, Helvetica, sans-serif;
 }
-.daashboard-frame tbody td {
+.dashboard-frame tbody td {
 	border-top: 1px solid #d3dadd;
 	padding: 32px 0;
 	vertical-align: top;
 }
-.daashboard-frame .col1 { width: 33.8%; }
+.dashboard-frame .col1 { width: 33.8%; }
 .notifications .col1 {width: 23%;}
-.daashboard-frame .col1 img {
+.dashboard-frame .col1 img {
 	float: left;
 	margin: -13px 27px 10px 0;
 	border-radius: 50%;
 	-webkit-border-radius: 50%;
 	border: 1px solid #d4d6d6;
 }
-.daashboard-frame .col1 h2 {
+.dashboard-frame .col1 h2 {
 	color: #26ade3;
 	font: 700 18px/24px 'Lato', sans-serif, Arial, Helvetica, sans-serif;
 	margin: 0;
 	float: left;
 }
-.daashboard-frame .col1 h2 a { color: #26ade3; }
-.daashboard-frame .col1 h2 a:hover {
+.dashboard-frame .col1 h2 a { color: #26ade3; }
+.dashboard-frame .col1 h2 a:hover {
 	text-decoration:none;
 	color:#1f8ab5;
 }
-.daashboard-frame.referral_page .col2 { width: 14.8%; }
-.daashboard-frame .col2 { width: 24.2%; }
+.dashboard-frame.referral_page .col2 { width: 14.8%; }
+.dashboard-frame .col2 { width: 24.2%; }
 .invites_sent .col2 { width: 48%;}
 .invites_sent .col3 { width: 18%; }
 .network_page .col2 { width: 22%;}
 .invites_sent .col3 .btn {
 	margin-bottom: 0px;
 }
-.daashboard-frame.referral_page .col5 .meta,
-.daashboard-frame .col2 .meta {
+.dashboard-frame.referral_page .col5 .meta,
+.dashboard-frame .col2 .meta {
 	display: block;
 	margin: 0;
 }
-.daashboard-frame.referral_page .col5 .meta .meta-text,
-.daashboard-frame .col2 .meta .meta-text {
+.dashboard-frame.referral_page .col5 .meta .meta-text,
+.dashboard-frame .col2 .meta .meta-text {
 	font: 700 14px/18px 'Lato', sans-serif, Arial, Helvetica, sans-serif;
 	color: #555c5e;
 }
-.daashboard-frame.referral_page .col5 .meta time,
-.daashboard-frame .col2 .meta time {
+.dashboard-frame.referral_page .col5 .meta time,
+.dashboard-frame .col2 .meta time {
 	font: 14px/18px 'Lato', sans-serif, Arial, Helvetica, sans-serif;
 	color: #555c5e;
 }
-.daashboard-frame.referral_page .col3 { width: 14.8%; }
-.daashboard-frame.notifications .col3  {width: 18%;}
-.daashboard-frame .col3 {
+.dashboard-frame.referral_page .col3 { width: 14.8%; }
+.dashboard-frame.notifications .col3  {width: 18%;}
+.dashboard-frame .col3 {
 	font: 14px/18px 'Lato', sans-serif, Arial, Helvetica, sans-serif;
 	color: #555c5e;
 	width: 17.1%;
 }
-.daashboard-frame .add { font: 700 16px/20px 'Lato', sans-serif, Arial, Helvetica, sans-serif; }
-.daashboard-frame.referral_page .col4 { width: 14.8%; }
-.daashboard-frame .col4 { width: 17.1%; }
-.finance-page .daashboard-frame .col4 {width: 11% ;}
-.daashboard-frame .col4 .mavens {
+.dashboard-frame .add { font: 700 16px/20px 'Lato', sans-serif, Arial, Helvetica, sans-serif; }
+.dashboard-frame.referral_page .col4 { width: 14.8%; }
+.dashboard-frame .col4 { width: 17.1%; }
+.finance-page .dashboard-frame .col4 {width: 11% ;}
+.dashboard-frame .col4 .mavens {
 	min-width: 100px;
 	background: url(../images/sprite.png) no-repeat #26ade3 -455px 14px;
 	padding: 0 10px 0 53px;
@@ -1208,11 +1187,11 @@ a.btn.reinstate:hover,
 	font: 700 16px/47px 'Lato', sans-serif, Arial, Helvetica, sans-serif;
 	color: #fff;
 }
-.daashboard-frame .col4 .mavens:hover {
+.dashboard-frame .col4 .mavens:hover {
 	background: url(../images/sprite.png) no-repeat #7bc6e4 -411px -28px;
 	text-decoration: none;
 }
-.daashboard-frame .col4 .setting {
+.dashboard-frame .col4 .setting {
 	width: 52px;
 	height: 47px;
 	background: url(../images/sprite.png) no-repeat -458px -107px #d3dadd;
@@ -1221,15 +1200,15 @@ a.btn.reinstate:hover,
 	float: right;
 	margin: 6px 0 0;
 }
-.daashboard-frame .col4 .setting:hover { background: url(../images/sprite.png) no-repeat -411px -153px #555c5e; }
-.daashboard-holder .help {
+.dashboard-frame .col4 .setting:hover { background: url(../images/sprite.png) no-repeat -411px -153px #555c5e; }
+.dashboard-holder .help {
 	position: absolute;
 	right: -12px;
 	top: -12px;
 }
 
-.daashboard-frame.referral_page .col5 { width: 21.8%; }
-.daashboard-holder .help img { display: block; }
+.dashboard-frame.referral_page .col5 { width: 21.8%; }
+.dashboard-holder .help img { display: block; }
 .about-deal-area { overflow: hidden; }
 .about-deal-area .image-area {
 	float: left;
@@ -1943,9 +1922,9 @@ a.btn.reinstate:hover,
 }
 @media (max-width: 1580px) {
 .payment-area .payment li { padding: 0 5% 35px; }
-.payment-area .paymnent-block { left: -232px; }
+.payment-area .payment-block { left: -232px; }
 .image-area .image-list li { width:17%;}
-.daashboard-frame .col4 { width:19.1%;}
+.dashboard-frame .col4 { width:19.1%;}
 
 }
 @media (max-width: 1280px) {
@@ -1960,9 +1939,9 @@ a.btn.reinstate:hover,
 .buttons-state .text { font-size: 13px; }
 .select-area-holder .select-frame { width: 63.1%; }
 .payment-area .payment li { padding: 0 5% 35px; }
-.daashboard-frame .col1 { width: 36.8%; }
-.daashboard-frame .col1 h2 { font-size: 15px; }
-.payment-area .paymnent-block { left: -225px; }
+.dashboard-frame .col1 { width: 36.8%; }
+.dashboard-frame .col1 h2 { font-size: 15px; }
+.payment-area .payment-block { left: -225px; }
 .connectoin-area .bar-overview { padding: 24px 2% 10px; }
 .connectoin-area .connectoin { margin: 0 0 0 -2%; }
 .connectoin-area .connectoin li {
@@ -1978,8 +1957,8 @@ a.btn.reinstate:hover,
 }
 .payment-area .payment li { padding:0 4% 35px;}
 .navitem-area .sort-area .sort-select { width: 29%; }
-.daashboard-frame .col4 { width:24.1%;}
-.daashboard-frame .col4 .mavens { padding:0 10px 0 48px;}
+.dashboard-frame .col4 { width:24.1%;}
+.dashboard-frame .col4 .mavens { padding:0 10px 0 48px;}
 }
 @media (max-width: 1110px) {
 .user-nav-area { font-size: 14px; }
@@ -1989,12 +1968,12 @@ a.btn.reinstate:hover,
 .select-area-holder .select-frame { font-size: 14px; }
 .payment-area { padding: 38px 1.5% 41px ; }
 .payment-area .payment li { padding: 0 3% 35px; }
-.payment-area .paymnent-block {
+.payment-area .payment-block {
 	left: -213px;
 	padding: 19px 19px 12px 10px;
 }
-.daashboard-holder { padding: 9px 30px 48px; }
-.daashboard-frame .col1 img { margin: -13px 17px 0 0; }
+.dashboard-holder { padding: 9px 30px 48px; }
+.dashboard-frame .col1 img { margin: -13px 17px 0 0; }
 .connectoin-area .connectoin li {
 	width: 31.8%;
 	margin: 0 0 38px;
@@ -2006,10 +1985,10 @@ a.btn.reinstate:hover,
 .navitem-area .sort-area { width: 60%; }
 .image-area .image-list { margin: 0 0 0 -5px; }
 .image-area .image-list li { margin: 0 0 10px 5px; }
-.daashboard-frame .col4 .mavens { min-width:80px; padding:0 10px 0 46px;}
+.dashboard-frame .col4 .mavens { min-width:80px; padding:0 10px 0 46px;}
 }
 @media ( -webkit-min-device-pixel-ratio : 1.5 ), ( min-resolution : 144dpi ) {
-.logo,  #nav ul li.home a,  #nav ul li.home a:hover, #nav ul li.home.active a,  #nav ul li.deals a,  #nav ul li.deals a:hover, #nav ul li.deals.active a,  #nav ul li.finance a,  #nav ul li.finance a:hover, #nav ul li.finance.active a,  #nav ul li.network a,  #nav ul li.network a:hover, #nav ul li.network.active a,  .heading-area .btn-area .mavens,  .heading-area .btn-area .mavens:hover,  .heading-area .btn-area .setting,  .heading-area .btn-area .setting:hover,  .buttons-state ul li.mavens a,  .buttons-state ul li.mavens a:hover, .buttons-state ul li.mavens.hover a,  .buttons-state ul li.setting a,  .buttons-state ul li.setting a:hover, .buttons-state ul li.setting.hover a,  .daashboard-frame .col4 .mavens,  .daashboard-frame .col4 .mavens:hover,  .daashboard-frame .col4 .setting,  .daashboard-frame .col4 .setting:hover,  .duration-area h3 {
+.logo,  #nav ul li.home a,  #nav ul li.home a:hover, #nav ul li.home.active a,  #nav ul li.deals a,  #nav ul li.deals a:hover, #nav ul li.deals.active a,  #nav ul li.finance a,  #nav ul li.finance a:hover, #nav ul li.finance.active a,  #nav ul li.network a,  #nav ul li.network a:hover, #nav ul li.network.active a,  .heading-area .btn-area .mavens,  .heading-area .btn-area .mavens:hover,  .heading-area .btn-area .setting,  .heading-area .btn-area .setting:hover,  .buttons-state ul li.mavens a,  .buttons-state ul li.mavens a:hover, .buttons-state ul li.mavens.hover a,  .buttons-state ul li.setting a,  .buttons-state ul li.setting a:hover, .buttons-state ul li.setting.hover a,  .dashboard-frame .col4 .mavens,  .dashboard-frame .col4 .mavens:hover,  .dashboard-frame .col4 .setting,  .dashboard-frame .col4 .setting:hover,  .duration-area h3 {
 	background-image: url(../images/sprite-2x.png);
 	background-size: 500px 500px;
 	background-repeat: no-repeat;
@@ -2056,12 +2035,7 @@ a.btn.reinstate:hover,
 }
 }
 .business-info-container {
-	background: #fff;
-	margin: 0 0 23px;
-	-webkit-box-shadow: 0 0 3px rgba(0,0,0,.14);
-	box-shadow: 0 0 3px rgba(0,0,0,.14);
-	padding: 38px 2% 41px;
-	position: relative;
+	padding: 50px 0 50px 0;
 	text-align:center;
 }
 .business-info-container h1 {
@@ -2173,10 +2147,6 @@ a.btn.reinstate:hover,
 	max-width: 400px;
 	overflow: hidden;
 	margin: 0 0 25px;
-	background: #fff;
-	padding: 25px 35px 17px 30px;
-	-webkit-box-shadow: 0 0 3px rgba(0,0,0,.14);
-	box-shadow: 0 0 3px rgba(0,0,0,.14);
 	margin-right: 3.7%;
 }
 .personal-profile {

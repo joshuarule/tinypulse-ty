@@ -382,6 +382,7 @@ form, fieldset {
 }
 .navitem-area.add1 .help { margin: 15px 0 0; }
 .navitem-area .help a { color: #555c5e; }
+
 .navitem-area .sort-area {
 	display: inline-block;
 	vertical-align: middle;
@@ -394,7 +395,7 @@ form, fieldset {
 	width: 60%;
 }
 
-
+.navitem-area .sort-area .beatpicker-input,
 .navitem-area .sort-area .sort-select {
 	width: 24%;
 	overflow: hidden;
@@ -672,17 +673,24 @@ a.btn.reinstate:hover,
 	float: right;
 	text-align: center;
 }
+/*
 .select-area-holder .select-holder {
 	overflow: hidden;
 	margin: 0 0 29px;
 	width: 59.1%;
 }
+*/
+/*
 .select-area-holder .select-frame {
 	float: left;
 	margin: 0;
 	color: #555c5e;
 	width: 68.3%;
 	font: 700 16px/46px 'Lato', sans-serif, Arial, Helvetica, sans-serif;
+}
+*/
+.sort-area .go_btn {
+	margin-right:30px;
 }
 .go_btn,
 .select-area-holder input[type="submit"] {
@@ -697,10 +705,12 @@ a.btn.reinstate:hover,
 	float: right;
 	text-align: center;
 }
+/*
 .select-area-holder .input-holder {
 	overflow: hidden;
 	margin: 0 0 32px;
 }
+*/
 .input-holder label {
 	color: #555c5e;
 	font: 700 16px/20px 'Lato', sans-serif, Arial, Helvetica, sans-serif;
@@ -1403,6 +1413,7 @@ a.btn.reinstate:hover,
 .chk-focus { border-color: #f00; }
 .chk-disabled { background: #eee; }
 .jcf-label-disabled { color: #ccc; }
+
 .select-area {
 	border: none;
 	position: relative;

@@ -4,9 +4,11 @@
 	<meta charset="utf-8">
 	<title>Local Maven</title>
 	<link rel="stylesheet" media="all" href="css/all.css" type="text/css">
+	<link rel="stylesheet" href="css/BeatPicker.min.css"/>
 	<link href='http://fonts.googleapis.com/css?family=Lato:400,700,300' rel='stylesheet' type='text/css'>
 	<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
 	<script type="text/javascript" src="js/jquery.main.js"></script>
+	<script type="text/javascript" src="js/BeatPicker.min.js"></script>
 	<!--[if lt IE 9]><link rel="stylesheet" type="text/css" href="css/ie.css"><![endif]-->
 	<!--[if IE]><script type="text/javascript" src="js/ie.js"></script><![endif]-->
 </head>
@@ -134,31 +136,24 @@
 				Sort By:
 				<form action="#" class="sort-area">
 					<fieldset>
-
 						<div class="sort-select">
-									<select>
-										<option>Deal Type</option>
-										<option>Deal Type</option>
-										<option>Deal Type</option>
-									</select>
-								</div>
-								<div class="sort-select date_select">
-									<select>
-										<option>From 03-31-2014</option>
-
-									</select>
-								</div>
-								<div class="sort-select date_select">
-									<select>
-										<option>From 03-31-2014</option>
-
-									</select>
-								</div>
-								<input type="submit" value="Go" class="go_btn" styele="float:left;">
-						</fieldset>
-					</form>
-				</div>
+							<select>
+								<option>Deal Type</option>
+								<option>Deal Type</option>
+								<option>Deal Type</option>
+							</select>
+						</div>
+						
+						<div class="date-picker-input">
+							<input type="text" data-beatpicker="true" data-beatpicker-position="['*','*']" data-beatpicker-range="true" data-beatpicker-module="today,clear">
+						</div>
+						
+						<input type="submit" value="Go" class="go_btn">
+						
+					</fieldset>
+				</form>
 			</div>
+		</div>
 
 			<section class="dashboard-area">
 				<div class="dashboard-holder shadow-box">
@@ -276,10 +271,12 @@
 		</section>
 
 	</div>
-	<script>
+	<!--
+<script>
 	$(document).ready(function() {
 		jcf.customForms.replaceAll();
 	});
 	</script>
+-->
 </body>
 </html>

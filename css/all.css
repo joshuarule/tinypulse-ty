@@ -22,30 +22,7 @@ form, fieldset {
 	padding: 0;
 	border-style: none;
 }
-input[type="text"],  
-input[type="email"], 
-input[type="number"],
-input[type="tel"], 
-input[type="password"], 
-input[type="search"], 
-input[type="radio"], 
-input[type="checkbox"], 
-textarea { 
-	-webkit-appearance: none; 
-	border: 1px solid #d3dadd;
-  margin: 0;
-  float: left;
-  width: 100%;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  background: #f5f6f7;
-  font: 16px/19px 'Lato', sans-serif, Arial, Helvetica, sans-serif;
-  height: 47px;
-  padding: 10px 15px 10px 15px;
-  color: #afb9bc;
-  outline: none;
-}
+/* input[type="text"], input[type="submit"], input[type="email"], input[type="number"], input[type="tel"], input[type="password"], input[type="search"], input[type="radio"], input[type="checkbox"], textarea { -webkit-appearance: none; } */
 ::-webkit-input-placeholder {
  color: #afb9bc;
 }
@@ -1640,7 +1617,7 @@ a.btn.reinstate:hover,
 	padding: 0 60px 0 37px;
 	margin: 0 0 22px;
 }
-.tab-content .search-holder input[type="search"] {
+.tab-content .search-holder input[type="search"], input[type="text"] {
 	border: 1px solid #d3dadd;
 	margin: 0;
 	float: left;
@@ -2307,6 +2284,3 @@ a.btn.reinstate:hover,
 .form-group .left {float: left;}
 .form-group .right {float: right;}
 .form-group {width:100%; float:left;}
-
-
-

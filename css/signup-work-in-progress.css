@@ -127,6 +127,7 @@
   display:block;
   clear:both;
   float:none;
+ 
 }
 .form-holder form input {
   margin-bottom: 30px;
@@ -347,6 +348,14 @@
 .clearfix { clear: both; }
 
 /* ======================================================  Simple Grid */
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
 
 [class*='col-'] {
 	float: left;

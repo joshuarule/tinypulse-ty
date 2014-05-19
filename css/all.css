@@ -264,8 +264,6 @@ form, fieldset {
 }
 #main .heading-area .btn-area {
 	float: right;
-	text-align: center;
-	font: 700 16px/47px 'Lato', sans-serif, Arial, Helvetica, sans-serif;
 }
 .heading-area .deal {
 	min-width: 143px;
@@ -280,41 +278,55 @@ form, fieldset {
 	text-decoration: none;
 }
 
-.heading-area .btn-area .secondary {
-	min-width: 158px;
-	float: right;
-	background: #26ade3;
+
+/* Call to Action Buttons */
+
+.cta-btn  {
 	color: #fff;
-	padding: 0 10px;
-	margin: 0 0 0 15px;
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center;
+	min-width: 165px;
+	font: 400 16px/47px 'Lato', sans-serif, Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	padding: 0px 10px 0 10px;
+	opacity: 1.0;
+	-moz-transition: all .2s; 
+	-webkit-transition: all .2s;
+	transition: all .2s;
 }
-.heading-area .btn-area .secondary:hover {
-	background: #7BC6E4;
+.cta-btn a {text-decoration: none; color: #fff;}
+.cta-btn:hover {
+	opacity: .5;
 	text-decoration: none;
+}
+.cta-btn:active {
+	background-color: #818181;
 }
 .tertiary {
-	min-width: 158px;
-	float: right;
-	background: #555c5e;
-	color: #fff;
-	padding: 0 10px;
+	background: #555c5e;	
+}
+.primary {
+	background: #fb435f;
+}
+.mavens {
+	background: url(../images/sprite.png) no-repeat #26ade3 -445px 14px;
+	text-indent: 20px;
+}
+.secondary{
+	background: #26ade3;
+}
+.general-form .deal-submit {
+	margin-top: 100px;
+	position: fixed;
+}
+.view-all {
+	float:right;
+}
+
+.heading-area .btn-area .tertiary {
+	float:right; 
 	margin: 0 0 0 15px;
-}
-.tertiary:hover {
-	background: #9ba9ad;
-	text-decoration: none;
-}
-.heading-area .btn-area .mavens {
-	width: 123px;
-	float: right;
-	background: url(../images/sprite.png) no-repeat #26ade3 -452px 14px;
-	padding: 0 10px 0 34px;
-	margin: 0 0 0 15px;
-	color: #fff;
-}
-.heading-area .btn-area .mavens:hover {
-	background: url(../images/sprite.png) no-repeat #7bc6e4 -408px -28px;
-	text-decoration: none;
 }
 .heading-area .btn-area .setting {
 	width: 52px;
@@ -325,6 +337,11 @@ form, fieldset {
 	text-indent: -9999px;
 	overflow: hidden;
 }
+.heading-area .btn-area .secondary {
+	float: right;
+	margin: 0 0 0 15px;
+}
+
 .heading-area .btn-area .setting:hover { background: url(../images/sprite.png) no-repeat -411px -153px #555c5e; }
 .navitem-area {
 	overflow: hidden;
@@ -426,10 +443,12 @@ form, fieldset {
 	text-transform: capitalize;
 	text-align: center;
 }
+/*
 .buttons-area {
 	overflow: hidden;
 	margin: 0 0 0 12px;
 }
+*/
 .buttons-area .buttons-holder {
 	float: right;
 	width: 43.9%;
@@ -459,16 +478,17 @@ form, fieldset {
 	clear: both;
 	content: '';
 }
-a.btn {
+.btn {
 	color: #fff;
 	display: inline-block;
 	vertical-align: middle;
 	padding: 13px 10px;
 	text-align: center;
+	text-decoration: none;
 }
-a.btn,
-.buttons-state ul li { margin: 0 0 27px; }
+/* .buttons-state ul li { margin: 0 0 27px; } */
 
+/*
 .buttons-state ul li a {
 	color: #fff;
 	display: inline-block;
@@ -476,8 +496,10 @@ a.btn,
 	padding: 0 10px;
 	text-align: center;
 }
-a.btn:hover,
+*/
+
 .buttons-state ul li a:hover { text-decoration: none; }
+
 
 a.btn.primary,
 .buttons-state ul li.primary a {
@@ -493,53 +515,48 @@ a.btn.secondary,
 }
 a.btn.secondary:hover,
 .buttons-state ul li.secondary a:hover, .buttons-state ul li.secondary.hover a { background: #7bc6e4; }
-.tertiary a {
-	min-width: 145px;
-	background: #555c5e;
-}
 .buttons-state ul li.tertiary a:hover, .buttons-state ul li.tertiary.hover a { background: #9ba9ad; }
+/*
 .buttons-state ul li.mavens a {
 	min-width: 123px;
 	background: url(../images/sprite.png) no-repeat #26ade3 -452px 14px;
 	padding: 0 10px 0 34px;
 }
-.buttons-state ul li.mavens a:hover, .buttons-state ul li.mavens.hover a { background: url(../images/sprite.png) no-repeat #7bc6e4 -408px -28px; }
-a.btn.pending,
-.buttons-state ul li.pending a {
+*/
+/* .buttons-state ul li.mavens a:hover, .buttons-state ul li.mavens.hover a { background: url(../images/sprite.png) no-repeat #7bc6e4 -408px -28px; } */
+.btn.resend,
+.btn.pending {
 	min-width: 99px;
 	background: #4dbcea;
 }
-a.btn.pending:hover,
-.buttons-state ul li.pending a:hover { background: #ea4d4d; }
-a.btn.refused,
-.buttons-state ul li.refused { margin: 0 0 35px; }
-a.btn.refused,
-.buttons-state ul li.refused a {
-	min-width: 99px;
-	background: #555c5e;
+.btn.resend:hover,
+.btn.pending:hover { 
+	text-decoration: none;
+	background: #ea4d4d; 
 }
-a.btn.refused:hover,
-.buttons-state ul li.refused a:hover { background: #8bc240; }
-a.btn.refuse,
-.buttons-state ul li.refuse a {
+
+.btn.refuse { 
+	min-width: 99px;
+	background: #555c5e; 
+}
+.btn.refuse:hover { 
+	background: #8bc240;
+	text-decoration: none;
+}
+.btn.refused {
 	min-width: 99px;
 	background: #ea4d4d;
 }
-a.btn.refuse:hover,
-.buttons-state ul li.refuse a:hover { text-decoration: underline; }
-a.btn.reinstate,
-.buttons-state ul li.reinstate { margin: 0 0 35px; }
-a.btn.reinstate,
-.buttons-state ul li.reinstate a {
+.btn.reinstate {
 	min-width: 99px;
 	background: #8bc240;
 }
-a.btn.reinstate:hover,
-.buttons-state ul li.reinstate a:hover { text-decoration: underline; }
-.buttons-state ul li.setting {
-	text-align: center;
-	margin: 0 0 59px;
+.btn.reinstate:hover {
+	text-decoration: none;
+	background: #555c5e;	
 }
+
+/*
 .buttons-state ul li.setting a {
 	width: 52px;
 	height: 47px;
@@ -548,6 +565,7 @@ a.btn.reinstate:hover,
 	text-indent: -9999px;
 	overflow: hidden;
 }
+*/
 .buttons-state ul li.setting a:hover, .buttons-state ul li.setting.hover a { background: url(../images/sprite.png) no-repeat -411px -153px #555c5e; }
 .buttons-state .text { font: 700 16px/20px 'Lato', sans-serif, Arial, Helvetica, sans-serif; }
 .buttons-state .text a { color: #26ade3; }
@@ -690,7 +708,7 @@ a.btn.reinstate:hover,
 }
 */
 .sort-area .go_btn {
-	margin-right:5%;
+	margin-right:0;
 }
 .go_btn,
 .select-area-holder input[type="submit"] {
@@ -1189,17 +1207,8 @@ a.btn.reinstate:hover,
 .dashboard-frame .col4 { width: 17.1%; }
 .finance-page .dashboard-frame .col4 {width: 11% ;}
 .dashboard-frame .col4 .mavens {
-	min-width: 100px;
-	background: url(../images/sprite.png) no-repeat #26ade3 -455px 14px;
-	padding: 0 10px 0 53px;
 	float: left;
 	margin: 6px 0 0;
-	font: 700 16px/47px 'Lato', sans-serif, Arial, Helvetica, sans-serif;
-	color: #fff;
-}
-.dashboard-frame .col4 .mavens:hover {
-	background: url(../images/sprite.png) no-repeat #7bc6e4 -411px -28px;
-	text-decoration: none;
 }
 .dashboard-frame .col4 .setting {
 	width: 52px;
@@ -2260,11 +2269,6 @@ a.btn.reinstate:hover,
 .general-form .two-col-input {
 	width: 48%;
 	margin: 0px 0 20px 0;
-}
-.general-form .deal-submit {
-	padding-top: 30px;
-	width: 100%;
-	position: fixed;
 }
 .clear {clear:both;}
 .general-form .company-address {

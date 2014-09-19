@@ -1,0 +1,5 @@
+.*
+_DOCS/*
+node_modules/*
+sass/*
+js/*

@@ -1,0 +1,77 @@
+// %half-left,
+// .half-left {
+//   @include grid-span(4,1);
+//   @include breakpoint($break)  {@include grid-span(4,1);}
+//   @include breakpoint($break2) {@include grid-span(6,1);}
+// }
+$susy: (
+  flow: ltr,
+  math: fluid,
+  output: isolate,
+  gutter-position: after,
+  container: auto,
+  container-position: center,
+  columns: 12,
+  gutters: 1/3,
+  column-width: false,
+  global-box-sizing: border-box,
+  last-flow: to,
+  debug: (
+    image: show,
+    color: rgba(#66f, .25),
+    output: overlay,
+    toggle: top right,
+  ),
+);
+
+.half {
+  @include span(6 at 1);
+  // @include clearfix;
+}
+
+
+// %half-right,
+// .half-right {
+//   @include grid-span(4,1);
+//   @include breakpoint($break)  {@include grid-span(4,5);}
+//   @include breakpoint($break2) {@include grid-span(6,7);}
+// }
+
+%col-5,
+.col-5 {
+  @include span(5 at 1);
+  // @include breakpoint($break)  {@include grid-span(4,1);}
+  // @include breakpoint($break2) {@include grid-span(5,1);}
+}
+
+%col-5-7,
+.col-5-7 {
+  @include span(5 at 7);
+}
+
+// .col-1 {
+//   @include float-span(1, 1);
+//   background: green;
+//   height: 20px;
+//   margin-bottom: 20px;
+
+//   @include breakpoint($break2) {
+//     @include float-span(1, 1);
+//   }
+// }
+
+// .col-1-last {
+//   @include float-span(1, 'last');
+//   background: green;
+//   height: 20px;
+//   margin-bottom: 20px;
+
+//   @include breakpoint($break2) {
+//     @include float-span(1, 'last');
+//   }
+// }
+
+// .last {
+//   float: right;
+//   margin-right: 0;
+// }

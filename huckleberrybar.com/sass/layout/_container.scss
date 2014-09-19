@@ -1,0 +1,6 @@
+.container,
+%container {
+  position: relative;
+  @include container(1700px);
+
+}

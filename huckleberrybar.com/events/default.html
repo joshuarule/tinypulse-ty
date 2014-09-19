@@ -1,0 +1,19 @@
+{% capture content %}
+
+  <pre>events/default.html template</pre>
+
+  <h1>{{title}}</h1>
+
+  {{body}}
+    <ul>
+    {% for post in posts %}
+      <li>
+        <h2>{{post.title}}</h2>
+        <p>{{post.body}}</p>
+      </li>
+    {% endfor %}
+    </ul>
+
+{% endcapture %}
+
+{% include 'layouts/default' %}

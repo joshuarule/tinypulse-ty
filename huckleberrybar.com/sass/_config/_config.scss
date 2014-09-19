@@ -1,0 +1,72 @@
+// Breakpoint
+
+$break:   768px, "no-query" true;
+$break2: 1100px;
+
+
+$break0:  0 (nth($break, 1) - 1px);
+$break1:  768px ($break2 - 1px);
+
+$base-font-family:  'DINweb', "helvetica", sans-serif;
+$alt-font-family:   'MrsEavesItalicRegular', "helvetica", sans-serif;
+
+// Colors
+
+$red: #9f1a27; // links, buttons, footer links, header links
+$white: #FFF;
+$orange: #c1621e;
+$purple-text: #7f8092;
+$bg-color: #0e0603;
+$black: $bg-color;
+$peach: #f9d8b7;
+
+// vertical rhythm
+
+$base-font-size:   20px;
+$base-line-height: 28px;
+$rhythm-unit: "rem";
+$rem-with-px-fallback: false;
+
+$type-scale: (
+    tiny: (
+        font-size: 13px,
+        base-lines: 0.5
+    ),
+    small: (
+        font-size: 16px,
+        base-lines: 0.75
+    ),
+    base: (
+        font-size: $base-font-size,
+        base-lines: 1
+    ),
+    medium: (
+        font-size: 25px,
+        base-lines: 1
+    ),
+    large: (
+        font-size: 31px,
+        base-lines: 1.5
+    ),
+    xlarge: (
+        font-size: 39px,
+        base-lines: 1.5
+    ),
+    xxlarge: (
+        font-size: 49px,
+        base-lines: 2 
+    )
+);
+
+$type-weight: (
+    thin: 200,
+    light: 300,
+    regular: 400,
+    bold: 700,
+    black: 900
+);
+
+// spacing units
+
+$base-spacing-unit: 20px;
+$dbl-spacing-unit:   $base-spacing-unit * 2;

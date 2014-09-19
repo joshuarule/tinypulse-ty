@@ -1,0 +1,36 @@
+.menu-items {
+  // outline: 1px solid red;
+  @extend %cf;
+}
+
+.items {
+  margin-bottom: 80px; // category
+  padding-left: 20px;
+}
+
+.category-title {
+  font-size: 40px; // same as button
+  font-family: $alt-font-family; // same as button
+  color: $peach;
+  line-height: 50px;
+  background: rgba($black,.8);
+  font-weight: 300;
+  margin: 0 0 30px 0;
+  text-indent: 20px;
+}
+
+.item {
+  margin-bottom: 30px;
+
+  p {
+    line-height: 26px;
+    margin-bottom: 0;
+  }
+}
+
+.item-title { // ten menu items per row
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 26px;
+  margin: 0;
+}

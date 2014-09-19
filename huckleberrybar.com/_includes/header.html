@@ -1,0 +1,17 @@
+<pre>includes/header include</pre>
+<header class="primary-header">
+
+  <span class="address" itemprop="address"><a href="{{site.meta['map']}}" target="_blank"><address>{{site.meta['address']}}<span class="hide">, NY 11211</span></address></a></span>
+  <span class="telephone" itemprop="telephone"><a href="tel:+1{{site.meta['phone']}}">{{site.meta['phone']}}</a></span>
+  <nav class="nav-main">
+    <ul class="page-menu">
+    {% for page in site.pages offset:1 %}
+
+      <li>
+        <a href="{{page.url}}"{% if page.url == url %} class="is-current-page"{% endif %} {% if page.title == "Menu" %}itemprop="menu"{% endif %}>{{page.title}}</a>
+      </li>
+    {% endfor %}
+    </ul>
+  </nav>
+  
+</header>

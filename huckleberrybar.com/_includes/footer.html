@@ -1,0 +1,53 @@
+<pre>includes/footer include</pre>
+
+<div class="wrapper">
+  <section class="info bg-img" style="background-image: url('/assets/img/blood-orange.jpg')">
+    <div class="container">
+
+      <div class="location">
+        <h2 class="title--underline">Location</h2>
+        <address class="pad-btm pull-left">588 Grand St<br>Williamsburg, Brooklyn NY</address>
+        <a href="{{site.meta['map']}}" target="_blank" class="btn center pull-right">Google Maps</a>
+        <a href="{{site.meta['map']}}" target="_blank"><img src="/assets/img/location.svg" alt="Map to Huckleberry Bar"></a>
+      </div>
+
+      <div class="hours">
+        <h2 class="title--underline">{{site.pages.hours.title}}</h2>    
+        {{site.pages.hours.body}}
+      </div>
+
+      <div id="mailing-list" class="mailing-list">
+        <h2 class="title--underline">Mailing List</h2>
+        <p class="push-btm-half">Get updates on weekly events and specials</p>
+        <input type="email" class="push-btm-half" placeholder="Enter email address">
+        <a href="#" class="btn center">Subscribe</a>
+      </div>
+<!--       <div class="cf"></div> -->
+    </div>
+  </section>
+</div>
+
+<footer>
+  <nav class="nav-footer">
+    <ul>
+      {% for page in site.pages %}
+        <li {% if page.title == "Hours" %}class="hide"{% endif %}><a href="{{page.url}}"{% if page.url == url %} class="is-current-page"{% endif %}>{{page.title}}</a></li>
+      {% endfor %}
+    </ul>
+  </nav>
+
+  <ul class="company-info">
+    <li><a href="{{site.meta['map']}}" target="_blank"><address>{{site.meta['address']}}</address></a></li>
+    <li><a href="tel:+1{{site.meta['phone']}}">{{site.meta['phone']}}</a></li>
+    <li><a href="mailto:{{site.meta['email']}}">{{site.meta['email']}}</a></li>
+  </ul>
+
+  <ul class="social-links">
+    <li><a href="http://{{site.meta['facebook']}}">{{site.meta['facebook'].key}}</a></li>
+    <li><a href="http://{{site.meta['instagram']}}">{{site.meta['instagram'].key}}</a></li>
+    <li><a href="http://{{site.meta['twitter']}}">{{site.meta['twitter'].key}}</a></li>
+  </ul>
+
+  <small>{{site.meta['copyright']}}</small>
+
+</footer>

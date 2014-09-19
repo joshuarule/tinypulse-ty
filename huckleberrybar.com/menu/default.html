@@ -1,0 +1,79 @@
+{% capture content %}
+
+<script>
+
+$(document).ready(function(){
+  var items = $('.menu-items.third-1 li');
+
+  // finds number of items in menu
+  var itemsTotal = items.size();
+  console.log(itemsTotal + " :total items");
+
+  // divides items in 3 
+  var itemsSlice =  itemsTotal / 3;
+  var itemsSliceTwo = itemsSlice + itemsSlice;
+
+  console.log(itemsSliceTwo);
+
+  for (var i=itemsTotal; i > 0; i--) {
+    if (i > itemsSliceTwo) {
+      $('.third-3').prepend(items.eq(i));
+    } else if (i >= itemsSlice) {
+      $('.third-2').prepend(items.eq(i));
+    }
+  }
+
+});
+
+</script>
+
+<div class="menu-bg" style="background-image: url('/assets/img/menu-bg.jpg')">
+
+  <div class="wrapper">
+
+  <div class="container">
+
+    <pre>menu/default.html</pre>
+    
+    {% include 'includes/nav-menu' %}
+
+    <ul class="menu-items third-1">
+    {% for set in taxonomy %}
+      {% for tag in set %}
+        {% unless tag == "luxurybox" %}
+          <li>
+            <h1 class="category-title">{{tag.value}}</h1>
+          </li>
+          {% for post in tag.posts %}
+            <li class="item">
+              <h2 class="item-title">{{post.title}}</h2>
+              {{post.body}}
+            </li>
+          {% endfor %}
+        {% endunless%}
+      {% endfor %}
+    {% endfor %}
+    </ul>
+    <ul class="menu-items third-2"></ul>
+    <ul class="menu-items third-3">
+        {% if taxonomy.tags.luxurybox.posts %}
+          <li><h1 class="category-title">Luxury Box</h1></li>
+          {% for post in taxonomy.tags.luxurybox.posts %}
+            <li class="item">
+              <h2 class="item-title">{{post.title}}</h2>
+              {{post.body}}
+            </li>
+          {% endfor %}
+        {% endif %}
+    </ul>
+    <div class="cf"></div>
+
+  </div>
+
+  </div>
+
+</div>
+
+{% endcapture %}
+
+{% include 'layouts/default' %}

@@ -1,0 +1,12 @@
+.hero {
+  @extend %container;
+  // height: 600px;
+  // margin-top: 200px;
+  // margin-bottom: 60px;
+  content: '';
+  display: block;
+  // background-size: 45%;
+  background-size: 35%;
+  background-position: bottom left;
+  background-repeat: no-repeat;
+}

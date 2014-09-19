@@ -1,0 +1,53 @@
+{% capture content %}
+  
+<pre>home.html template</pre>
+
+<div class="wrapper">
+
+<div class="hero container full" style="background-image: url('assets/img/hero-drink.jpg')">
+  {% include 'includes/logo' %}
+</div>
+
+<div class="container">
+  {% comment %}{{body}}{% endcomment %}
+  
+  <section class="bg-img intro" style="background-image: url('assets/img/berries.jpg')">
+    <div class="col-5">
+      <p> Inside our menu you will find a robust, inventive, and finessed collection of cocktails that represent our labor of love. Every day we juice fresh fruit, compose signature syrups and infusions, and carefully curate our encyclopedia of spirits in order to give you the best cocktails we can imagine. </p>
+      <p> An adventurous list of wines and craft beers, alongside thoughtful small plates and panini sandwiches round out the menu to make sure there is something for everyone. </p>
+      <a href="/menu" class="btn">See Menu</a>
+    </div>
+    <div class="intro-img-1">
+      <img src="assets/img/bar-photo-1.jpg" class="" alt="beautiful bar">
+    </div>
+    <div class="intro-img-2">
+      <img src="assets/img/bar-photo-2.jpg" class="top-img" alt="beautiful bar">
+      <img src="assets/img/bar-photo-3.jpg" class="btm-img" alt="beautiful bar">
+    </div>
+    
+  </section>
+
+  <section class="events bg-img" style="background-image: url('assets/img/lemon.jpg')">
+    <div class="col-5-7">
+      <p> Almost every day there's something special going on here at Huckleberry Bar. <a href="/events">Check our schedule</a>, <a href="#mailing-list">join our mailing list</a>, or follow our social pages for our Monday Night Movie line-up and much more. </p>
+      <p> Looking to catch a laid back cocktail by candlelight? Come visit us on the quieter weeknights. </p>
+      <p>Looking  ​to hear the best local DJs set the tone for the nightlife crowd?  ​The music starts at 10pm and we go to to 4am every Friday and Saturday.</p>
+      <p>Looking​ to throw a small party or hold a large private event? <a href="mailto:info@huckleberry.com">Give us a shout!</a></p>
+      {% comment %}js inserts upcoming events{% endcomment %}
+    </div>
+    <div class="half">
+      <ul class="events-list cf"></ul>
+      <div class="center">
+        <a href="/events" class="btn center pad-btm">See Full Schedule</a>
+      </div>
+      <div class="cf"></div>
+    </div>
+  </section>
+
+</div>
+
+</div>
+
+{% endcapture %}
+
+{% include 'layouts/default' %}

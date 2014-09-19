@@ -1,0 +1,248 @@
+@include establish-baseline;
+
+* {
+  @include box-sizing('border-box');
+}
+
+body {
+  font-family: $base-font-family;
+  background: $bg-color;
+  color: $white;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+section {
+  @extend %cf;
+  padding: 60px 0;
+  position: relative;
+}
+
+header {
+  margin-top:    40px;
+  margin-bottom: 40px; // $fix
+  padding-left:  40px;
+  padding-right: 40px;
+  background: $black;
+}
+
+footer {
+  background: #1e1d26;
+  padding: 40px;
+}
+
+header,
+footer {
+  text-align: center;
+}
+
+footer a,
+header a {
+  text-decoration: none;
+}
+
+pre {
+  font-family: "courier";
+  font-size: 12px;
+  background: #fff;
+  padding: 5px 10px;
+  color: #000;
+  margin: 20px 0;
+
+  display: none;
+}
+
+a {
+  // text-decoration: none;
+}
+
+nav {
+  display: inline-block;
+
+  ul {
+
+    li {
+      display: inline-block;
+
+      a {
+        display: block;
+        color: $white;
+        text-decoration: none;
+        padding: 0 23px 9px 23px;
+        @include transition(.2s);
+        
+        &:hover {
+          color: $red;
+        }
+      }
+    }
+  }
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+
+input {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  font-family: $base-font-family;
+  font-weight: 300;
+  font-size: 19px;
+  color: $black;
+  background: $white;
+  -webkit-font-smoothing: antialiased;
+  padding: 10px 10px;
+}
+
+::-webkit-input-placeholder {
+  font-family: $base-font-family;
+  font-weight: 300;
+  color: #9e9190;
+  -webkit-font-smoothing: antialiased;
+}
+/* Firefox 18- */
+:-moz-placeholder {}
+ /* Firefox 19+ */
+::-moz-placeholder {}
+:-ms-input-placeholder {}
+
+
+input:focus {
+  box-shadow: 0 0 1px $red;
+}
+
+
+////// notes from joe
+///
+/// spacing in increments of 20/40/80/120/200
+/// horizontal padding: 20 / 40
+
+// address // nav
+
+nav,
+footer nav {
+  font-size: 26px;
+  
+  a:hover {
+    color: $red;
+  }
+}
+
+.homepage p {
+  font-size: 26px;
+  // line-height: 32px;
+}
+
+p {
+  font-size: 19px;
+}
+
+a {
+  color: $red;
+  @include single-transition(color, .2s, ease);
+
+  &:hover {
+    color: $orange;
+  }
+}
+
+.event-day,
+.footer-title {
+  font-family: $alt-font-family;
+  color: $white;
+  font-size: 50px;
+}
+
+.footer-title {
+  border-bottom: 2px solid $white;
+}
+
+// .current-event-title,
+// .footer-day,
+// .footer-hours {
+//   font-size: 32px;
+//   color: #7f8092;
+//   line-height: 38px;
+// }
+
+.footer-hours {
+  color: $white;
+}
+
+.event-description,
+footer p,
+.mailing-list p {
+  font-size: 19px;
+  line-height: 23px;
+  color: $purple-text;
+}
+
+.upcoming-event,
+.location {
+  font-size: 26px;
+  line-height: 31px;
+}
+
+.upcoming-event {
+  background: rgba(0,0,0,.2);
+  color: $purple-text;
+}
+
+.location {
+  color: $white;
+}
+
+.location {
+  font-size: 26px;
+}
+
+.copyright,
+footer nav .location,
+footer nav .social {
+  color: $purple-text;
+}
+
+
+// menu
+// 
+
+.menu-background {
+  // gradient color #1d1e27
+}
+
+.menu-nav {
+  background: rgba($black,.8);
+  &:hover {
+    color: $white;
+    border: 2px solid $white;
+  }
+}
+
+.menu-nav.active{
+  color: $red;
+
+  &:before {
+    //triangle
+  }
+}
+
+// .category-title {
+//   font-size: 40px; // same as button
+//   font-family: $alt-font-family; // same as button
+//   color: $peach;
+//   background: rgba($black,.8);
+//   margin-bottom: 80px; // category
+// }
+
+
+
+
+
+
+
+
+

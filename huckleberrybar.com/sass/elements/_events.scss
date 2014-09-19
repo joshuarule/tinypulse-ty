@@ -1,0 +1,122 @@
+.events .half {
+  background: #262734;
+
+  @include breakpoint($break2) {
+    padding-left:  20px;
+    padding-right: 20px;
+  }
+}
+
+
+.events-list {
+  padding: 20px 0;
+
+  h1 a{
+    color: #7f8092;
+    text-decoration: none;
+
+    &:hover {
+      color: $orange;
+    }
+  }
+  
+  p,
+  p a {
+    @extend .h6;
+  }
+
+  .current-event,
+  .future-event {
+    @include breakpoint($break0) {
+      @include span(4 at 1);
+    }
+  }
+
+  .current-event-title {
+    margin-bottom: 20px;
+  }
+
+  .current-event {
+    margin-bottom: 80px;
+    @extend %cf;
+
+    h1 { // current day
+      display: inline;
+      font-size:   32px;
+      line-height: 38px;
+      font-weight: 300;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      @include breakpoint($break2) {
+        @include span(3 at 1 of 6);
+      }
+    }
+
+    .current-event-info {
+      @include breakpoint($break2) {
+        @include span(3 at 4 of 6);
+      }
+    }
+  }
+
+  .future-event {
+    padding: 20px 20px 20px 0;
+    margin-bottom: 20px;
+    position: relative;
+    @include breakpoint($break2) {
+      @include span(3 at 1 of 6);
+    }
+
+    // background adjustments
+
+    &:before {
+      position: absolute;
+      content: '';
+      background: rgba(0,0,0,.2);
+      left: -20px;
+      right: 0;
+      top: 0;
+      bottom: 0;
+    }
+
+    span {
+      position: absolute;
+      top: -31px;
+      left: 0;
+    }
+
+    h1 { // upcoming day - title
+      font-size: 26px;
+      line-height: 31px;
+      font-weight: 300;
+      margin-bottom: 10px;
+      position: relative;
+    }
+
+    *:last-child {
+      margin: 0;
+    }
+
+    &:last-child {
+      padding: 20px 0 20px 20px;
+      @include breakpoint($break2) {
+        @include span(3 at 4 of 6);
+      }
+
+      &:before {
+        left: 0;
+        right: -20px;
+      }
+
+      span {
+        left: 20px;
+      }
+    }
+  }
+}
+
+
+

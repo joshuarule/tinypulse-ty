@@ -1,0 +1,18 @@
+.btn,
+%btn {
+  display: inline-block;
+  font-family: $alt-font-family;
+  font-size: 40px;
+  padding: 10px 40px 3px 40px;
+  background: $red;
+  color: $white;
+  text-decoration: none;
+  border: 2px solid transparent;
+  @include transition(.2s);
+
+  &:hover {
+    background: transparent;
+    border: 2px solid $red;
+    color: $red;
+  }
+}

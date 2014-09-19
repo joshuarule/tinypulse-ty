@@ -1,0 +1,37 @@
+.intro {
+  // padding-bottom: 650px;
+}
+
+.intro-img-1 {
+  @include span(5 at 7);
+  margin-top: -100px;
+}
+
+.intro-img-2 {
+  clear: both;
+  @include span(9 at 1);
+  position: relative;
+  margin-top: 60px;
+  padding-bottom: 35%; // controls height of imgs
+
+  .top-img,
+  .btm-img {
+    position: absolute;
+    width: 50%;
+  }
+
+  .top-img {
+    z-index: 1;
+  }
+
+  .btm-img {
+    right: 60px;
+    top: 60px;
+  }
+}
+
+
+.info {
+  // display: none;
+  margin-top: 90px;
+}

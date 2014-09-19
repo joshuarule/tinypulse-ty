@@ -1,0 +1,17 @@
+.third-1 {
+  @include breakpoint($break) {
+    @include span(4 at 1);
+  }
+}
+
+.third-2 {
+  @include breakpoint($break) {
+   @include span(4 at 5); 
+  }
+}
+
+.third-3 {
+  @include breakpoint($break) {
+   @include span(4 at 9); 
+  }
+}

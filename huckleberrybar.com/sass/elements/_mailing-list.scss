@@ -1,0 +1,6 @@
+.mailing-list {
+  @include span(4 at 4);
+  clear:left;
+
+  p {color: $white;}
+}

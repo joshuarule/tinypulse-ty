@@ -1,0 +1,34 @@
+
+footer nav {
+  text-align: center;
+  margin-bottom: 40px;
+
+  ul {
+    border: none;
+  }
+}
+
+.company-info,
+.social-links {
+  width: 230px; // set to equal width for centered nav and copyright
+
+  a {
+    color: $purple-text;
+  }
+}
+
+.company-info {
+  text-align: left;
+  float: left;
+}
+
+.social-links {
+  float:right;
+  text-align: right;
+}
+
+footer small { // copyright
+  @extend %cf;
+  display: block;
+  color: $purple-text;
+}

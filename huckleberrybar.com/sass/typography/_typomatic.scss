@@ -1,0 +1,53 @@
+// A mixin for scaling type that utilises the $type-scale map with the predefined values
+
+@mixin type-scale($scale, $map: $type-scale) {
+    $font-size: map-fetch($map, $scale font-size);
+    $base-lines: map-fetch($map, $scale base-lines);
+    @include adjust-font-size-to($font-size, $base-lines);
+}
+@mixin type-weight($weight) {
+    font-weight: map-get($type-weight, $weight);
+}
+
+// A quick ligature mixin, to be updated with a more modular one
+@mixin type-ligatures() {
+    -moz-font-feature-settings: "liga=1, dlig=1";
+    -ms-font-feature-settings: "liga", "dlig";
+    -webkit-font-feature-settings: "liga", "dlig";
+    -o-font-feature-settings: "liga", "dlig";
+    font-feature-settings: "liga", "dlig";
+}
+
+// Headings
+#{h1, h2, h3, h4, h5} {
+    font-family: $base-font-family;
+    margin-top: 0;
+    @include type-weight(black);
+    @include margin-trailer(1);
+    @include type-ligatures;
+}
+h1, .h1 {@include type-scale(xxlarge);}
+h2, .h2 {@include type-scale(xlarge);}
+h3, .h3 {@include type-scale(large);}
+h4, .h4 {@include type-scale(medium);}
+h5, .h5 {@include type-scale(base);}
+h6, .h6 {@include type-scale(small);}
+
+// Paragraphs
+p {
+    @include margin-trailer(1);
+    @include word-break(break-word);
+    @include hyphens(auto);
+    @include type-ligatures;
+    font-family: $base-font-family;
+    @include type-scale(base);
+}
+
+// Small
+small {
+    @include type-scale(small);
+}
+
+body {
+    @include type-scale(base);
+}

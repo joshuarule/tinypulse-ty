@@ -1,0 +1,29 @@
+.bg-img {
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  &.intro {
+    background-position: left -20px;
+  }
+  &.events {
+    background-position: right -20px;
+  }
+  &.info {
+    background-position: -80px -20px;
+  }
+}
+
+.menu-bg {
+  background-size: cover;
+  position: relative;
+
+  &:before {
+    position: absolute;
+    content: '';
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    @include background-image(linear-gradient(rgba($purple-text, 0), rgba($purple-text, 0) 50%, rgba($purple-text, .7)));
+  }
+}

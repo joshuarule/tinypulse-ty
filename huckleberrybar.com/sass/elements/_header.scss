@@ -1,0 +1,22 @@
+.address,
+.telephone {
+  position: absolute;
+  @include breakpoint($break0) {
+    position: relative;
+    margin-bottom: rhythm(.5);
+    display: block;
+  }
+}
+
+.address {
+  @include breakpoint($break) {
+    left: 20px;
+  }
+  
+}
+
+.telephone {
+  @include breakpoint($break) {
+    right: 20px;
+  }
+}

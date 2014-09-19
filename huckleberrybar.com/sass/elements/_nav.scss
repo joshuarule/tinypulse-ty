@@ -1,0 +1,69 @@
+// active link for current page
+
+.is-current-page {
+
+  footer &,
+  header & {
+    color: $red;
+
+    &:hover {
+      cursor: default;
+    }
+  }
+
+  .nav-menu & {
+    background: $red !important;
+    position: relative;
+
+    &:after { // down arrow
+      $size: 14px;
+      position: absolute;
+      content: '';
+      z-index: 1;
+      bottom: -$size - 2px; // size - border size
+      width: 0;
+      height: 0;
+      border-left:  $size solid transparent;
+      border-right: $size solid transparent;
+      border-top:   $size solid $red;
+      left: 50%;
+      margin-left: -($size); 
+    }
+
+    &:hover {
+      border-color: transparent !important;
+      cursor: default;
+    }
+  }
+  
+}
+
+.nav-main {
+  ul {
+    border-bottom: 2px solid $white;
+  }
+
+  li {
+    &:first-child a {padding-left:  0;}
+    &:last-child a  {padding-right: 0;}
+  }
+}
+
+.nav-menu {
+  display: block;
+  text-align: center;
+  margin-bottom: 100px;
+
+  ul {
+    display: inline-block;
+  }
+  a {
+    @extend %btn;
+    background: $black;
+
+    &:hover {
+      border-color: $white;
+      color: $white;
+    }
+  }
+}

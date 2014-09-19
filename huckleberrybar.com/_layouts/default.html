@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+  <title>{{site.title}} | {{title}}</title>
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script> // detects whether the browser has svg
+      !function () {
+          function supportsSVG() { return !!document.createElementNS && !! document.createElementNS('http://www.w3.org/2000/svg', 'svg').createSVGRect }
+          if (supportsSVG()) document.documentElement.className += ' svg'
+      }()
+  </script>
+
+  {% if url == "/" %}
+  <script type="text/javascript">
+    var d   = new Date();
+    var day = d.getDay(); // returns a # 0 - 6
+    var day2 = (function() { // return the day after today
+      if(day > 5) {
+        return ((day + 1) - 7);
+      } else {
+        return (day + 1);
+      };
+    })();
+    var day3 = (function() { // return the day after next
+      if(day > 4) {
+        return ((day + 2) - 7);
+      } else {
+        return (day + 2);
+      };
+    })();
+    
+    var dayName = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+
+    var eventTitle  = [{% for event in site.pages.events.posts %}"{{ event.title }}",{% endfor %}];
+    var eventBody  =  [{% for event in site.pages.events.posts %}{{ event.body | json }},{% endfor %}];
+    var eventExcerpt  =  [{% for event in site.pages.events.posts %}{{ event.excerpt | json }},{% endfor %}];
+    var eventUrl  =   [{% for event in site.pages.events.posts %}'{{ event.url }}',{% endfor %}];
+    var eventImg  =   [{% for event in site.pages.events.posts %}{% for asset in event.assets %}"{{ asset.url }}",{% endfor %}{% endfor %}];
+
+  </script>
+  {% endif %}
+
+  <link rel="alternate" type="application/rss+xml" href="{{site.feed_url}}" />
+  <link rel="stylesheet" type="text/css" href="/assets/css/app.css" />
+</head>
+<body itemscope itemtype="http://schema.org/BarOrPub">
+
+  {% include 'includes/header' %}
+
+  <p class="hide" itemprop="description">{{site.meta['description']}}</p>
+  
+
+  {{ content }}
+
+
+  {% include 'includes/footer' %}
+  <!-- <div class="grid" data-development-grid="hide"></div> -->
+
+  <script src="/assets/js/app.js"></script>
+  {% if url == "/" %}
+  <script>
+    document.querySelector( '.events-list' ).innerHTML += 
+      '<li class="current-event"><div class="current-event-title"><span class="title">Tonight </span>' + 
+        '<h1><a href="' + eventUrl[day] + '">' + eventTitle[day] + '</a></h1></div>' + 
+        '<img src="' + eventImg[day] + '" alt=" - flyer">' + 
+        '<div class="current-event-info">' + eventBody[day] + '<a href="' + eventUrl[day] + '" >Read More</a></div>' +
+      '</li>' +
+      '<li class="future-event"><span class="title">Tomorrow </span>' + 
+        '<h1><a href="' + eventUrl[day2] + '">' + eventTitle[day2] + '</a></h1>' +
+        eventExcerpt[day2] + 
+      '</li>' +
+      '<li class="future-event"><span class="title">'+ dayName[day3] +'</span>' +
+        '<h1><a href="' + eventUrl[day3] + '">' + eventTitle[day3] + '</a></h1>' + 
+        eventExcerpt[day3] +  
+      '</li>';
+  </script>
+  {% endif %}
+  
+</body>
+</html>

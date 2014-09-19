@@ -1,0 +1,7 @@
+<nav class="nav-menu">
+  <ul>
+    {% for page in site.pages.menu.pages %}
+      <li><a href="{{page.url}}"{% if page.url == url %} class="is-current-page"{% endif %}>{{page.title}}</a></li>
+    {% endfor %} 
+  </ul>
+</nav>
